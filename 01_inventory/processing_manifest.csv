@@ -1,0 +1,22 @@
+course_id,module_code,title,record_section,source_status,inventory_status,profile_status,next_action
+ma6018,MA6018,Master's Thesis,degree,PDF and Git repository accessible,complete,not_started,Profile later from PDF and repository at recorded revision plus dirty-state review
+ma3001,MA3001,Functional Analysis,degree,Exact archive match,complete,complete_validated,Profile created at 02_profiles/courses/ma3001-functional-analysis.md; ready for review and later thematic synthesis
+ma4800,MA4800,Foundations of Data Analysis,degree,Exact archive match,complete,not_started,Profile from archive
+ma5348,MA5348,Numerical Methods for Uncertainty Quantification,degree,Exact archive match,complete,complete_validated,Profile created at 02_profiles/courses/ma5348-numerical-methods-uncertainty-quantification.md; ready for review and later thematic synthesis
+ma3503,MA3503,Nonlinear Optimization,degree,Exact archive match,complete,not_started,Profile from archive
+ma4502,MA4502,Combinatorial Optimization,degree,Exact archive match,complete,complete_validated,Profile created at 02_profiles/courses/ma4502-combinatorial-optimization.md; ready for review and later thematic synthesis
+cit413042,CIT413042,Case Studies Optimization,degree,PDF and Git repository accessible,complete,not_started,Profile later from PDF and repository at recorded revision plus dirty-state review
+ma4802,MA4802,Statistical Learning,degree,Exact archive match,complete,not_started,Profile from archive
+cit4230003,CIT4230003,Advanced Machine Learning: Deep Generative Models,degree,Exact archive match,complete,not_started,Profile from archive
+in2361,IN2361,Natural Language Processing,degree,Exact archive match,complete,not_started,Profile from archive
+in2138,IN2138,Robot Motion Planning,degree,No matching archive,complete,blocked_missing_source,Locate course material; do not substitute IN2404 Mobile Robotik
+ei7263,EI7263,Biologically-Inspired Learning for Humanoid Robots,degree,Exact title archive match,complete,not_started,Profile from archive
+ei7646,EI7646,Computational Neuroscience: A Lecture Series from Models to Applications,degree,Exact title archive match,complete,not_started,Profile from archive
+mgt001299,MGT001299,Introduction to Deep Reinforcement Learning,degree,Exact archive match,complete,not_started,Profile from archive
+ma6015,MA6015,Advanced Seminar Course,degree,Exact component-title archive match,complete,not_started,Profile from archive
+ma8102,MA8102,Internship,degree,No supporting material configured,complete,blocked_missing_source,Locate internship evidence if a profile is desired
+sz0339,SZ0339,German as a Foreign Language B2.1,degree,Transcript only,complete,not_started,Transcript metadata may be sufficient
+sz0341,SZ0341,German as a Foreign Language C1.1,degree,Transcript only,complete,not_started,Transcript metadata may be sufficient
+additional-foml,,Fundamentals of Optimization for Machine Learning,additional_credit,User-confirmed archive; all PDFs internally MIT/MLSS/PKU-branded,complete,complete_validated,Profile created at 02_profiles/courses/additional-foml-fundamentals-of-optimization-for-machine-learning.md; retain unresolved TUM-specific provenance limitation
+additional-german-b1-2,,German as a Foreign Language B1.2,additional_credit,Transcript only,complete,not_started,Transcript metadata may be sufficient
+additional-cognitive-systems,,Technical Cognitive Systems,additional_credit,User-confirmed IN2222 Cognitive Systems archive,complete,not_started,Profile later from confirmed archive while retaining both recorded titles

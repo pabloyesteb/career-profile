@@ -1,0 +1,22 @@
+course_id,module_code,official_title_en,official_title_de,ects,grade,record_section,transcript_page,archive_match_status,archive
+ma6018,MA6018,Master's Thesis,Master's Thesis,30,2.0,degree,1,not_applicable,
+ma3001,MA3001,Functional Analysis,Funktionalanalysis,9,4.0,degree,2,exact,Functional Anal 950763320 (W24_25)_20261012_1552.zip
+ma4800,MA4800,Foundations of Data Analysis,Foundations of Data Analysis,8,1.3,degree,2,exact,Foundations in 950732430 (S24)_20261012_1529.zip
+ma5348,MA5348,Numerical Methods for Uncertainty Quantification,Numerical Methods for Uncertainty Quantification,6,2.7,degree,2,exact,NUMUQ (SoSe24)_20261012_1548.zip
+ma3503,MA3503,Nonlinear Optimization,Nichtlineare Optimierung,5,2.0,degree,2,exact,NLOA (W24_25)_20261012_1553.zip
+ma4502,MA4502,Combinatorial Optimization,Combinatorial Optimization,5,4.0,degree,2,exact,Combinatorial O 950730014 (S24)_20261012_1548.zip
+cit413042,CIT413042,Case Studies Optimization,Case Studies Optimization,10,1.0,degree,2,separate_source,
+ma4802,MA4802,Statistical Learning,Statistical Learning,6,3.0,degree,3,exact,Statistical Lea 950732556 (S24)_20261012_1548.zip
+cit4230003,CIT4230003,Advanced Machine Learning: Deep Generative Models,Advanced Machine Learning: Deep Generative Models,3,4.0,degree,3,exact,Advanced Machin 950803071 (S25)_20261012_1600.zip
+in2361,IN2361,Natural Language Processing,Natural Language Processing,6,2.7,degree,3,exact,Natural Languag 950767586 (W24_25)_20261012_1553.zip
+in2138,IN2138,Robot Motion Planning,Bewegungsplanung in der Robotik,5,3.0,degree,3,missing,
+ei7263,EI7263,Biologically-Inspired Learning for Humanoid Robots,Biologically-Inspired Learning for Humanoid Robots,6,1.3,degree,3,exact,Biologically-In 950799123 (S25)_20261012_1600.zip
+ei7646,EI7646,Computational Neuroscience: A Lecture Series from Models to Applications,Computational Neuroscience: Eine Ringvorlesung von Modellen bis zu Anwendungen,3,2.0,degree,3,exact,Computational N 950766500 (W24_25)_20261012_1552.zip
+mgt001299,MGT001299,Introduction to Deep Reinforcement Learning,Introduction to Deep Reinforcement Learning,6,2.3,degree,4,exact,Introduction to 950839140 (W25_26)_20261012_1601.zip
+ma6015,MA6015,Advanced Seminar Course,Hauptseminar,3,BE,degree,4,exact,Hauptseminar_ MLMC for UQ (SoSe 25)_20261012_1600.zip
+ma8102,MA8102,Internship,Berufspraktikum (Master),6,BE,degree,4,missing,
+sz0339,SZ0339,German as a Foreign Language B2.1,Deutsch als Fremdsprache B2.1,3,1.0,degree,4,missing,
+sz0341,SZ0341,German as a Foreign Language C1.1,Deutsch als Fremdsprache C1.1,3,2.0,degree,4,missing,
+additional-foml,,Fundamentals of Optimization for Machine Learning,Fundamentals of Optimization for Machine Learning,5,3.7,additional_credit,6,confirmed,fund_opt_ML_CIT413031.zip
+additional-german-b1-2,,German as a Foreign Language B1.2,Deutsch als Fremdsprache B1.2,4,1.3,additional_credit,6,missing,
+additional-cognitive-systems,,Technical Cognitive Systems,Kognitive Systeme,5,4.0,additional_credit,6,confirmed,CogSys SS2025_20261012_1559.zip

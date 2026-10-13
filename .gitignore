@@ -1,0 +1,34 @@
+# Original academic materials and personal documents
+/00_sources/
+
+# Temporary files and extracted text
+/.cache/
+/tmp/
+/temp/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# LaTeX compilation artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local configuration containing personal paths
+/config/sources.yaml
