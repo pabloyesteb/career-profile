@@ -13,7 +13,9 @@ Consult README.md for project context and config/sources.yaml for the configured
 - 00_sources/: original academic documents, course archives, thesis and publication PDFs, transcripts, and previous CV material.
 - 01_inventory/: catalogs of courses, files, sources, and processing status.
 - 02_profiles/courses/: one technical profile per course.
-- 02_profiles/projects/: profiles of the master's thesis, scientific publication, and relevant software contributions.
+- 02_profiles/supplementary/: source-grounded maps of supplementary academic materials, separate from transcript-accredited courses and personal project implementations. Track their provenance and status in 01_inventory/supplementary_processing_manifest.csv; do not add them to the transcript course count.
+- 02_profiles/projects/: definitive profiles of the master's thesis, scientific publication, and relevant software contributions.
+- 02_profiles/projects/_analysis/: internal reconstruction and contribution-analysis reports; not definitive profiles or direct thematic-synthesis inputs.
 - 03_knowledge_base/: thematic syntheses across courses and projects.
 - 04_master_profile/: consolidated academic and technical profile.
 - 05_cv/: CV templates and sector-specific CVs.
