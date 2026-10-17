@@ -1,0 +1,53 @@
+experience: "tum-advanced-control"
+claims:
+  -
+    id: "tum-advanced-control:feedback-architectures"
+    experience: "tum-advanced-control"
+    kind: "knowledge"
+    concepts:
+      - "state-feedback-observers"
+    statement: "Supplementary map covers equilibrium/LTI stability, controllability/observability and zero structure, SISO/MIMO pole assignment, LQR, Luenberger/Kalman introductions, separation/duality and modular tracking/disturbance rejection."
+    basis: "supplementary_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/supplementary/advanced_control.md"
+        section: "State-space modeling and stability"
+      -
+        profile: "02_profiles/supplementary/advanced_control.md"
+        section: "State feedback and optimal control"
+      -
+        profile: "02_profiles/supplementary/advanced_control.md"
+        section: "Observers, duality and decoupling"
+      -
+        profile: "02_profiles/supplementary/advanced_control.md"
+        section: "Disturbance rejection and tracking architectures"
+    limitations:
+      - "Credit not established; individual learning relationship unspecified. Exact Riccati/decoupling/invariant-zero theorem hypotheses are not supplied in this selective profile."
+  -
+    id: "tum-advanced-control:nonlinear-tools"
+    experience: "tum-advanced-control"
+    kind: "knowledge"
+    concepts:
+      - "state-feedback-observers"
+    statement: "Supplementary map adds relative-degree/input–output linearization and zero dynamics with elastic-arm modeling, MATLAB/Simulink LQR/eigenvalue/ss/lsim three-tank examples and named auxiliary mechanical/decoupling packages."
+    basis: "supplementary_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/supplementary/advanced_control.md"
+        section: "Nonlinear input–output linearization"
+      -
+        profile: "02_profiles/supplementary/advanced_control.md"
+        section: "Computational methods, tools and examples"
+    limitations:
+      - "No personal exercise/simulation completion is inferred; nested/auxiliary algorithms and exact nonlinear zero-dynamics hypotheses were not exhaustively extracted upstream."
+    tools:
+      - "MATLAB"
+      - "Simulink"
+      - "eig"
+      - "lqr"
+      - "ss"
+      - "lsim"

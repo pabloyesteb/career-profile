@@ -1,0 +1,549 @@
+experience: "ma6018"
+claims:
+  -
+    id: "ma6018:impedance-formulation"
+    experience: "ma6018"
+    kind: "contribution"
+    concepts:
+      - "nonlinear-model-predictive-control"
+    statement: "Formulated a finite-horizon tracking OCP whose predicted rigid-body response includes impedance feedback while optimizing feedforward acceleration."
+    basis: "project_report"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Identity, sources and attribution"
+        locator: "Contribution boundary"
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Optimal control formulation"
+        locator: "Tracking cost and impedance-in-prediction equations"
+    limitations:
+      - "Prior offline planner and existing impedance law are building blocks, not original inventions."
+      - "No full-architecture stability, recursive-feasibility or robustness guarantee is established."
+  -
+    id: "ma6018:impedance-in-prediction"
+    experience: "ma6018"
+    kind: "implementation"
+    concepts:
+      - "nonlinear-model-predictive-control"
+    statement: "Implemented impedance-aware receding-horizon control using CasADi/acados direct multiple shooting, SQP/Gauss-Newton and full-condensing HPIPM."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Optimal control formulation"
+        locator: "controller.py; _build_model; _build_ocp"
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Numerical transcription and reference interpolation"
+        locator: "Two-stage Gauss implicit RK; clock augmentation"
+    limitations:
+      - "Feedforward acceleration bounds do not bound total wrench or joint torque."
+      - "No hardware deployment or hard-real-time guarantee follows."
+    tools:
+      - "Python"
+      - "CasADi"
+      - "acados"
+      - "HPIPM"
+  -
+    id: "ma6018:multirate-feedback"
+    experience: "ma6018"
+    kind: "decision"
+    concepts:
+      - "nonlinear-model-predictive-control"
+    statement: "Held the first feedforward action across each control interval but recomputed impedance feedback at each physics substep."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Computational architecture"
+        locator: "25 ms nominal control; 34 times 0.73 ms physics substeps"
+    limitations:
+      - "This decision is statically documented; numerical wrench comparisons are not independently reproduced."
+      - "34 substeps advance 24.82 ms, not exactly 25 ms."
+    decision:
+      choice: "Recompute impedance feedback at physics rate; hold optimized feedforward at control rate."
+      context: "MuJoCo contact simulation with slower MPC solves."
+      rationale: "Profile documents this as a substantive multirate choice and reports reduced wrench jumps versus held feedback."
+      alternatives:
+        - "Hold feedback over the full control interval."
+      tradeoffs:
+        - "Separate optimization and feedback clocks; respect simulated-time rounding."
+  -
+    id: "ma6018:spiral-grid-result"
+    experience: "ma6018"
+    kind: "result"
+    concepts:
+      - "progress-triggered-recovery"
+    statement: "The thesis/defense report baseline 47/121 and discrete-spiral recovery 78/121 successful planar-offset cases."
+    basis: "project_report"
+    actor: "user"
+    verification: "reported_not_reproduced"
+    references:
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Search versus estimated-direction recovery"
+        locator: "Tables 6.7-6.8; discrete spiral"
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Evaluation design"
+        locator: "121 fixed planar offsets; intended 2.5 mm final true-position criterion"
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Evidence note and profile validation"
+        locator: "Known classification bug"
+    limitations:
+      - "Saved classification instead used a 12 mm minimum-over-time error around another goal; count matching is not corrected independent reproduction."
+      - "Simulation-only hexagonal assembly with frictionless/no-gravity assumptions; no general robustness guarantee."
+      - "Oracles use unavailable information and are not deployable results."
+    result:
+      metric: "Successful insertion cases"
+      values:
+        -
+          method: "Baseline without recovery"
+          value: 47
+          denominator: 121
+        -
+          method: "Discrete spiral recovery"
+          value: 78
+          denominator: 121
+      unit: "successful cases / 121 simulated offset cases"
+      evaluation_context: "Shared fixed planar translational perception-offset grid; intended final true-position error below 2.5 mm."
+      sample_count: 121
+  -
+    id: "ma6018:recovery-versus-prediction"
+    experience: "ma6018"
+    kind: "lesson"
+    concepts:
+      - "nonlinear-model-predictive-control"
+      - "progress-triggered-recovery"
+    statement: "In the reported setup, prediction/contact augmentation alone did not enlarge the baseline successful set, while progress-triggered reference recovery did."
+    basis: "project_report"
+    actor: "user"
+    verification: "reported_not_reproduced"
+    references:
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Controller, reference and recovery comparison"
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Stagnation detector"
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Discrete and continuous spiral search"
+    limitations:
+      - "Reported experiment interpretation, not a universal comparison of MPC and reactive control."
+      - "The known classification discrepancy and simulation scope apply."
+    lesson:
+      observation: "More detailed prediction did not provide the reported robustness gain; task-level recovery did."
+      implication: "Separate compliant tracking from progress monitoring and corrective reference search."
+      scope: "Profile-supported interpretation of the thesis's tested geometry/offset configurations."
+  -
+    id: "ma6018:pose-impedance"
+    experience: "ma6018"
+    kind: "implementation"
+    concepts:
+      - "rigid-body-pose-kinematics"
+      - "impedance-contact-dynamics"
+    statement: "Implemented rigid-part/perceived-pose conventions and Cartesian impedance execution, using scalar-first unit quaternions, pose-composed observation bias and the existing stiffness/damping feedback law."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Rigid-part model and uncertainty"
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Cartesian impedance and compliance"
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Formulated, implemented and evaluated"
+    limitations:
+      - "The existing impedance law is a building block, not a personal invention; fixed-reference passivity foundations do not prove stability of the full MPC/recovery system."
+      - "The free rigid-part simulation omits the robot arm, gravity/friction and a full six-dimensional uncertainty study."
+  -
+    id: "ma6018:reference-interpolation"
+    experience: "ma6018"
+    kind: "implementation"
+    concepts:
+      - "optimal-control-transcription"
+      - "rigid-body-pose-kinematics"
+      - "nonlinear-model-predictive-control"
+    statement: "Integrated clock-augmented reference dynamics, linear position/velocity interpolation, shortest-arc quaternion SLERP, antipodal alignment and increment-derived angular reference velocity into the multiple-shooting/implicit-RK controller."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Numerical transcription and reference interpolation"
+        locator: "controller.py; quat_utils.py; 101 supplied planning nodes at 0.04 s"
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Main operating point"
+        locator: "controller.py; quat_utils.py; 101 supplied planning nodes at 0.04 s"
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Inherited robust planning interface"
+        locator: "controller.py; quat_utils.py; 101 supplied planning nodes at 0.04 s"
+    limitations:
+      - "The offline scenario/contact-implicit planner and its reference trajectories are inherited; reference ingestion/interpolation is the thesis integration work."
+      - "Nominal 25 ms control advances 24.82 ms in the physics grid; no real-time guarantee follows."
+  -
+    id: "ma6018:contact-prediction"
+    experience: "ma6018"
+    kind: "implementation"
+    concepts:
+      - "impedance-contact-dynamics"
+      - "nonlinear-model-predictive-control"
+    statement: "Added measured-wrench-initialized smooth elastic contact prediction and an external free/contact switching wrapper; zero stiffness retains initialized wrench as a constant predicted disturbance."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Contact-aware prediction and model extensions"
+        locator: "ContactAwareMPCController; ContactSwitchingMPC.run_optimization"
+    limitations:
+      - "No contact-topology inference, unilateral/friction-cone enforcement or principal insertion improvement is established for this local model."
+  -
+    id: "ma6018:adaptive-model-extensions"
+    experience: "ma6018"
+    kind: "implementation"
+    concepts:
+      - "impedance-contact-dynamics"
+    statement: "Repository evidence includes regularized local stiffness fitting, symmetrization/PSD eigenvalue clipping, normal-oriented anisotropic costs and further planar/unilateral/adaptive predictor variants."
+    basis: "project_code"
+    actor: "unspecified"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Contact-aware prediction and model extensions"
+        locator: "stiffness_estimator.py; anisotropic_cost.py"
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Implemented extensions, theoretical foundations and research exposure"
+        locator: "stiffness_estimator.py; anisotropic_cost.py"
+    limitations:
+      - "The profile establishes implemented extensions, not their individual authorship in every file or a validated principal performance gain."
+      - "Contact-implicit MPC, ADMM contact optimization, sampling MPC, diffusion policies and residual RL remain research exposure/future directions, not demonstrated implementations here."
+  -
+    id: "ma6018:progress-projection"
+    experience: "ma6018"
+    kind: "implementation"
+    concepts:
+      - "progress-triggered-recovery"
+    statement: "Implemented closest-polyline-point projection, arc/time inversion and inverse-distance scenario blending for local reference timing and progress geometry, comparing this with clock-based timing."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Local horizon and scenario projection"
+        locator: "path_projection.py; _compute_blend_t0; beta=1 and near-zero-distance safeguards"
+    limitations:
+      - "This is positional progress geometry, not a probabilistic pose/contact estimator. Stalled projected timing can remove growing tracking error; its reported timing deficit is not a rejection of projection for progress detection."
+  -
+    id: "ma6018:recovery-state-machines"
+    experience: "ma6018"
+    kind: "implementation"
+    concepts:
+      - "progress-triggered-recovery"
+    statement: "Integrated windowed stagnation detection with tangential reference displacement, event-driven persistent ring probes, a timed continuous spiral and scenario retargeting; retained true-geometry/known-offset oracles as diagnostics."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Stagnation detector"
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Tangential reference displacement"
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Discrete and continuous spiral search"
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Scenario switching and oracles"
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Recovery strategies and diagnostic comparisons"
+    limitations:
+      - "Known search primitives are building blocks; the personal contribution is progress triggering and reference-execution integration."
+      - "True-geometry correction changes tangent and distance weights together; known-offset oracle information is unavailable in ordinary execution."
+  -
+    id: "ma6018:experiment-workflow"
+    experience: "ma6018"
+    kind: "implementation"
+    concepts:
+      - "reproducible-validation-workflows"
+    statement: "Built configuration-driven simulation/offset batteries with MuJoCo execution and HDF5 trajectories, JSON metadata, CSV metrics, plots/video and logs of true/perceived/reference states, solver diagnostics, progress and recovery."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Computational architecture"
+        locator: "run_experiments.py; run_battery.py; run_log.py"
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Evaluation design"
+        locator: "run_experiments.py; run_battery.py; run_log.py"
+    limitations:
+      - "Stored artifacts do not correct the known 12 mm minimum-over-time classifier or independently validate final 2.5 mm success."
+      - "Inspection HEAD postdates runs and does not freeze uncommitted presentation material; generated C artifacts are acados products, not handwritten-C authorship."
+    tools:
+      - "Python"
+      - "NumPy"
+      - "MuJoCo"
+      - "CasADi"
+      - "acados"
+      - "HPIPM"
+      - "YAML"
+      - "h5py/HDF5"
+      - "JSON"
+      - "CSV"
+      - "Matplotlib"
+      - "LaTeX"
+      - "Git/submodules"
+  -
+    id: "ma6018:comparison-sensitivities"
+    experience: "ma6018"
+    kind: "result"
+    concepts:
+      - "progress-triggered-recovery"
+      - "nonlinear-model-predictive-control"
+    statement: "Reported controller/recovery comparisons and detector/preview/planning-size sensitivity counts qualify the principal spiral finding; all unrecovered preview lengths 0.2/0.4/0.5/1.0 s report 47/121."
+    basis: "project_report"
+    actor: "user"
+    verification: "reported_not_reproduced"
+    references:
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Controller, reference and recovery comparison"
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Search versus estimated-direction recovery"
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Sensitivity and dependence on planning"
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Evaluation design"
+    limitations:
+      - "The known classification bug applies: 12 mm minimum-over-time saved logic differs from intended final 2.5 mm success; these results are reported, not corrected independent reproduction."
+      - "True-geometry and known-offset oracles are nondeployable; detector/horizon studies and planning-size studies vary different factors, not repeated independent corroboration."
+      - "Planning-size comparisons use identical unscaled test offsets and tangential recovery, not the best spiral; the 3-offset practical threshold is not a formal significance test."
+    result:
+      metric: "Reported successful insertion cases by labeled method or sensitivity condition"
+      values:
+        -
+          method: "Direct impedance + tangential recovery"
+          value: 68
+          denominator: 121
+        -
+          method: "Impedance-aware MPC + tangential recovery"
+          value: 66
+          denominator: 121
+        -
+          method: "Projected-time reference without recovery"
+          value: 32
+          denominator: 121
+        -
+          method: "Projected-time reference + tangential recovery"
+          value: 58
+          denominator: 121
+        -
+          method: "Contact-aware MPC + tangential recovery"
+          value: 67
+          denominator: 121
+        -
+          method: "Continuous spiral recovery"
+          value: 74
+          denominator: 121
+        -
+          method: "Scenario switching"
+          value: 47
+          denominator: 121
+        -
+          method: "True-geometry tangential oracle"
+          value: 106
+          denominator: 121
+        -
+          method: "Known-offset oracle"
+          value: 121
+          denominator: 121
+        -
+          method: "Preview 0.2 s + recovery"
+          value: 69
+          denominator: 121
+        -
+          method: "Preview 0.4 s + recovery"
+          value: 67
+          denominator: 121
+        -
+          method: "Preview 1.0 s + recovery"
+          value: 66
+          denominator: 121
+        -
+          method: "Tangential detector alpha=0.01"
+          value: 51
+          denominator: 121
+        -
+          method: "Tangential detector alpha=0.3"
+          value: 51
+          denominator: 121
+        -
+          method: "Tangential detector alpha=0.5"
+          value: 55
+          denominator: 121
+        -
+          method: "Tangential detector alpha=0.7"
+          value: 66
+          denominator: 121
+        -
+          method: "Tangential detector alpha=0.9"
+          value: 68
+          denominator: 121
+        -
+          method: "Planning offsets 25 mm, without recovery"
+          value: 47
+          denominator: 121
+        -
+          method: "Planning offsets 15 mm, without recovery"
+          value: 30
+          denominator: 121
+        -
+          method: "Planning offsets 5 mm, without recovery"
+          value: 25
+          denominator: 121
+        -
+          method: "Planning offsets 25 mm, tangential recovery"
+          value: 68
+          denominator: 121
+        -
+          method: "Planning offsets 15 mm, tangential recovery"
+          value: 52
+          denominator: 121
+        -
+          method: "Planning offsets 5 mm, tangential recovery"
+          value: 35
+          denominator: 121
+      unit: "successful cases / 121 simulated offset cases"
+      evaluation_context: "Fixed planar perception-offset tests. Preview study fixes 25 ms control; main 0.5 s preview is represented by the MPC+recovery entry. Detector values vary tangential recovery alpha. Planning-size study changes scenario offsets 25/15/5 mm while keeping test offsets unscaled. Baseline/discrete-spiral counts are stored in ma6018:spiral-grid-result."
+      sample_count: 121
+  -
+    id: "ma6018:runtime-study"
+    experience: "ma6018"
+    kind: "result"
+    concepts:
+      - "nonlinear-model-predictive-control"
+      - "optimal-control-transcription"
+    statement: "Reported solve-time statistics increase with preview; nominal-cycle overruns remain despite typical solves below 25 ms."
+    basis: "project_report"
+    actor: "user"
+    verification: "reported_not_reproduced"
+    references:
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Sensitivity and dependence on planning"
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Main operating point"
+    limitations:
+      - "Shared-machine timings, unspecified standardized hardware/load and cold/later overruns do not establish hard-real-time operation."
+      - "Mean preview timings and recovery/no-recovery medians are different statistics; not an isolated recovery speedup experiment."
+    result:
+      metric: "Reported solver duration"
+      values:
+        -
+          method: "Mean, preview 0.2 s"
+          value: 3.9
+        -
+          method: "Mean, preview 0.4 s"
+          value: 7.2
+        -
+          method: "Mean, preview 0.5 s"
+          value: 10.2
+        -
+          method: "Mean, preview 1.0 s"
+          value: 17.5
+        -
+          method: "Median, with recovery"
+          value: 9.3
+        -
+          method: "Median, without recovery"
+          value: 13.2
+      unit: "ms"
+      evaluation_context: "25 ms nominal control interval. Only 44/121 recovered and 8/121 unrecovered simulation runs have no overrun; these deadline counts are not insertion-success counts. Report Table 6.4 and runtime section; no independent rerun."
+  -
+    id: "ma6018:feedback-model-audits"
+    experience: "ma6018"
+    kind: "result"
+    concepts:
+      - "nonlinear-model-predictive-control"
+      - "impedance-contact-dynamics"
+    statement: "Appendix audits report smaller substep-feedback wrench jumps and small omitted gyroscopic effects under the tested low-speed/feedback settings."
+    basis: "project_report"
+    actor: "user"
+    verification: "reported_not_reproduced"
+    references:
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Sensitivity and dependence on planning"
+        locator: "Appendix A.5–A.6"
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Computational architecture"
+        locator: "Appendix A.5–A.6"
+    limitations:
+      - "Numerical audits are reported, not independently reproduced stability/model-validity proofs; scope is the tested feedback and low-speed conditions."
+    result:
+      metric: "Reported median wrench-jump magnitude"
+      values:
+        -
+          method: "Substep feedback"
+          value: 0.003
+        -
+          method: "Held feedback"
+          value: 7.3
+      unit: "N"
+      evaluation_context: "Appendix A.5 feedback comparison. Separate A.6 gyroscopic audit reports median ratio about 0.07% and 95th percentile 1.1%; these dimensionless ratios are not wrench-jump units."
+  -
+    id: "ma6018:sampled-region"
+    experience: "ma6018"
+    kind: "result"
+    concepts:
+      - "progress-triggered-recovery"
+    statement: "Defense reports a fully successful sampled rhombus with spiral recovery, 30 mm versus the 25 mm planning rhombus, giving a 44% geometric area expansion."
+    basis: "project_report"
+    actor: "user"
+    verification: "reported_not_reproduced"
+    references:
+      -
+        profile: "02_profiles/projects/thesis.md"
+        section: "Search versus estimated-direction recovery"
+        locator: "Defense p. 31 and conclusions pp. 34–37"
+    limitations:
+      - "The classification discrepancy applies; sampled-region observation is not a guarantee for all continuous poses, rotations or arbitrary geometries."
+      - "The 44% is an area ratio, not a 44-percentage-point success improvement."
+    result:
+      metric: "Reported sampled-region area expansion relative to planning rhombus"
+      values:
+        -
+          method: "Spiral recovery, (30/25)^2 - 1"
+          value: 44
+      unit: "percent area increase"
+      evaluation_context: "Reported fully successful sampled 30 mm rhombus versus 25 mm planning rhombus; geometric area ratio 1.44, not continuous-region certification."

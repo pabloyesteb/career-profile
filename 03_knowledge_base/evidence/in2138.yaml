@@ -1,0 +1,43 @@
+experience: "in2138"
+claims:
+  -
+    id: "in2138:planning-syllabus"
+    experience: "in2138"
+    kind: "knowledge"
+    concepts:
+      - "geometric-sampling-motion-planning"
+    statement: "Official syllabus covers configuration spaces, online Bug/wavefront planning, complete/partial-map strategies, visibility/Voronoi/decomposition/potential fields, PRM/RRT and expansiveness/connectivity parameter selection."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/in2138-robot-motion-planning.md"
+        section: "Configuration-space representation"
+      -
+        profile: "02_profiles/courses/in2138-robot-motion-planning.md"
+        section: "Geometric planning and map assumptions"
+      -
+        profile: "02_profiles/courses/in2138-robot-motion-planning.md"
+        section: "Sampling-based planning and connectivity"
+      -
+        profile: "02_profiles/courses/in2138-robot-motion-planning.md"
+        section: "Computational and assessment evidence"
+    limitations:
+      - "Summer Semester 2024 webpage is not an independently established attendance term. No recordings/homework submissions, algorithm implementations, theorem bounds or programming tools are independently documented."
+  -
+    id: "in2138:uncertain-mapping"
+    experience: "in2138"
+    kind: "knowledge"
+    concepts:
+      - "state-feedback-observers"
+    statement: "Syllabus covers Kalman/EKF/UKF and Bayesian/particle filtering for the indicated linear/nonlinear uncertainty classes, plus SLAM."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/in2138-robot-motion-planning.md"
+        section: "Uncertainty, filtering and mapping"
+    limitations:
+      - "Syllabus-level categories only, not universal guarantees, detailed recursion/noise assumptions or personally implemented filtering/SLAM."

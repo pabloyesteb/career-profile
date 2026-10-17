@@ -1,0 +1,82 @@
+experience: "tum-approximate-dynamic-programming"
+claims:
+  -
+    id: "tum-approximate-dynamic-programming:bellman-policy-operator"
+    experience: "tum-approximate-dynamic-programming"
+    kind: "knowledge"
+    concepts:
+      - "bellman-policy-evaluation"
+    statement: "The material covers stationary-policy Bellman evaluation T_pi J = G_pi + gamma P_pi J, discounted costs, policy fixed points and value/policy iteration."
+    basis: "supplementary_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/supplementary/approximate_dynamic_programming.md"
+        section: "Sequential decisions and exact dynamic programming"
+      -
+        profile: "02_profiles/supplementary/approximate_dynamic_programming.md"
+        section: "Policy iteration and computational variants"
+    limitations:
+      - "Supplementary coverage does not establish personal implementation or accredited completion."
+      - "Exact contraction rates and full convergence hypotheses are not supplied by this profile."
+  -
+    id: "tum-approximate-dynamic-programming:projected-policy-evaluation"
+    experience: "tum-approximate-dynamic-programming"
+    kind: "knowledge"
+    concepts:
+      - "projected-policy-evaluation"
+    statement: "Linear/neural value approximation, stationary-distribution weighted projection, MSBE and MSPBE are represented as distinct evaluation constructions."
+    basis: "supplementary_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/supplementary/approximate_dynamic_programming.md"
+        section: "Function approximation and projected evaluation"
+    limitations:
+      - "The profile lacks exact projection matrices, objective formulas and complete convergence hypotheses; these remain extraction gaps."
+      - "Do not elevate broad slide claims about ergodicity/off-policy stability to universal guarantees."
+  -
+    id: "tum-approximate-dynamic-programming:norm-mismatch-example"
+    experience: "tum-approximate-dynamic-programming"
+    kind: "knowledge"
+    concepts:
+      - "projected-policy-evaluation"
+    statement: "Assignment 2 studies a two-state Markov-chain counterexample to projected-evaluation convergence under a mismatched norm and alternative features."
+    basis: "supplementary_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/supplementary/approximate_dynamic_programming.md"
+        section: "Exercise, assignment and computational evidence"
+        locator: "Assignment 2; norm-mismatch divergence"
+    limitations:
+      - "Presence of the assignment does not establish that the user solved it."
+      - "Numerical matrices, feature values and the full counterexample derivation are absent from the profile."
+  -
+    id: "tum-approximate-dynamic-programming:sample-linear-algebra"
+    experience: "tum-approximate-dynamic-programming"
+    kind: "knowledge"
+    concepts:
+      - "temporal-difference-learning"
+      - "policy-gradient-credit-assignment"
+    statement: "The supplementary map covers MC/TD/SARSA/Q-learning, traces/Robbins–Monro, off-policy importance weighting, gradient/TD-corrected methods, LSPE/LSTD, Sherman–Morrison online inverse updates and Newton-type interpretations, with named Python utilities."
+    basis: "supplementary_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/supplementary/approximate_dynamic_programming.md"
+        section: "Sample-based learning and numerical linear algebra"
+      -
+        profile: "02_profiles/supplementary/approximate_dynamic_programming.md"
+        section: "Exercise, assignment and computational evidence"
+    limitations:
+      - "Exact GTD/LSTD/lambda-operator/update equations and sufficient sampling/feature assumptions are unavailable at profile depth; no universal off-policy stability claim or personally completed assignment is inferred."
+    tools:
+      - "Python"
+      - "NumPy"
+      - "Matplotlib"
+      - "tqdm"

@@ -1,0 +1,88 @@
+experience: "tum-mobile-robotics"
+claims:
+  -
+    id: "tum-mobile-robotics:representations-tools"
+    experience: "tum-mobile-robotics"
+    kind: "knowledge"
+    concepts:
+      - "rigid-body-pose-kinematics"
+      - "robot-perception-control-interfaces"
+    statement: "Supplementary mobile-robotics material covers quaternion/minimal state representations, sensors/pinhole and differential-drive/quadrotor models plus Python numerical/visualization exercises."
+    basis: "supplementary_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/supplementary/mobile_robotics.md"
+        section: "Foundations: state, geometry, sensors and motion"
+      -
+        profile: "02_profiles/supplementary/mobile_robotics.md"
+        section: "Tools and represented exercise work"
+    limitations:
+      - "Supplied code/imports, not personal implementation or tested behavior; exact perturbation/Jacobian conventions are not in the profile."
+    tools:
+      - "Python"
+      - "NumPy"
+      - "SciPy optimization/spatial transforms"
+      - "Matplotlib"
+      - "PyQt5"
+      - "qpsolvers"
+      - "vedo"
+  -
+    id: "tum-mobile-robotics:estimation-mapping"
+    experience: "tum-mobile-robotics"
+    kind: "knowledge"
+    concepts:
+      - "probabilistic-slam-mapping"
+      - "state-feedback-observers"
+    statement: "Gauss–Newton/LM and bundle adjustment, Bayesian/particle/Kalman/EKF estimation, sparse visual/RANSAC and dense ICP/photometric SLAM, occupancy/TSDF/OctoMap, loop closure/submaps and semantic/dynamic maps are represented."
+    basis: "supplementary_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/supplementary/mobile_robotics.md"
+        section: "Probabilistic nonlinear least squares"
+      -
+        profile: "02_profiles/supplementary/mobile_robotics.md"
+        section: "Recursive estimation and sparse visual SLAM"
+      -
+        profile: "02_profiles/supplementary/mobile_robotics.md"
+        section: "Dense, semantic and dynamic maps"
+    limitations:
+      - "Exact filter/Jacobian/map equations and sufficient assumptions are not supplied by this selective profile; no personal SLAM implementation is established."
+  -
+    id: "tum-mobile-robotics:feedback-control"
+    experience: "tum-mobile-robotics"
+    kind: "knowledge"
+    concepts:
+      - "state-feedback-observers"
+      - "nonlinear-model-predictive-control"
+    statement: "LTI stability, PID/anti-windup/feedforward/reference filtering, LQR/MPC and quadrotor cascades/input remapping are covered; supplied hill-driving code separates LQR/MPC controllers and calls qpsolvers.solve_qp."
+    basis: "supplementary_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/supplementary/mobile_robotics.md"
+        section: "Feedback and model-predictive control"
+    limitations:
+      - "Supplementary numerical workflow, not personal controller implementation or a demonstrated general quadrotor decoupling/stability result. Exact QP horizon/cost/constraint contracts remain unavailable at profile depth."
+  -
+    id: "tum-mobile-robotics:planning-learning"
+    experience: "tum-mobile-robotics"
+    kind: "knowledge"
+    concepts:
+      - "geometric-sampling-motion-planning"
+      - "bellman-policy-evaluation"
+      - "temporal-difference-learning"
+    statement: "Configuration-space collision/inflation and roadmap/grid planning, Dijkstra/A*/RRT variants/exploration, and finite/discounted MDP utility, VI/PI/Q-learning/epsilon-greedy are covered."
+    basis: "supplementary_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/supplementary/mobile_robotics.md"
+        section: "Planning, exploration and learned decisions"
+    limitations:
+      - "Theory/exercise map only; tree rewiring/collision details and exact code behavior were not exhaustively reconstructed, and no personal learning result follows."

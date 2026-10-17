@@ -1,0 +1,192 @@
+experience: "additional-cognitive-systems"
+claims:
+  -
+    id: "additional-cognitive-systems:cognitive-architectures"
+    experience: "additional-cognitive-systems"
+    kind: "knowledge"
+    concepts:
+      - "cognitive-architectures-binding"
+    statement: "Marr/ultimate–proximate levels, symbolic/emergent/enactive/hybrid paradigms and embodied processing cycles; ACT-R chunks/buffers/production control, activation/utility learning and compilation."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/additional-cognitive-systems-technical-cognitive-systems.md"
+        section: "Cognitive systems, representation, and modeling paradigms"
+      -
+        profile: "02_profiles/courses/additional-cognitive-systems-technical-cognitive-systems.md"
+        section: "Cognitive architectures and ACT-R"
+    limitations:
+      - "Confirmed transcript/archive association; IN2222 is source metadata, not an established official transcript module code."
+  -
+    id: "additional-cognitive-systems:spiking-models"
+    experience: "additional-cognitive-systems"
+    kind: "knowledge"
+    concepts:
+      - "spiking-neuron-plasticity"
+    statement: "Biological/measurement/model hierarchy, threshold/ADALINE, conductance gating, LIF, AdEx and Izhikevich threshold/reset dynamics with supplied unit-aware numerical simulation."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/additional-cognitive-systems-technical-cognitive-systems.md"
+        section: "Brain organization, experimental evidence, and neuron models"
+    limitations:
+      - "Confirmed transcript/archive association; IN2222 is source metadata, not an established official transcript module code."
+  -
+    id: "additional-cognitive-systems:plasticity-simulation"
+    experience: "additional-cognitive-systems"
+    kind: "knowledge"
+    concepts:
+      - "spiking-neuron-plasticity"
+      - "information-coding-sensory-inference"
+      - "matrix-low-rank-pca"
+    statement: "Rate/timing/population codes, Brian2 equations/units/threshold/synapse/monitor workflows, Hebb/Oja/BCM/STDP trace rules and neuromorphic examples; Oja's normalized covariance dynamics relates to PCA."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/additional-cognitive-systems-technical-cognitive-systems.md"
+        section: "Neural coding, simulation, plasticity, and neuromorphic computation"
+    limitations:
+      - "Confirmed transcript/archive association; IN2222 is source metadata, not an established official transcript module code."
+  -
+    id: "additional-cognitive-systems:statistical-examples"
+    experience: "additional-cognitive-systems"
+    kind: "knowledge"
+    concepts:
+      - "statistical-risk-model-selection"
+      - "regularized-linear-inference"
+      - "ensemble-margin-kernel-methods"
+      - "neural-training-data-contracts"
+    statement: "Capacity/generalization, perceptron separability/XOR, Gaussian linear least squares, supplied PolynomialFeatures/Ridge pipeline, introductory margins and vectorized Python examples establish teaching content."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/additional-cognitive-systems-technical-cognitive-systems.md"
+        section: "Statistical learning, generalization, and feature representations"
+    limitations:
+      - "Confirmed transcript/archive association; IN2222 is source metadata, not an established official transcript module code."
+  -
+    id: "additional-cognitive-systems:feature-binding"
+    experience: "additional-cognitive-systems"
+    kind: "knowledge"
+    concepts:
+      - "neural-training-data-contracts"
+      - "cognitive-architectures-binding"
+    statement: "SIFT/Fourier/Sobel/Gabor and convolutional hierarchies, Fourier acceleration idea and capsule binding/EM routing distinguish feature representations from full biological equivalence."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/additional-cognitive-systems-technical-cognitive-systems.md"
+        section: "Deep feature learning, convolutional networks, and binding"
+    limitations:
+      - "Confirmed transcript/archive association; IN2222 is source metadata, not an established official transcript module code."
+  -
+    id: "additional-cognitive-systems:rl-teaching"
+    experience: "additional-cognitive-systems"
+    kind: "knowledge"
+    concepts:
+      - "bellman-policy-evaluation"
+      - "temporal-difference-learning"
+      - "deep-value-learning"
+    statement: "DP/GPI/MC/TD/SARSA/Q-learning/n-step backups are taught; supplied CartPole uses replay and two 32-unit ReLU layers but the same online bootstrap network, not a separate stabilized DQN target."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/additional-cognitive-systems-technical-cognitive-systems.md"
+        section: "Reinforcement learning and neural Q approximation"
+    limitations:
+      - "Confirmed transcript/archive association; IN2222 is source metadata, not an established official transcript module code."
+  -
+    id: "additional-cognitive-systems:embodied-platform"
+    experience: "additional-cognitive-systems"
+    kind: "knowledge"
+    concepts:
+      - "robot-perception-control-interfaces"
+      - "biological-motor-action-models"
+    statement: "NRP connects Gazebo/ROS/NEST/OpenSim/Blender via transfer functions; half-center CPG circuitry supplies rhythmic embodied examples, not a complete local robot experiment."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/additional-cognitive-systems-technical-cognitive-systems.md"
+        section: "Embodied neurorobotics and central pattern generators"
+    limitations:
+      - "Confirmed transcript/archive association; IN2222 is source metadata, not an established official transcript module code."
+  -
+    id: "additional-cognitive-systems:language-evaluation"
+    experience: "additional-cognitive-systems"
+    kind: "knowledge"
+    concepts:
+      - "neural-sequence-language-models"
+    statement: "MoE/state-space architecture context, NF4/double quantization and float16 inference, code-task metrics and hallucination/explanation methods; supplied five single-sample tasks do not satisfy requested 50-task/latency/pass@k study."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/additional-cognitive-systems-technical-cognitive-systems.md"
+        section: "Language models, evaluation, quantization, and retrieval augmentation"
+    limitations:
+      - "Confirmed transcript/archive association; IN2222 is source metadata, not an established official transcript module code."
+  -
+    id: "additional-cognitive-systems:retrieval-workflow"
+    experience: "additional-cognitive-systems"
+    kind: "knowledge"
+    concepts:
+      - "retrieval-grounded-dialogue"
+    statement: "Supplied overlap-chunk/MiniLM bi-encoder/ELECTRA rerank pipeline selects six of up to 32 candidate passages; final hosted generation does not implement requested conversational rewriting/source citations."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/additional-cognitive-systems-technical-cognitive-systems.md"
+        section: "Language models, evaluation, quantization, and retrieval augmentation"
+    limitations:
+      - "Confirmed transcript/archive association; IN2222 is source metadata, not an established official transcript module code."
+  -
+    id: "additional-cognitive-systems:dynamic-binding"
+    experience: "additional-cognitive-systems"
+    kind: "knowledge"
+    concepts:
+      - "cognitive-architectures-binding"
+    statement: "Guest structured-neural-code, Häussler cooperation/competition, retinotopy, shifter circuits/dynamic links and schema–instance hypotheses are theoretical rather than established topology or biological theorems."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/additional-cognitive-systems-technical-cognitive-systems.md"
+        section: "Guest lecture: neural code and dynamic-link representations"
+    limitations:
+      - "Confirmed transcript/archive association; IN2222 is source metadata, not an established official transcript module code."
+  -
+    id: "additional-cognitive-systems:computational-scope"
+    experience: "additional-cognitive-systems"
+    kind: "knowledge"
+    concepts:
+      - "spiking-neuron-plasticity"
+      - "neural-sequence-language-models"
+      - "robot-perception-control-interfaces"
+    statement: "Python/NumPy/sklearn/Brian2 and Keras/Gym/Transformers teaching artifacts coexist with NEST/ROS/Gazebo/OpenSim platform examples; no personal authorship or successful execution follows from their presence."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/additional-cognitive-systems-technical-cognitive-systems.md"
+        section: "Tools, applications, and thematic categories"
+    limitations:
+      - "Confirmed transcript/archive association; IN2222 is source metadata, not an established official transcript module code."

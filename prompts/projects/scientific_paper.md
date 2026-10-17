@@ -1,6 +1,14 @@
 Read AGENTS.md and review the current state of the
 Career Profile project.
 
+Current organization note (2026-10-15): this publication belongs to
+NGValidation. Its existing definitive profile is
+02_profiles/projects/ngvalidation.md (stable identifier scientific_paper).
+Resolve the PDF and repository through config/sources.yaml. This original
+paper-focused workflow must preserve the profile's subsequently documented
+repository evidence and individual contributions; do not overwrite them or
+create a duplicate project. A rerun is not required by the relocation.
+
 The academic course-profiling phase is complete.
 We are now beginning research and software project
 profiling, starting with the coauthored scientific paper.
@@ -99,7 +107,7 @@ OUTPUT
 
 Create:
 
-02_profiles/projects/scientific_paper.md
+02_profiles/projects/ngvalidation.md
 
 Follow the established profiling conventions where
 appropriate, adapting the structure to a research

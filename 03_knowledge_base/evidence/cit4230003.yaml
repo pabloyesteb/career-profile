@@ -1,0 +1,130 @@
+experience: "cit4230003"
+claims:
+  -
+    id: "cit4230003:variational-inference"
+    experience: "cit4230003"
+    kind: "knowledge"
+    concepts:
+      - "variational-generative-inference"
+      - "mixtures-latent-inference"
+    statement: "Generative likelihood, latent marginalization, ELBO/KL decomposition, EM and mean-field variational inference; inference approximations and likelihood objectives are separated."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/cit4230003-advanced-machine-learning-deep-generative-models.md"
+        section: "Generative-model formulation and design criteria"
+      -
+        profile: "02_profiles/courses/cit4230003-advanced-machine-learning-deep-generative-models.md"
+        section: "Latent-variable models and variational inference"
+    limitations:
+      - "Taught/supplied material documents technical knowledge, not individual completion of every exercise or personal implementation."
+  -
+    id: "cit4230003:flows"
+    experience: "cit4230003"
+    kind: "knowledge"
+    concepts:
+      - "invertible-generative-flows"
+    statement: "Change-of-variables likelihood, coupling/autoregressive flows and invertibility/Jacobian constraints; RealNVP and MAF/IAF express distinct sampling/density-evaluation trade-offs."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/cit4230003-advanced-machine-learning-deep-generative-models.md"
+        section: "Normalizing flows"
+    limitations:
+      - "Taught/supplied material documents technical knowledge, not individual completion of every exercise or personal implementation."
+  -
+    id: "cit4230003:vae"
+    experience: "cit4230003"
+    kind: "knowledge"
+    concepts:
+      - "variational-generative-inference"
+    statement: "Amortized encoder/decoder inference, Gaussian pathwise reparameterization, reconstruction/KL balance, beta-VAE variants and variance parameterization."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/cit4230003-advanced-machine-learning-deep-generative-models.md"
+        section: "Variational autoencoders"
+    limitations:
+      - "Taught/supplied material documents technical knowledge, not individual completion of every exercise or personal implementation."
+  -
+    id: "cit4230003:adversarial"
+    experience: "cit4230003"
+    kind: "knowledge"
+    concepts:
+      - "minimax-adversarial-learning"
+    statement: "Moment/MMD and density-ratio ideas, GAN discriminator/value objective, divergence interpretation, saturation, and adversarial/conditional variants including BiGAN and CycleGAN."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/cit4230003-advanced-machine-learning-deep-generative-models.md"
+        section: "Likelihood-free learning and generative adversarial networks"
+    limitations:
+      - "Taught/supplied material documents technical knowledge, not individual completion of every exercise or personal implementation."
+  -
+    id: "cit4230003:diffusion"
+    experience: "cit4230003"
+    kind: "knowledge"
+    concepts:
+      - "diffusion-score-probability-flows"
+    statement: "Gaussian forward diffusion, tractable ELBO components, noise/score prediction, reverse generation, Langevin and score-based/SDE connections with conditional versus marginal score distinctions."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/cit4230003-advanced-machine-learning-deep-generative-models.md"
+        section: "Denoising diffusion and score-based models"
+    limitations:
+      - "Taught/supplied material documents technical knowledge, not individual completion of every exercise or personal implementation."
+  -
+    id: "cit4230003:continuous-flows"
+    experience: "cit4230003"
+    kind: "knowledge"
+    concepts:
+      - "invertible-generative-flows"
+    statement: "ODE transport, continuous normalizing-flow likelihood, conditional flow matching and equality of conditional/marginal training gradients under the course assumptions; training regression differs from numerical ODE generation."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/cit4230003-advanced-machine-learning-deep-generative-models.md"
+        section: "Conditional flow matching and continuous normalizing flows"
+    limitations:
+      - "Taught/supplied material documents technical knowledge, not individual completion of every exercise or personal implementation."
+  -
+    id: "cit4230003:generative-teaching"
+    experience: "cit4230003"
+    kind: "knowledge"
+    concepts:
+      - "variational-generative-inference"
+      - "invertible-generative-flows"
+      - "diffusion-score-probability-flows"
+    statement: "Eight lectures, four exercise units and historical assessments cover derivations and generative applications. Advertised flow/VAE/diffusion programming tasks are not supplied implementations; framework-neutral pseudo-code does not establish a personal framework project."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/cit4230003-advanced-machine-learning-deep-generative-models.md"
+        section: "Algorithms and numerical methods"
+      -
+        profile: "02_profiles/courses/cit4230003-advanced-machine-learning-deep-generative-models.md"
+        section: "Computational work and tools"
+      -
+        profile: "02_profiles/courses/cit4230003-advanced-machine-learning-deep-generative-models.md"
+        section: "Applications and model problems"
+      -
+        profile: "02_profiles/courses/cit4230003-advanced-machine-learning-deep-generative-models.md"
+        section: "Exercise, project, and assessment evidence"
+    limitations:
+      - "Taught/supplied material documents technical knowledge, not individual completion of every exercise or personal implementation."
+

@@ -1,0 +1,129 @@
+experience: "ma3001"
+claims:
+  -
+    id: "ma3001:neumann-inversion"
+    experience: "ma3001"
+    kind: "knowledge"
+    concepts:
+      - "neumann-series"
+    statement: "Bounded-operator Neumann-series inversion of I-T under norm(T)<1 and an integral-equation application are covered."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma3001-functional-analysis.md"
+        section: "Normed, Banach, and operator spaces"
+        locator: "Series and operator equations"
+      -
+        profile: "02_profiles/courses/ma3001-functional-analysis.md"
+        section: "Algorithms and numerical methods"
+        locator: "Neumann-series construction"
+    limitations:
+      - "The profile does not supply a truncation-error formula or the full proof; neither is reconstructed."
+      - "No personal software implementation is evidenced."
+  -
+    id: "ma3001:hilbert-projection"
+    experience: "ma3001"
+    kind: "knowledge"
+    concepts:
+      - "hilbert-projection"
+    statement: "Hilbert geometry covers projection onto closed convex sets/subspaces, Riesz representation, orthonormal systems, Bessel/Fourier coefficients, Parseval/completeness and separable Hilbert-to-l2 representation."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma3001-functional-analysis.md"
+        section: "Hilbert-space geometry"
+    limitations:
+      - "The explicit projection variational inequality is supplied by the separate FDA claim; it is not attributed to an equation absent from this profile."
+      - "Course coverage is theoretical knowledge, not personally implemented projection code."
+  -
+    id: "ma3001:banach-duality"
+    experience: "ma3001"
+    kind: "knowledge"
+    concepts:
+      - "banach-duality-weak-compactness"
+    statement: "Normed/Banach, product and quotient spaces, bounded operators and dense extensions; Baire, uniform boundedness, open mapping, bounded inverse and closed graph; Hahn–Banach, dual norm, separation, bidual embedding and reflexivity are covered with completeness and convergence-mode distinctions."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma3001-functional-analysis.md"
+        section: "Normed, Banach, and operator spaces"
+      -
+        profile: "02_profiles/courses/ma3001-functional-analysis.md"
+        section: "Fundamental principles of functional analysis"
+      -
+        profile: "02_profiles/courses/ma3001-functional-analysis.md"
+        section: "Duality, extension, reflexivity, and separation"
+      -
+        profile: "02_profiles/courses/ma3001-functional-analysis.md"
+        section: "Exercise and assessment evidence"
+    limitations:
+      - "Full theorem proofs and endpoint/domain hypotheses not stated in the profile are not reconstructed."
+  -
+    id: "ma3001:weak-compactness"
+    experience: "ma3001"
+    kind: "knowledge"
+    concepts:
+      - "banach-duality-weak-compactness"
+    statement: "Finite epsilon-nets, Arzelà–Ascoli, Fréchet–Riesz–Kolmogorov, weak/weak-star convergence, Banach–Alaoglu, reflexive/separable subsequence settings and direct-method existence with strict-convexity uniqueness are covered."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma3001-functional-analysis.md"
+        section: "Compactness and weak topologies"
+      -
+        profile: "02_profiles/courses/ma3001-functional-analysis.md"
+        section: "Applications and model problems"
+    limitations:
+      - "Weak compactness is not equated with arbitrary sequential compactness; strict convexity alone does not establish existence."
+  -
+    id: "ma3001:sobolev-regularization"
+    experience: "ma3001"
+    kind: "knowledge"
+    concepts:
+      - "sobolev-distributions"
+    statement: "Test functions, regular/singular distributions, Dirac, distributional and weak derivatives, convolution/mollification, W^{m,p}/H^m, smooth density, zero-boundary closures, one-dimensional regularity and Rellich compactness form the PDE foundation."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma3001-functional-analysis.md"
+        section: "Distributions and Sobolev spaces"
+      -
+        profile: "02_profiles/courses/ma3001-functional-analysis.md"
+        section: "Algorithms and numerical methods"
+    limitations:
+      - "No general embedding/trace theorem with hypotheses absent from the input is added."
+  -
+    id: "ma3001:compact-fredholm-spectrum"
+    experience: "ma3001"
+    kind: "knowledge"
+    concepts:
+      - "compact-operator-spectral-theory"
+    statement: "Compact/adjoint operators, kernels/annihilators/ranges, complements/quotients, Fredholm index and compact perturbations, spectral types and spectral radius/mapping, compact normal spectral decomposition and infinite-dimensional SVD/truncation are covered."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma3001-functional-analysis.md"
+        section: "Compact, adjoint, and Fredholm operators"
+      -
+        profile: "02_profiles/courses/ma3001-functional-analysis.md"
+        section: "Spectrum and compact-operator decomposition"
+      -
+        profile: "02_profiles/courses/ma3001-functional-analysis.md"
+        section: "Algorithms and numerical methods"
+      -
+        profile: "02_profiles/courses/ma3001-functional-analysis.md"
+        section: "Applications and model problems"
+    limitations:
+      - "Nonzero compact-operator spectral values and the possible zero accumulation point are distinguished; full Fredholm compatibility and spectral proofs are unavailable at profile depth."

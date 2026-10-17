@@ -1,0 +1,151 @@
+experience: "ei7646"
+claims:
+  -
+    id: "ei7646:cellular-models"
+    experience: "ei7646"
+    kind: "knowledge"
+    concepts:
+      - "spiking-neuron-plasticity"
+    statement: "Neuroanatomical/cellular context, membrane/equilibrium/ionic/synaptic and dendritic mechanisms distinguish biophysical explanations from abstract neurons."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ei7646-computational-neuroscience.md"
+        section: "Anatomical and cellular foundations"
+    limitations:
+      - "Coverage establishes taught technical knowledge, not individual authorship of supplied software or personally performed experiments."
+  -
+    id: "ei7646:coding-decoding"
+    experience: "ei7646"
+    kind: "knowledge"
+    concepts:
+      - "information-coding-sensory-inference"
+    statement: "Marr-level modeling, grid/population likelihood decoding and range–resolution trade-offs; entropy/MI, timing/rate codes, efficient/sparse coding and active entropy-guided sensing."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ei7646-computational-neuroscience.md"
+        section: "Modeling levels, neural representations, and spatial decoding"
+      -
+        profile: "02_profiles/courses/ei7646-computational-neuroscience.md"
+        section: "Information theory, efficient coding, and active sensing"
+    limitations:
+      - "Coverage establishes taught technical knowledge, not individual authorship of supplied software or personally performed experiments."
+  -
+    id: "ei7646:plasticity"
+    experience: "ei7646"
+    kind: "knowledge"
+    concepts:
+      - "spiking-neuron-plasticity"
+    statement: "Developmental activity, Hebbian/covariance weight dynamics and normalization, LTP/LTD and pair/triplet/burst STDP with local traces; the inconsistent printed upper-bound equation is not adopted."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ei7646-computational-neuroscience.md"
+        section: "Development, Hebbian learning, and synaptic plasticity"
+    limitations:
+      - "Coverage establishes taught technical knowledge, not individual authorship of supplied software or personally performed experiments."
+  -
+    id: "ei7646:probabilistic-perception"
+    experience: "ei7646"
+    kind: "knowledge"
+    concepts:
+      - "information-coding-sensory-inference"
+      - "biological-motor-action-models"
+    statement: "Ill-posed sensory inversion, likelihood/prior uncertainty and hierarchical/predictive-coding hypotheses connect natural statistics to sensory/motor judgments; the absent blackboard derivation is not reconstructed."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ei7646-computational-neuroscience.md"
+        section: "Probabilistic perception and sensorimotor inference"
+    limitations:
+      - "Coverage establishes taught technical knowledge, not individual authorship of supplied software or personally performed experiments."
+  -
+    id: "ei7646:cell-chip"
+    experience: "ei7646"
+    kind: "knowledge"
+    concepts:
+      - "bioelectronic-neural-interfaces"
+    statement: "Cell–electrode equivalent circuits, impedance/noise, flexible/3D interfaces and electrochemical transport/Cottrell/Shoup–Szabo connect physical geometry to measurement."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ei7646-computational-neuroscience.md"
+        section: "Bioelectronic interfaces and cell–chip communication"
+    limitations:
+      - "Coverage establishes taught technical knowledge, not individual authorship of supplied software or personally performed experiments."
+  -
+    id: "ei7646:stimulation"
+    experience: "ei7646"
+    kind: "knowledge"
+    concepts:
+      - "bioelectronic-neural-interfaces"
+    statement: "Cable/volume-conductor and activating-function reasoning, neuroprosthetic modalities and ChR2 kinetic/optical constraints distinguish recording from controlled stimulation."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ei7646-computational-neuroscience.md"
+        section: "Neuroprostheses and neural stimulation"
+    limitations:
+      - "Coverage establishes taught technical knowledge, not individual authorship of supplied software or personally performed experiments."
+  -
+    id: "ei7646:auditory-prostheses"
+    experience: "ei7646"
+    kind: "knowledge"
+    concepts:
+      - "bioelectronic-neural-interfaces"
+    statement: "CIS/ACE/FS4 and feature/waveform strategies, AGC/envelope/compression/interleaving, stochastic LIF, current spread and ITD/ILD/rate trade-offs define auditory interface models."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ei7646-computational-neuroscience.md"
+        section: "Cochlear implant coding and auditory-nerve models"
+    limitations:
+      - "Coverage establishes taught technical knowledge, not individual authorship of supplied software or personally performed experiments."
+  -
+    id: "ei7646:population-memory"
+    experience: "ei7646"
+    kind: "knowledge"
+    concepts:
+      - "population-dynamics-neural-memory"
+    statement: "Spike sorting/LFP/CSD and volume-conductor interpretation, spatial attractors/remapping, theta/gamma/precession/replay and systems-consolidation intervention evidence."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ei7646-computational-neuroscience.md"
+        section: "Systems electrophysiology, attractor dynamics, and memory"
+    limitations:
+      - "Coverage establishes taught technical knowledge, not individual authorship of supplied software or personally performed experiments."
+  -
+    id: "ei7646:experimental-tools"
+    experience: "ei7646"
+    kind: "knowledge"
+    concepts:
+      - "bioelectronic-neural-interfaces"
+      - "population-dynamics-neural-memory"
+    statement: "Lecture methods include recording arrays, stimulation and signal interpretation, with no supplied course programming language or personal experimental project; videos remain untranscribed."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ei7646-computational-neuroscience.md"
+        section: "Tools, applications, and thematic categories"
+    limitations:
+      - "Coverage establishes taught technical knowledge, not individual authorship of supplied software or personally performed experiments."

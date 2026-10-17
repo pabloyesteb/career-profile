@@ -1,0 +1,169 @@
+experience: "additional-foml"
+claims:
+  -
+    id: "additional-foml:convex-foundations"
+    experience: "additional-foml"
+    kind: "knowledge"
+    concepts:
+      - "convex-conjugacy-sparse-optimization"
+      - "constrained-nonlinear-optimization"
+    statement: "Convex sets/functions, Jensen/closure rules, Schur complements and matrix/norm duality, conjugates/Fenchel–Young, subgradients/normal cones, LP/QP/SOCP/SDP, Slater/KKT and trust-region duality."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/additional-foml-fundamentals-of-optimization-for-machine-learning.md"
+        section: "Convex analysis and mathematical foundations"
+      -
+        profile: "02_profiles/courses/additional-foml-fundamentals-of-optimization-for-machine-learning.md"
+        section: "Convex problem classes, duality, and optimality"
+    limitations:
+      - "Imported slide provenance limits edition-specific delivery claims; official module code is not established."
+  -
+    id: "additional-foml:nonconvex-geometry"
+    experience: "additional-foml"
+    kind: "knowledge"
+    concepts:
+      - "nonconvex-geometric-optimization"
+    statement: "Smooth/nonsmooth nonconvex stationarity, hidden convexity and spectral relaxations, Polyak–Lojasiewicz structure, Riemannian gradients/retractions and geodesic geometry on spheres, Stiefel and SPD examples."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/additional-foml-fundamentals-of-optimization-for-machine-learning.md"
+        section: "Nonconvex optimality and structured nonconvex problems"
+      -
+        profile: "02_profiles/courses/additional-foml-fundamentals-of-optimization-for-machine-learning.md"
+        section: "Riemannian and geodesic optimization"
+    limitations:
+      - "Imported slide provenance limits edition-specific delivery claims; official module code is not established."
+  -
+    id: "additional-foml:first-order"
+    experience: "additional-foml"
+    kind: "knowledge"
+    concepts:
+      - "first-order-stochastic-optimization"
+    statement: "Gradient/subgradient/stochastic optimization, acceleration and variance reduction; stated rates depend on convexity, smoothness, strong convexity and sampling/noise hypotheses."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/additional-foml-fundamentals-of-optimization-for-machine-learning.md"
+        section: "Gradient, subgradient, and stochastic methods"
+    limitations:
+      - "Imported slide provenance limits edition-specific delivery claims; official module code is not established."
+  -
+    id: "additional-foml:composite-methods"
+    experience: "additional-foml"
+    kind: "knowledge"
+    concepts:
+      - "proximal-block-optimization"
+      - "mixtures-latent-inference"
+    statement: "Conditional gradients, projected/proximal and accelerated composite methods, splitting, coordinate/block methods, Dykstra and majorization/EM/CCCP examples."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/additional-foml-fundamentals-of-optimization-for-machine-learning.md"
+        section: "Constrained, composite, coordinate, and majorization methods"
+    limitations:
+      - "Imported slide provenance limits edition-specific delivery claims; official module code is not established."
+  -
+    id: "additional-foml:probability-geometry"
+    experience: "additional-foml"
+    kind: "knowledge"
+    concepts:
+      - "diffusion-score-probability-flows"
+    statement: "Gradient flow, Langevin/Fokker–Planck and probability-measure optimization, Wasserstein/entropy geometry, HWI/log-Sobolev/Talagrand connections under their convexity hypotheses."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/additional-foml-fundamentals-of-optimization-for-machine-learning.md"
+        section: "Gradient flow, sampling, and optimization over probability measures"
+    limitations:
+      - "Imported slide provenance limits edition-specific delivery claims; official module code is not established."
+  -
+    id: "additional-foml:minimax"
+    experience: "additional-foml"
+    kind: "knowledge"
+    concepts:
+      - "minimax-adversarial-learning"
+    statement: "Convex–concave saddle operators, mirror descent/prox, extragradient/optimistic methods and conditional rates; nonconvex local minimax/Nash concepts do not inherit convex guarantees."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/additional-foml-fundamentals-of-optimization-for-machine-learning.md"
+        section: "Convex–concave and nonconvex minimax optimization"
+    limitations:
+      - "Imported slide provenance limits edition-specific delivery claims; official module code is not established."
+  -
+    id: "additional-foml:network-optimization"
+    experience: "additional-foml"
+    kind: "knowledge"
+    concepts:
+      - "first-order-stochastic-optimization"
+      - "neural-training-data-contracts"
+    statement: "Neural-network optimization, initialization, activation/normalization/residual choices, adaptive gradients, regularization and numerical training practices, as slide-covered theory rather than submitted implementations."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/additional-foml-fundamentals-of-optimization-for-machine-learning.md"
+        section: "Neural-network optimization"
+    limitations:
+      - "Imported slide provenance limits edition-specific delivery claims; official module code is not established."
+  -
+    id: "additional-foml:newton-barriers"
+    experience: "additional-foml"
+    kind: "knowledge"
+    concepts:
+      - "constrained-nonlinear-optimization"
+    statement: "Newton decrement and damped/full steps, local quadratic convergence with Hessian regularity, self-concordant barriers, local Hessian norms and central-path interior-point complexity for convex problems."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/additional-foml-fundamentals-of-optimization-for-machine-learning.md"
+        section: "Newton and interior-point methods"
+      -
+        profile: "02_profiles/courses/additional-foml-fundamentals-of-optimization-for-machine-learning.md"
+        section: "Algorithms and convergence results"
+    limitations:
+      - "Imported slide provenance limits edition-specific delivery claims; official module code is not established."
+  -
+    id: "additional-foml:source-scope"
+    experience: "additional-foml"
+    kind: "knowledge"
+    concepts:
+      - "first-order-stochastic-optimization"
+      - "nonconvex-geometric-optimization"
+    statement: "The confirmed course archive contains MIT 6.881, MLSS and PKU slide sources. Their technical scope is recorded without asserting that every imported slide was delivered in the TUM edition; no supplied executable assignments establish implementation."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/additional-foml-fundamentals-of-optimization-for-machine-learning.md"
+        section: "Evidence base and material structure"
+      -
+        profile: "02_profiles/courses/additional-foml-fundamentals-of-optimization-for-machine-learning.md"
+        section: "Computational work and tools"
+      -
+        profile: "02_profiles/courses/additional-foml-fundamentals-of-optimization-for-machine-learning.md"
+        section: "Applications and model problems"
+      -
+        profile: "02_profiles/courses/additional-foml-fundamentals-of-optimization-for-machine-learning.md"
+        section: "Exercise, project, and assessment evidence"
+    limitations:
+      - "Imported slide provenance limits edition-specific delivery claims; official module code is not established."
+

@@ -1,0 +1,163 @@
+experience: "ei7263"
+claims:
+  -
+    id: "ei7263:embodied-circuits"
+    experience: "ei7263"
+    kind: "knowledge"
+    concepts:
+      - "biological-motor-action-models"
+    statement: "Motor babbling/demonstration/CPG coordination, cerebellar sparse recoding and circuit signs, schema/forward-inverse models and basal-ganglia pathways/loops/action organization are covered with biological evidence distinctions."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ei7263-biologically-inspired-learning-humanoid-robots.md"
+        section: "Embodied learning and motor representations"
+      -
+        profile: "02_profiles/courses/ei7263-biologically-inspired-learning-humanoid-robots.md"
+        section: "Cerebellar anatomy, coding, and supervised adaptation"
+      -
+        profile: "02_profiles/courses/ei7263-biologically-inspired-learning-humanoid-robots.md"
+        section: "Internal models, feedback, and coordinated control"
+      -
+        profile: "02_profiles/courses/ei7263-biologically-inspired-learning-humanoid-robots.md"
+        section: "Basal ganglia, action selection, and biological evidence"
+    limitations:
+      - "Biological models/lesion/optogenetic examples are not a single proven comprehensive control theory, medical advice or personally reproduced neuroscience/robotics. GMR/GA examples are framework-level."
+  -
+    id: "ei7263:local-adaptation"
+    experience: "ei7263"
+    kind: "knowledge"
+    concepts:
+      - "local-adaptive-function-approximation"
+    statement: "CMAC quantization/association/sparse target/error updates, local generalization and memory/hash trade-offs are compared with SOM prototype adaptation, separate success/failure maps, vigilance and QARL quality modulation."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ei7263-biologically-inspired-learning-humanoid-robots.md"
+        section: "Cerebellar Model Articulation Controller (CMAC)"
+      -
+        profile: "02_profiles/courses/ei7263-biologically-inspired-learning-humanoid-robots.md"
+        section: "Self-organizing maps, success/failure memory, and risk modulation"
+    limitations:
+      - "CMAC lecture sum/fixed-active-count and code average/n_a-squared conventions differ; SOM's displayed kernel has a missing square. No universal performance, safety or global control-convergence guarantee is inferred."
+  -
+    id: "ei7263:decision-models"
+    experience: "ei7263"
+    kind: "knowledge"
+    concepts:
+      - "bellman-policy-evaluation"
+      - "temporal-difference-learning"
+    statement: "Observed/private/internal states, MDP policies/returns, DP/MC/TD, SARSA/Q-learning and model-count estimation distinguish learning and planning under full/partial observation."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ei7263-biologically-inspired-learning-humanoid-robots.md"
+        section: "Sequential decision models and reinforcement-learning algorithms"
+    limitations:
+      - "No rigorous sufficient robot-RL convergence theorem or universal TD superiority is supplied; unvisited states remain unresolved."
+  -
+    id: "ei7263:factored-models"
+    experience: "ei7263"
+    kind: "knowledge"
+    concepts:
+      - "temporal-difference-learning"
+    statement: "RL-DT predicts relative coordinate changes/reward with factored trees, combines marginal probabilities under conditional independence and plans with value iteration; soccer exercises use AiNex/ROS observations and human rewards."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ei7263-biologically-inspired-learning-humanoid-robots.md"
+        section: "RL-DT: factored model learning and robot soccer"
+    limitations:
+      - "Reference C4.5 differs from submitted scikit-learn trees; heuristic exploration can stop early. Adjusted code has incomplete Bellman sweeps and state/readiness issues, not a verified personal planning system."
+  -
+    id: "ei7263:distributional-knowledge"
+    experience: "ei7263"
+    kind: "knowledge"
+    concepts:
+      - "distributional-value-coding"
+    statement: "The supplied presentation/paper describes asymmetric dopamine prediction-error channels, expectile-like value codes, reversal points and reward-distribution decoding with biological experimental context."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ei7263-biologically-inspired-learning-humanoid-robots.md"
+        section: "Distributional reward coding: documented student presentation"
+    limitations:
+      - "Expectiles are not quantiles; complete loss/operator derivations and personal recording/software/replication are not established."
+  -
+    id: "ei7263:robot-learning-tools"
+    experience: "ei7263"
+    kind: "knowledge"
+    concepts:
+      - "robot-perception-control-interfaces"
+      - "neural-training-data-contracts"
+    statement: "ROS 2 package/build/communication workflows, joint/camera interfaces, OpenCV HSV/blob/ArUco measurements and NumPy MLP/visual-motor training/inference are represented by tutorials and team submissions."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ei7263-biologically-inspired-learning-humanoid-robots.md"
+        section: "Computational methods, tools, and lab evidence"
+    limitations:
+      - "No individual authorship of all team code is inferred. Mixed dates/NAO-AiNex setups, normalization/model-path/module gaps and binary/video artifacts limit reproduction; models/code were not executed."
+    tools:
+      - "Python"
+      - "ROS 2"
+      - "rclpy"
+      - "Ament"
+      - "colcon"
+      - "CMake"
+      - "OpenCV"
+      - "NumPy"
+      - "Matplotlib"
+      - "Jupyter"
+      - "pandas"
+      - "seaborn"
+      - "python-mnist"
+      - "scikit-learn"
+      - "rqt_graph"
+      - "RViz2"
+      - "PlotJuggler"
+  -
+    id: "ei7263:distributional-presentation"
+    experience: "ei7263"
+    kind: "contribution"
+    concepts:
+      - "distributional-value-coding"
+    statement: "Pablo Yeste Blesa's named presentation analyzes and explains the distributional dopamine-value research, distinguishing expected value, asymmetric channels, expectiles and quantiles."
+    basis: "project_report"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/courses/ei7263-biologically-inspired-learning-humanoid-robots.md"
+        section: "Distributional reward coding: documented student presentation"
+        locator: "P physical pp. 1–11; DP pp. 2–4, Figs. 1/4"
+    limitations:
+      - "Personal scientific exposition, not original authorship of Dabney et al. (Nature 2020), neural recording or distributional-RL implementation."
+  -
+    id: "ei7263:team-comparison"
+    experience: "ei7263"
+    kind: "contribution"
+    concepts:
+      - "local-adaptive-function-approximation"
+    statement: "The Team E CMAC/FFNN comparison explicitly names Pablo among five authors and discusses local learning speed versus feed-forward generalization."
+    basis: "project_report"
+    actor: "team"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/courses/ei7263-biologically-inspired-learning-humanoid-robots.md"
+        section: "Computational methods, tools, and lab evidence"
+    limitations:
+      - "Collaborative analytical artifact, not isolated individual code authorship or a controlled universal performance ranking. Dataset counts, NPZ files and videos do not establish personal quantitative outcomes."

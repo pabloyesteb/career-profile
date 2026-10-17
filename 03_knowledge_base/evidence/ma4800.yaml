@@ -1,0 +1,81 @@
+experience: "ma4800"
+claims:
+  -
+    id: "ma4800:projection-geometry"
+    experience: "ma4800"
+    kind: "knowledge"
+    concepts:
+      - "hilbert-projection"
+    statement: "Linear maps, adjoints, spectral/Frobenius norm geometry, Hilbert completeness and the real-Hilbert projection characterization support Gram–Schmidt, orthogonal decomposition and finite-dimensional alternating-projection convergence for two closed convex sets with nonempty intersection."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma4800-foundations-of-data-analysis.md"
+        section: "Linear algebra, Hilbert-space geometry, and projections"
+      -
+        profile: "02_profiles/courses/ma4800-foundations-of-data-analysis.md"
+        section: "Alternating projections and convergence arguments"
+    limitations:
+      - "The finite-dimensional alternating-projection argument is not generalized to empty intersections or arbitrary infinite-dimensional norm convergence."
+  -
+    id: "ma4800:svd-pca"
+    experience: "ma4800"
+    kind: "knowledge"
+    concepts:
+      - "matrix-low-rank-pca"
+    statement: "Reduced/full SVD, matrix norms, truncated best rank approximation, multiplicity-aware power iteration, perturbation/subspace stability, pseudoinverse/least squares, principal angles and SVD-based PCA are covered, with image-compression and ovariancancer visualization exercises."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma4800-foundations-of-data-analysis.md"
+        section: "Singular value decomposition, low-rank approximation, and PCA"
+      -
+        profile: "02_profiles/courses/ma4800-foundations-of-data-analysis.md"
+        section: "Computational tools and applications"
+    limitations:
+      - "MATLAB svd/plotting and permitted Python exercises do not establish personal code authorship or observed image/medical performance; executable solutions and some referenced data are absent."
+  -
+    id: "ma4800:concentration-embeddings"
+    experience: "ma4800"
+    kind: "knowledge"
+    concepts:
+      - "concentration-random-embeddings"
+    statement: "MGFs, convolution, Gaussian covariance, Markov/Chebyshev/Chernoff and Cramér-type reasoning, subgaussian/subexponential Bernstein concentration, high-dimensional ball geometry, Gaussian annuli, random projections and finite-set JL are covered with convergence-mode distinctions."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma4800-foundations-of-data-analysis.md"
+        section: "Probability, concentration, and high-dimensional geometry"
+      -
+        profile: "02_profiles/courses/ma4800-foundations-of-data-analysis.md"
+        section: "Random projections and Johnson–Lindenstrauss embeddings"
+      -
+        profile: "02_profiles/courses/ma4800-foundations-of-data-analysis.md"
+        section: "Computational tools and applications"
+    limitations:
+      - "No uniform-all-vectors embedding guarantee, unsupported tail constants or personal simulation outcome is inferred; the profile records source tail-bound typos."
+  -
+    id: "ma4800:convex-gradient"
+    experience: "ma4800"
+    kind: "knowledge"
+    concepts:
+      - "convex-conjugacy-sparse-optimization"
+    statement: "Convexity/semicontinuity, separation, conjugate calculus, subgradient/soft thresholding, l1-ball projection, basis-pursuit duality and gradient/differential estimates are covered with a conditional invariant-ball example and distinct stopping rules."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma4800-foundations-of-data-analysis.md"
+        section: "Convex analysis, conjugacy, sparse formulations, and duality"
+      -
+        profile: "02_profiles/courses/ma4800-foundations-of-data-analysis.md"
+        section: "Gradient methods and differential estimates"
+    limitations:
+      - "Feasible l1-ball points remain unchanged; the consistent gradient recurrence is used rather than the source's sign typo. No additional accelerated/stochastic/proximal-gradient algorithm is inferred."

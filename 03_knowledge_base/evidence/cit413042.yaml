@@ -1,0 +1,390 @@
+experience: "cit413042"
+claims:
+  -
+    id: "cit413042:trajectory-models"
+    experience: "cit413042"
+    kind: "implementation"
+    concepts:
+      - "optimal-control-transcription"
+      - "rigid-body-pose-kinematics"
+    statement: "Team pipeline implements planar point/unicycle/car models, finite footprints and fixed-horizon state/control NLPs with forward-Euler defects, path-length cost, optional collision slack/input magnitude penalties and configurable endpoint heading."
+    basis: "project_code"
+    actor: "team"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/courses/cit413042-case-studies-optimization.md"
+        section: "Optimal-control formulation and direct transcription"
+      -
+        profile: "02_profiles/courses/cit413042-case-studies-optimization.md"
+        section: "Point-mass, unicycle, and car kinematics"
+      -
+        profile: "02_profiles/projects/case_studies_optimization.md"
+        section: "Continuous problem and direct transcription"
+      -
+        profile: "02_profiles/projects/case_studies_optimization.md"
+        section: "Robot/vehicle models and footprints"
+    limitations:
+      - "Report's multiple-shooting label does not imply higher-order integration/collocation; input penalty omits the final control and is not jerk."
+      - "Second-order Ackermann derivative/state-order and steering-factor inconsistencies, point-state mismatch, vertex/time-node sampling and point-slack handling qualify implementation reliability."
+      - "No minimum-time optimization, tire-force dynamics or continuous swept-volume certification is established."
+  -
+    id: "cit413042:rrt-initialization"
+    experience: "cit413042"
+    kind: "implementation"
+    concepts:
+      - "geometric-sampling-motion-planning"
+      - "optimal-control-transcription"
+    statement: "Team implementation provides goal-biased RRT, nearest-node extension/segment checks, path-parent reconstruction, shortcutting and SciPy CubicSpline XY warm starts for nonlinear refinement."
+    basis: "project_code"
+    actor: "team"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/courses/cit413042-case-studies-optimization.md"
+        section: "Sampling-based initialization and trajectory refinement"
+      -
+        profile: "02_profiles/projects/case_studies_optimization.md"
+        section: "Sampling-based initialization"
+    limitations:
+      - "Only XY is returned; remaining states are zero-filled and controls uninitialized, not a dynamically feasible seed. Spline paths are not fully collision-rechecked; rectangle inflation is limited."
+      - "RRT-Connect/RRT*/Informed RRT*, A*/Dijkstra and learned initialization are background alternatives, not all implemented benchmarks."
+  -
+    id: "cit413042:distance-fields"
+    experience: "cit413042"
+    kind: "implementation"
+    concepts:
+      - "signed-distance-neural-fields"
+    statement: "Team geometric pipeline implements reference/analytic polygon and circle/square fields, smooth min/max/absolute/clamp approximations and log-sum-exp unions, plus transformed footprint constraints and trapezoid decompositions."
+    basis: "project_code"
+    actor: "team"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/courses/cit413042-case-studies-optimization.md"
+        section: "Signed-distance geometry and differentiable approximations"
+      -
+        profile: "02_profiles/projects/case_studies_optimization.md"
+        section: "Reference geometry and differentiable surrogates"
+    limitations:
+      - "Smoothing changes boundaries; learned-field approximation, slack and sampled vertices/time nodes do not certify collision safety."
+    tools:
+      - "Shapely"
+      - "CasADi"
+  -
+    id: "cit413042:neural-training"
+    experience: "cit413042"
+    kind: "implementation"
+    concepts:
+      - "signed-distance-neural-fields"
+    statement: "Team PyTorch/L4CasADi training connects coordinate-to-SDF MLP/Fourier/SIREN models, mixed global/boundary sampling, autograd Eikonal and surface penalties, Adam, validation and early stopping to the differentiable solver interface."
+    basis: "project_code"
+    actor: "team"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/courses/cit413042-case-studies-optimization.md"
+        section: "Neural implicit-field learning and solver integration"
+      -
+        profile: "02_profiles/projects/case_studies_optimization.md"
+        section: "Data generation and training"
+    limitations:
+      - "Main reported results use MLPs; SIREN/Fourier availability is not benchmark superiority."
+      - "Code/report Eikonal and surface definitions differ; trainer's positional sampling argument limits requested boundary-fraction reproduction. Validation excludes Eikonal; Kaiming/Xavier comment mismatch and possible architecture reinitialization remain."
+      - "No personal authorship of the complete trainer, L4CasADi or PyTorch is inferred."
+  -
+    id: "cit413042:solver-architecture"
+    experience: "cit413042"
+    kind: "implementation"
+    concepts:
+      - "constrained-nonlinear-optimization"
+      - "reproducible-validation-workflows"
+    statement: "Team architecture joins validated YAML/Pydantic scenarios, physical/geometric abstractions, neural fields, initialization, CasADi Opti/IPOPT, metrics, CSV reports and Tkinter/Matplotlib demonstrations."
+    basis: "project_code"
+    actor: "team"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/courses/cit413042-case-studies-optimization.md"
+        section: "Nonlinear programming and primal–dual interior-point methods"
+      -
+        profile: "02_profiles/courses/cit413042-case-studies-optimization.md"
+        section: "Computational tools and thematic categories"
+      -
+        profile: "02_profiles/projects/case_studies_optimization.md"
+        section: "Numerical solvers and computational architecture"
+    limitations:
+      - "IPOPT is external software, not a personally implemented interior-point method. A sqpmethod branch exists but the benchmark does not forward its configured selection."
+      - "Generated C++/TorchScript artifacts do not prove handwritten C++ authorship. Test/CI scaffolds and GUI integration do not establish a passing suite or deployment."
+    tools:
+      - "Python 3.12"
+      - "NumPy"
+      - "SciPy/CubicSpline"
+      - "PyTorch/autograd/Adam"
+      - "CasADi"
+      - "L4CasADi"
+      - "IPOPT"
+      - "Shapely"
+      - "Matplotlib"
+      - "Tkinter"
+      - "YAML/PyYAML"
+      - "Pydantic"
+      - "Poetry"
+      - "pytest"
+      - "Git"
+  -
+    id: "cit413042:siren-implementation"
+    experience: "cit413042"
+    kind: "implementation"
+    concepts:
+      - "signed-distance-neural-fields"
+    statement: "Pablo implemented SineLayer/SIREN with frequency-scaled sinusoidal activation, first/hidden-layer initialization bounds and a linear output."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/case_studies_optimization.md"
+        section: "Contributions and attribution"
+        locator: "717a0f367a4b1d4392643031a8f1b2e8ab5bbd5b; core/nn_architectures.py"
+      -
+        profile: "02_profiles/projects/case_studies_optimization.md"
+        section: "Data generation and training"
+        locator: "717a0f367a4b1d4392643031a8f1b2e8ab5bbd5b; core/nn_architectures.py"
+    limitations:
+      - "Published architecture, not invention of SIREN; shared trainer initialization may affect preserved bounds, and no verified personal accuracy/runtime gain is established."
+    tools:
+      - "Python"
+      - "PyTorch"
+  -
+    id: "cit413042:hausdorff-implementation"
+    experience: "cit413042"
+    kind: "implementation"
+    concepts:
+      - "geometric-field-validation"
+    statement: "Pablo added symmetric Hausdorff contour distance, shape checks and empty-surface handling in the geometry metrics interface."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/case_studies_optimization.md"
+        section: "Contributions and attribution"
+        locator: "12544f1dc5819226a6a3a9b4b3b5535bcd38430d; core/metrics.py"
+      -
+        profile: "02_profiles/projects/case_studies_optimization.md"
+        section: "Evaluation quantities"
+        locator: "12544f1dc5819226a6a3a9b4b3b5535bcd38430d; core/metrics.py"
+    limitations:
+      - "Other metrics pre-existed and later team edits change details; metric implementation does not certify whole-shape safety or a verified test run."
+  -
+    id: "cit413042:model-benchmark-integration"
+    experience: "cit413042"
+    kind: "contribution"
+    concepts:
+      - "signed-distance-neural-fields"
+      - "geometric-field-validation"
+      - "reproducible-validation-workflows"
+    statement: "Pablo extended architecture selection/configuration and result logging, corrected NumPy/Torch metric annotations, scaffolded CI/project organization and participated in nonconvex/GUI integration merges."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/case_studies_optimization.md"
+        section: "Contributions and attribution"
+        locator: "f32a2b5; 49bd409; d03691d; 489665e; cc59650; c98e1b1; 52cf317; 934956c"
+    limitations:
+      - "Merge participation is not authorship of all merged code; no sole runner/GUI authorship, universal tensor/device compatibility or passing CI is established."
+  -
+    id: "cit413042:field-evaluation"
+    experience: "cit413042"
+    kind: "knowledge"
+    concepts:
+      - "geometric-field-validation"
+    statement: "The study distinguishes SDF MSE, occupancy IoU, one-sided surface errors, symmetric Chamfer and worst-case Hausdorff contour distance from objective/runtime/control-profile measurements."
+    basis: "project_report"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/cit413042-case-studies-optimization.md"
+        section: "Evaluation methodology and engineering trade-offs"
+      -
+        profile: "02_profiles/projects/case_studies_optimization.md"
+        section: "Evaluation quantities"
+      -
+        profile: "02_profiles/projects/case_studies_optimization.md"
+        section: "Experimental methodology and principal results"
+    limitations:
+      - "Contour grid/threshold and empty-surface handling affect metrics. Reference-on-predicted and predicted-on-reference surface measurements differ; physical distance units are not established."
+      - "B1.1 table IoU is 0.8091 despite >0.97 prose; malformed Chamfer data is not interpreted."
+  -
+    id: "cit413042:representation-background"
+    experience: "cit413042"
+    kind: "knowledge"
+    concepts:
+      - "signed-distance-neural-fields"
+      - "matrix-low-rank-pca"
+    statement: "Appendix reviews conic-duality/separation and penalized-penetration formulations, TT-SVD compression of voxelized TSDFs and Bernstein tensor-product field fitting/analytic differentiation."
+    basis: "project_report"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/cit413042-case-studies-optimization.md"
+        section: "Supplementary representations and collision-avoidance formulations"
+      -
+        profile: "02_profiles/projects/case_studies_optimization.md"
+        section: "Technical findings, limitations and research extensions"
+    limitations:
+      - "Reviewed background, not implemented planner alternatives; Bernstein normal-equation inversion needs full column rank, and minima across link fields need not remain smooth."
+      - "3D/dynamic obstacles, risk-sensitive/uncertainty-aware fields and real-time MPC are proposed, not completed."
+  -
+    id: "cit413042:sampling-result"
+    experience: "cit413042"
+    kind: "result"
+    concepts:
+      - "geometric-field-validation"
+    statement: "Team reports a ten-repetition sampling comparison favoring informed boundary sampling at fraction 0.8 for the tested field."
+    basis: "project_report"
+    actor: "team"
+    verification: "reported_not_reproduced"
+    references:
+      -
+        profile: "02_profiles/projects/case_studies_optimization.md"
+        section: "Learned SDF and solver trade-offs"
+        locator: "Report Table 2, physical p. 22"
+    limitations:
+      - "Reported, not independently reproduced; the ± dispersion statistic is not identified here as a confidence interval or standard error."
+      - "Scenario-specific; checked sampling-argument mismatch limits direct ablation reproduction, and no universal best boundary fraction is established."
+    result:
+      metric: "Reported mean occupancy IoU by sampling strategy"
+      values:
+        -
+          method: "Uniform grid"
+          value: 0.591
+          reported_dispersion: 0.125
+        -
+          method: "Uniform random"
+          value: 0.595
+          reported_dispersion: 0.082
+        -
+          method: "Boundary-informed, fraction 0.8"
+          value: 0.721
+          reported_dispersion: 0.05
+      unit: "dimensionless IoU (0–1)"
+      evaluation_context: "Ten repetitions in the report sampling experiment; reported ± values preserved as dispersion without assigning an unsupported uncertainty interpretation."
+      sample_count: 10
+  -
+    id: "cit413042:solver-tradeoff-result"
+    experience: "cit413042"
+    kind: "result"
+    concepts:
+      - "geometric-field-validation"
+      - "optimal-control-transcription"
+    statement: "Reported B0 analytic/learned paths have similar objectives with neural runtime overhead; B1.1 geometric initialization changes both attained objective and solve duration."
+    basis: "project_report"
+    actor: "team"
+    verification: "reported_not_reproduced"
+    references:
+      -
+        profile: "02_profiles/projects/case_studies_optimization.md"
+        section: "Learned SDF and solver trade-offs"
+        locator: "Tables 6/9/10, physical pp. 34/41/42; B3 Fig. 19 p. 47"
+    limitations:
+      - "Team-report measurements, not personal achieved speedup or independently controlled reruns; no normalized hardware/seed protocol is established."
+      - "Separate benchmarks, initialization randomness and control-penalty changes preclude treating every row as a controlled like-for-like runtime comparison."
+    result:
+      metric: "Reported solve duration for labeled benchmark/configuration"
+      values:
+        -
+          method: "B0 analytic"
+          value: 0.8252
+        -
+          method: "B0 learned"
+          value: 2.6702
+        -
+          method: "B1.1 learned RRT"
+          value: 18.26
+        -
+          method: "B1.1 learned linear"
+          value: 21.1
+        -
+          method: "B1.1 learned default"
+          value: 23.93
+        -
+          method: "B1 control penalty weight 0.5"
+          value: 16.85
+        -
+          method: "B3 composite-cost car"
+          value: 7.941
+      unit: "s"
+      evaluation_context: "B0 objectives 1.5032 analytic/1.5027 learned. B1.1 RRT/linear/default objectives 1.5029/1.5108/1.5186; adding input weight 0.5 changes composite objective to 1.5371 (not pure path-length comparison). B3 composite objective 9.309 is a different setting. Secondary report rows remain upstream; no universal neural speedup follows."
+  -
+    id: "cit413042:geometry-result"
+    experience: "cit413042"
+    kind: "result"
+    concepts:
+      - "geometric-field-validation"
+    statement: "Team reports learned-field IoU in several geometries; contour errors and the B1.1 prose/table discrepancy qualify interpretation."
+    basis: "project_report"
+    actor: "team"
+    verification: "reported_not_reproduced"
+    references:
+      -
+        profile: "02_profiles/projects/case_studies_optimization.md"
+        section: "Learned SDF and solver trade-offs"
+        locator: "Tables 6/7/11/13, physical pp. 34/38/43/48"
+      -
+        profile: "02_profiles/projects/case_studies_optimization.md"
+        section: "Complex-corridor representation comparison"
+        locator: "Tables 6/7/11/13, physical pp. 34/38/43/48"
+    limitations:
+      - "Different geometry/training settings are not an accuracy ranking or isolated network-size comparison; final corridor field uses one million samples, not the earlier 200,000-sample field."
+      - "No independent reproduction, physical-scale distance interpretation or continuous collision-safety certificate is established."
+    result:
+      metric: "Reported occupancy IoU for labeled learned fields"
+      values:
+        -
+          method: "B0"
+          value: 0.9836
+        -
+          method: "B1.1 table (contradicting nearby prose)"
+          value: 0.8091
+        -
+          method: "B2 nonconvex star"
+          value: 0.9356
+        -
+          method: "Final B3 corridor, one million samples"
+          value: 0.8722
+      unit: "dimensionless IoU (0–1)"
+      evaluation_context: "B2 contour CD/HD = 0.0025/0.0336; final B3 CD/HD = 0.00138/0.02958, in source coordinate units (physical length scale not established). These distances are separate metrics from IoU, not unitless accuracy scores."
+  -
+    id: "cit413042:representation-tradeoff"
+    experience: "cit413042"
+    kind: "lesson"
+    concepts:
+      - "signed-distance-neural-fields"
+      - "geometric-field-validation"
+    statement: "In the reported corridor, finer convex decomposition improves shape agreement but increases per-iteration cost without clear path-objective benefit; boundary data and initialization materially affect usefulness of the learned geometry."
+    basis: "project_report"
+    actor: "team"
+    verification: "reported_not_reproduced"
+    references:
+      -
+        profile: "02_profiles/courses/cit413042-case-studies-optimization.md"
+        section: "Evaluation methodology and engineering trade-offs"
+      -
+        profile: "02_profiles/projects/case_studies_optimization.md"
+        section: "Complex-corridor representation comparison"
+      -
+        profile: "02_profiles/projects/case_studies_optimization.md"
+        section: "Technical findings, limitations and research extensions"
+    limitations:
+      - "Scenario-specific reported trade-off, not universal superiority. Decomposition uses 16/36/56/76 trapezoids; later comparison disables earlier input regularization."
+      - "Raw untracked CSVs do not establish exact report-table lineage; no experiments were rerun."
+    lesson:
+      observation: "Geometric fidelity, derivative/evaluation cost and achieved path objective can improve or worsen independently."
+      implication: "Evaluate representation quality and solver/task behavior separately; preserve initialization, training-budget and penalty settings."
+      scope: "Team-reported static planar corridor experiments, not general certified planning."

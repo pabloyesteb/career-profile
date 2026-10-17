@@ -1,10 +1,13 @@
-# Scientific paper — Statistical validation of industrial supervised-learning surrogates
+# NGValidation — Statistical validation software and industrial supervised-learning research
 
 ## Publication identity and evidence
 
 | Field | Value |
 |---|---|
 | Stable profile identifier | scientific_paper |
+| Project identity | NGValidation / UPM-NGValidation; existing scientific_paper identifier retained |
+| Source repository | `/home/pablo/UPM/NGValidation/UPM-NGValidation` |
+| Inspected revision / branch | `746a0a7a4ffa6ebb1b9a4b9b2417b8f9bab38458` / `main`; clean worktree |
 | Title | Towards certification: A complete statistical validation pipeline for supervised learning in industry |
 | Authors, in published order | Lucas Lacasa; Abel Pardo; Pablo Arbelo; Miguel Sánchez-Domínguez; Noelia Bascones; Pablo Yeste; Alejandro Martínez-Cava; Gonzalo Rubio; Ignacio Gómez; Eusebio Valero; Javier de Vicente |
 | Journal | Expert Systems With Applications |
@@ -12,20 +15,20 @@
 | DOI | 10.1016/j.eswa.2025.127169 |
 | Publisher identifier | S0957417425007912 |
 | Publication dates | Received 6 November 2024; revised 29 January 2025; accepted 4 March 2025; available online 13 March 2025 |
-| Local authoritative source | `00_sources/article/1-s2.0-S0957417425007912-main.pdf` |
+| Local authoritative source | `/home/pablo/UPM/NGValidation/1-s2.0-S0957417425007912-main.pdf` |
 | Source extent | 17 PDF pages; 17 numbered figures; equations (1)–(10); no numbered tables or appendices |
 | Source SHA-256 | `32ac496f492cadee89d9675beaad3ab0997aca3ae83ef52aeac8fff8efd9ac58` |
 | Profile status | complete_validated |
 
-Bibliographic information is supported by PDF p. 1 and its metadata. The local PDF was resolved from `sources.article_pdf` in `config/sources.yaml`, relative to that configuration's directory, and verified against `01_inventory/files_manifest.csv`. It is the sole technical source for this profile. The [publication DOI](https://doi.org/10.1016/j.eswa.2025.127169) and [publisher page](https://www.sciencedirect.com/science/article/pii/S0957417425007912) identify the work; no external literature or repository was analyzed to expand its content.
+Bibliographic information is supported by PDF p. 1 and its metadata. The authoritative PDF resolves through the retained `sources.article_pdf` identifier and matches the existing inventory hash. The publication remains the primary source for scientific methods and reported results; the newly registered NGValidation repository supplies complementary implementation evidence. The [publication DOI](https://doi.org/10.1016/j.eswa.2025.127169) and [publisher page](https://www.sciencedirect.com/science/article/pii/S0957417425007912) identify the work.
 
-References below use **[Paper, section, equation/figure, PDF page]**. Physical PDF page numbers agree with printed article pages. Analysis completed 2026-10-14. No repository revision applies because this task analyzes the published PDF only.
+References use **[Paper, section, equation/figure, PDF page]** or **[Code, repository-relative path/function]**. Physical PDF page numbers agree with printed article pages. Paper analysis completed 2026-10-14; targeted repository enrichment completed 2026-10-15 at the revision above, origin `https://github.com/pabloyesteb/UPM-NGValidation.git`. Repository paths below resolve against that checkout. The 2023 repository snapshot precedes the 2025 publication and is not asserted to reproduce its exact experimental version.
 
 ## Attribution and knowledge-use boundary
 
 **Explicit user attribution:** the CRediT statement assigns **Pablo Yeste: Software, Visualization, Investigation**. He is a coauthor affiliated with the Department of Applied Mathematics, ETSI Aeronáutica y del Espacio, Universidad Politécnica de Madrid; the published contact is `p.yesteb@upm.es`. [Paper, p. 1; CRediT statement, p. 16.]
 
-The same three CRediT categories are assigned to Pablo Arbelo, Miguel Sánchez-Domínguez and Noelia Bascones. Conceptualization/methodology/formal analysis and writing roles are assigned separately in the statement. It does **not** allocate particular algorithms, figures, experiments or code modules among the four Software/Visualization/Investigation contributors. Consequently this profile does not claim that Pablo individually devised the complete pipeline, implemented every method, performed all experiments or wrote every section.
+The same three CRediT categories are assigned to Pablo Arbelo, Miguel Sánchez-Domínguez and Noelia Bascones. The paper does not allocate particular algorithms, figures, experiments or code modules among these contributors. Targeted repository diffs now support a narrower, concrete personal contribution account below; they do not imply individual authorship of the complete validation library or all paper experiments.
 
 The user explicitly confirms that the paper's complete technical content corresponds to their knowledge. Accordingly the technical material below is available for later knowledge-base use, independently of whether individual implementation ownership can be established. The distinction is between **knowledge represented by the work**, **explicit contribution categories**, and **unresolved task-level authorship**; the latter does not block this profile.
 
@@ -303,11 +306,11 @@ These are published collective findings. The paper does not demonstrate a univer
 6. **§4.10/Fig. 17:** text/caption sometimes refer to true reserve factors while axes/conditional notation use predicted reserve factor. The operational distinction is made explicit; precise binning/calibration settings remain undisclosed.
 7. **§4.9 relative loss and correlation penalty:** zero denominators are not specified; matching correlations does not alone ensure that other outputs become accurate. These refinements are not treated as mathematically proved safety guarantees.
 
-These cautions preserve source fidelity and prevent downstream overclaims. They do not trigger repository forensics or expand this task beyond the paper.
+These cautions preserve the published evidence. The implementation comparison below clarifies two paper/code differences without rewriting the publication's formulas or repeating a forensic audit.
 
 ## Computational tools and technical knowledge represented
 
-**Explicit software evidence:** the paper attributes Software contributions, but names **no programming language, package or ML library**. Python, NumPy, SciPy, pandas, scikit-learn, PyTorch, TensorFlow, MATLAB, plotting libraries and particular solver products must therefore not be attached to this publication on the basis of its PDF alone. Adam/ReLU/PCA are named algorithms or mathematical components, not proof of a software stack.
+**Explicit software evidence:** the paper alone names no language/package stack. The repository now directly establishes Python, NumPy, pandas, SciPy, scikit-learn, statsmodels, Matplotlib/Seaborn, h5py/HDF5, joblib, Jupyter/nbformat/nbclient/nbconvert and GitPython. `docs/requirements/requirements.yml` additionally specifies Python 3.9.13, TensorFlow 2.9.1, Keras 2.9.0, ONNX 1.12.0 and CUDA/cuDNN dependencies; these are declared environment choices, not proof that every run used GPU acceleration. `misc/explainability.py` also imports SHAP. The code-backed stack belongs to NGValidation, not an inference from the paper or personal authorship of every package integration.
 
 The substantive knowledge represented by the paper includes:
 
@@ -320,6 +323,55 @@ The substantive knowledge represented by the paper includes:
 - Applicability guards and calibrated global/input-/output-conditioned prediction intervals, with clear distinctions between point accuracy, statistical uncertainty and safety claims.
 - Fuselage structural-design context, loads/geometric indexing, strength/buckling failure modes and safety-asymmetric reserve-factor errors.
 
+## NGValidation software implementation and engineering evidence
+
+### Project identity and software architecture
+
+The user identifies the publication as part of NGValidation. The repository origin/name, README's UPM–Airbus surrogate-validation purpose and `setup.py`'s UPM/NGSA Data Analytics Team/ML Deploy integration support treating software and paper as **one project**. The filename is now `ngvalidation.md`; the stable `scientific_paper` identifier and `article_pdf` source key are retained for continuity, not duplicate records.
+
+The architecture separates `validationlib/engine` orchestration, `misc` data/metrics/explainability utilities, `models` transforms/wrappers, `tests` statistical procedures, and `plots`/`tables` reporting. Here `tests` means scientific diagnostic routines, not evidence of a passing automated software-test suite. `templates/` contains run-model, basic/global statistics, input/output bias, train/test split and uncertainty notebooks. `Validator` loads surrogate/dataset/template configuration, checks and merges user overrides, materializes a run notebook/configuration, supports notebook execution/resume and exports HTML. `TemplateTools` loads inputs, persists outputs, applies applicability/error masks, records requirement checks and exports tables/figures. [Code, `readme.md`; `setup.py`; `validationlib/vlib.py`; `engine/validator.py::Validator`; `engine/vltools.py::TemplateTools`; `engine/common.py::checkTemplates`.]
+
+This translates the paper's connected validation procedure into reusable **model × dataset × diagnostic-template workflows**. `public_runs/master_config.json` configures s18 and LSTF examples, dataset paths/options, metrics and pass/warning requirements; CSV/HDF5 data and serialized model/transform artifacts support inference/diagnostics. These fixtures and saved notebook/HTML artifacts document a workflow, not new independently reproduced experimental results. [Code, `public_runs/master_config.json`; `public_runs/surrogates/s18/`; `public_runs/surrogates/LSTF_1/`; `templates/run_model.ipynb`.]
+
+### Geometric split validation and numerical statistics
+
+`templates/tt_split.ipynb` groups points by categorical coordinates, checks numerical ranges inside each training voxel, compares nearest test-to-training distance with the nearest training neighbor's own training-to-training distance, and performs staged convex-hull membership tests in PCA99 and ambient coordinates. It uses scikit-learn nearest-distance utilities and reports a one-sided Mann–Whitney U comparison for suspicious test/train proximity. The implementation's PCA component-index selection and small-voxel behavior were not numerically validated in this task; the source documents the intended geometric workflow. [Code, notebook Geometric analysis/`check_test_sample` and Mann–Whitney sections.]
+
+Convex-hull membership is implemented as a **linear feasibility program**: for training points \(v_i\), find \(w_i\ge0\) such that \(\sum_iw_iv_i=x\), \(\sum_iw_i=1\). `chmp_lp` passes a zero objective and stacked equality constraints to SciPy `linprog(method='highs-ds')`, using its default nonnegative bounds. This is concrete numerical-optimization evidence beyond the publication's high-level hull discussion. [Code, `validationlib/misc/convexhull.py::chmp_lp`.]
+
+Residual/statistical utilities include SciPy distribution fitting and goodness-of-fit comparisons, generalized ESD outlier detection, Johnson SU fitting, ANOVA and continuous-trend tables, permutation-based diagnostics, and feature-permutation scoring with joblib support. `DistanceMetrics` exposes expression-based residual definitions, while sparse masks support per-output filtering/calibration. These are library-level capabilities, not all individually attributed to Pablo. [Code, `validationlib/tests/dist.py::fit_dist`; `tests/outliers.py`; `tests/bias.py`; `tests/permutation.py`; `misc/explainability.py::permutation_importance`; `misc/metrics.py`; `misc/subsampling.py`.]
+
+### Uncertainty modeling and paper/code distinctions
+
+`BinnedUncertaintyModel` supports equal-spaced numerical bins and categorical conditioning, one-/two-tailed quantile bounds, calibration masks and prediction lookup. The uncertainty template represents a global model as one bin, then constructs predicted-output-conditioned and input-conditioned models. `ModelCoverage` evaluates residual inclusion in bounds and offers exact/Wilson binomial proportion intervals or bootstrap coverage estimation; the inspected default is `method='exact'`, not necessarily the paper's bootstrap setting. [Code, `validationlib/tests/interval.py`; `templates/uncertainty.ipynb`, global/local model and coverage sections.]
+
+Two material distinctions matter for interpretation:
+
+- The repository's `outliers_johnsonsu` explicitly computes \(z=\gamma+\delta\,\operatorname{arcsinh}((e-\xi)/\lambda)\), unlike the paper's printed Eq. (9) discussed above. This records implementation evidence; it does not retroactively alter the published equation or establish that this checkout generated its figure.
+- `combine_model_predictions` selects the **widest candidate interval** for each sample/output using `nanargmax` of interval widths; it does not implement the paper's Eq. (10) intersection. The uncertainty notebook describes this maximum-width choice. Selection of the widest constituent is not automatically a set union/envelope or a universal calibration guarantee. No saved output is used here to assert either algorithm's published coverage.
+
+[Code, `validationlib/tests/outliers.py::outliers_johnsonsu`; `validationlib/tests/interval.py::BinnedUncertaintyModel.combine_model_predictions`; `templates/uncertainty.ipynb`, Full uncertainty model.]
+
+### Identifiable individual implementation contributions
+
+Targeted author/diff evidence associates `Pablo` and `P. Yeste Blesa` at `p.yesteb@alumnos.upm.es` with the following specific changes. Notebook diffs were compared at cell-source level to avoid mistaking regenerated outputs for authored algorithms:
+
+| Contribution | Technical substance | Commit evidence |
+|---|---|---|
+| Dataset sampling utility | Added `sampling_datasets.py`: argparse CLI, indexed CSV loading, pandas random row sampling with optional seed, output-path normalization and CSV serialization | `3d92c269134eec3aa3ff990bcd4d43ce57775bfe` |
+| Split-validation robustness | Added numerical-only/dummy-category handling for a single voxel and adjusted conditional reporting/requirements; earlier changes copy training data explicitly and correct checks/reporting in split templates | `bc657f66af254e745ae32d7f1de2b01852393695`; `8628a2f41f090713b98a5030ea2aba4abfa47c34` |
+| Structured validation artifacts | Organized outputs by model/dataset/template, wrote per-run configuration files, retained latest-result HTML and moved appendix outputs into per-run `media` directories | `628aaf2d10996ec42f11839b5bff8f3d0efab45b` |
+| Configuration portability | Resolved user-provided `from_file` inputs relative to the run root and checked their existence; consolidated example surrogate configurations into the master configuration | `74bda52b955bc32a44fc360543e63ef644f241c0`; `d752fe7d7db9fc0210511734ad134d4e6472dc36` |
+| Collaborative workflow adaptation | Updated/documented paths in `Syncronization.py` for synchronizing UPM validation components to the Airbus-side layout | `06964bb86e39f50ae83789ec49982ed1840ff1a8` |
+
+The last entry is an adaptation of an existing GitPython synchronization utility, not authorship of the entire script or proof of production deployment. The single-voxel changes establish implemented handling, not a measured universal fix. This concrete account complements the published Software/Visualization/Investigation roles without assigning the full statistical library or paper experiments to one contributor.
+
+### Engineering significance and implementation limits
+
+NGValidation connects aerospace reserve-factor regression with applicability checks, tail-sensitive statistics, explainability and conditional uncertainty, then packages these as configurable scientific-software workflows. Pablo's evidenced work adds practical data reduction, edge-case handling, configuration portability and organized validation artifacts: transferable scientific/data/ML engineering competencies grounded in actual source changes, not a generic skills list.
+
+The inspected repository is a clean **2023 snapshot**, whereas the paper appeared in 2025. It contains reduced datasets, model artifacts and saved reports, but no exact mapping to every published figure/data split is established. The paper's original industrial-data sharing restriction remains relevant; local fixture availability is not permission to redistribute. `setup.py` refers to absent root `requirements.txt`/`opt_requirements.txt`, while an environment YAML and platform specifications exist; README paths also reflect older layouts. A packaged `ml_deploy.tar.xz` is present but was not executed or fully analyzed. No dependency installation, notebook execution, model loading, certification assessment or benchmark was performed.
+
 ## Relevant thematic categories
 
 - Statistics, uncertainty quantification, and statistical validation.
@@ -331,6 +383,8 @@ The substantive knowledge represented by the paper includes:
 The work also connects technically to quantitative-risk concerns through tail modeling and asymmetric errors, but does not constitute an insurance/actuarial experiment. Its control/robotics connection is the transferable validation of learned surrogates, not an implemented GNC or robot controller. These are thematic connections, not new source claims or thematic synthesis files.
 
 ## Complete-paper coverage and validation record
+
+Repository update validation (2026-10-15): the publication's substantive technical sections/results and source hash are retained; added code evidence was checked statically at `746a0a7a4ffa6ebb1b9a4b9b2417b8f9bab38458`. Representative authored diffs substantiate the contribution table. The broader identity replaces the old filename, not the stable project or its count. Paper/code differences are recorded explicitly, and no experiment was rerun. The PDF is actually located at `/home/pablo/UPM/NGValidation/1-s2.0-S0957417425007912-main.pdf`; the user-mentioned `00_sources/NGValidation/` directory is absent, so configuration records the existing external file rather than fabricating a local copy.
 
 The full 17-page text, all ten numbered equations and all 17 figures were inspected; references/end matter were read for publication, attribution and availability, not used to attribute entire cited works to this project. Layout-preserving text extraction was complemented by rendered figure pages 4, 6–16, the mathematical page 3 and a high-resolution Eq. (9) crop. No mathematical content was reconstructed from presumed implementation knowledge.
 

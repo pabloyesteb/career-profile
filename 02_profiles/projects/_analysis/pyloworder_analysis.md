@@ -4,7 +4,7 @@ Status: **contribution analysis complete; final professional profile not started
 
 ## 1. Repository and attribution context
 
-Configured repository: `/home/pablo/pyLowOrder`, remote `https://github.com/ArnauMiro/pyLowOrder.git`, checked-out branch `140-GNN-implementation`, HEAD `f79ad1d67660eb9502c17398aa5c196cda90cc97`. Worktree clean; repository is not shallow, but only this local branch and its origin tracking branch are present. No fetch or remote-state verification performed. Local reachable history, not all possible upstream branches, bounds this analysis.
+Configured repository: `/home/pablo/UPM/pyLowOrder`, remote `https://github.com/ArnauMiro/pyLowOrder.git`, checked-out branch `140-GNN-implementation`, HEAD `f79ad1d67660eb9502c17398aa5c196cda90cc97`. Worktree clean; repository is not shallow, but only this local branch and its origin tracking branch are present. No fetch or remote-state verification performed. Local reachable history, not all possible upstream branches, bounds this analysis.
 
 ## 2. User-associated identities
 

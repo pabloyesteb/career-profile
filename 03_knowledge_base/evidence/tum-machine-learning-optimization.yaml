@@ -1,0 +1,77 @@
+experience: "tum-machine-learning-optimization"
+claims:
+  -
+    id: "tum-machine-learning-optimization:risk-data"
+    experience: "tum-machine-learning-optimization"
+    kind: "knowledge"
+    concepts:
+      - "statistical-risk-model-selection"
+    statement: "Regression risk, held-out evaluation, bias/variance, uniform-convergence/Hoeffding/union-bound and stability viewpoints; dataset curation/deduplication/filters and language-model training-data context."
+    basis: "supplementary_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/supplementary/machine_learning.md"
+        section: "Regression, regularization and evaluation"
+      -
+        profile: "02_profiles/supplementary/machine_learning.md"
+        section: "Training data and language-model context"
+    limitations:
+      - "Supplementary credit and individual learning relationship are not established; supplied exercises/code are not personal implementation."
+  -
+    id: "tum-machine-learning-optimization:regression-kernels"
+    experience: "tum-machine-learning-optimization"
+    kind: "knowledge"
+    concepts:
+      - "regularized-linear-inference"
+      - "ensemble-margin-kernel-methods"
+    statement: "Ridge, collinearity, SVM duality, kernels and representer/Gaussian-kernel learning; the profile does not supply complete functional-analytic hypotheses or an RKHS derivation."
+    basis: "supplementary_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/supplementary/machine_learning.md"
+        section: "Regression, regularization and evaluation"
+      -
+        profile: "02_profiles/supplementary/machine_learning.md"
+        section: "Margins, kernels and nonlinear predictors"
+    limitations:
+      - "Supplementary credit and individual learning relationship are not established; supplied exercises/code are not personal implementation."
+  -
+    id: "tum-machine-learning-optimization:optimizers"
+    experience: "tum-machine-learning-optimization"
+    kind: "knowledge"
+    concepts:
+      - "first-order-stochastic-optimization"
+    statement: "Gradient/stochastic/accelerated and adaptive optimization, least-squares implicit regularization/early stopping, AdaGrad/Adam and additional Kaczmarz reading, without a universal convergence guarantee."
+    basis: "supplementary_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/supplementary/machine_learning.md"
+        section: "Optimization algorithms"
+    limitations:
+      - "Supplementary credit and individual learning relationship are not established; supplied exercises/code are not personal implementation."
+  -
+    id: "tum-machine-learning-optimization:neural-tools"
+    experience: "tum-machine-learning-optimization"
+    kind: "knowledge"
+    concepts:
+      - "neural-training-data-contracts"
+    statement: "Neural/vision architectures from LeNet/AlexNet to residual and U-Net models; supplied Python/PyTorch/torchvision and data-processing notebooks support technical context rather than personal implementation."
+    basis: "supplementary_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/supplementary/machine_learning.md"
+        section: "Neural networks and vision"
+      -
+        profile: "02_profiles/supplementary/machine_learning.md"
+        section: "Computational material, tools and applications"
+    limitations:
+      - "Supplementary credit and individual learning relationship are not established; supplied exercises/code are not personal implementation."
+

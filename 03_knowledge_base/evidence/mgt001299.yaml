@@ -1,0 +1,192 @@
+experience: "mgt001299"
+claims:
+  -
+    id: "mgt001299:search-utility"
+    experience: "mgt001299"
+    kind: "knowledge"
+    concepts:
+      - "heuristic-adversarial-search"
+    statement: "Rational utility/search modeling, graph/tree and frontier distinctions, DFS/BFS/UCS/greedy/A*, admissible tree-search optimality, minimax/multiplayer/expectimax and uncertainty-sensitive utility transformations are covered."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/mgt001299-introduction-to-deep-reinforcement-learning.md"
+        section: "Rational agents, utilities, and search formulation"
+      -
+        profile: "02_profiles/courses/mgt001299-introduction-to-deep-reinforcement-learning.md"
+        section: "Uninformed, heuristic, adversarial, and stochastic search"
+    limitations:
+      - "A* proof is for tree search; no separate consistent-heuristic closed-list theorem is supplied. Nonlinear monotone utility transforms need not preserve expected-utility decisions."
+  -
+    id: "mgt001299:markov-planning"
+    experience: "mgt001299"
+    kind: "knowledge"
+    concepts:
+      - "bellman-policy-evaluation"
+    statement: "Markov chains and finite/horizon-dependent or stationary MDP policies, reward/cost conventions, bounded discounted returns, Bellman optimality, value iteration and exact-evaluation policy iteration are covered with stopping/gridworld examples."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/mgt001299-introduction-to-deep-reinforcement-learning.md"
+        section: "Markov models and dynamic programming"
+    limitations:
+      - "Discounted convergence requires bounded rewards and gamma<1; finite-policy termination assumes exact evaluation and tie handling. This is not a neural-policy convergence guarantee."
+  -
+    id: "mgt001299:sample-learning"
+    experience: "mgt001299"
+    kind: "knowledge"
+    concepts:
+      - "temporal-difference-learning"
+    statement: "Empirical transition/reward models, Monte Carlo, TD(0), Q-learning, exploration bonuses/epsilon-greedy and stochastic-approximation step-size conditions are covered, with supplied gridworld code."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/mgt001299-introduction-to-deep-reinforcement-learning.md"
+        section: "Learning from interaction: model estimation, Monte Carlo, TD, and Q-learning"
+    limitations:
+      - "Step-size series alone do not provide a full visitation/MDP convergence theorem. Zero-visit bonus convention is unspecified; supplied agent has negative-Q greedy-selection and rounding limitations."
+  -
+    id: "mgt001299:neural-training"
+    experience: "mgt001299"
+    kind: "knowledge"
+    concepts:
+      - "neural-training-data-contracts"
+    statement: "Linear/neural approximation, activations/logistic-softmax probabilities, losses, backpropagation, SGD variants/schedules and held-out evaluation are covered through mathematical exercises and TensorFlow/Keras examples."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/mgt001299-introduction-to-deep-reinforcement-learning.md"
+        section: "Neural approximation, supervised learning, and optimization"
+    limitations:
+      - "Universal approximation is not trainability/generalization. Supplied bank features leak the target; a scalar-sigmoid exercise is mislabeled softmax. No personal predictive result is established."
+  -
+    id: "mgt001299:deep-values"
+    experience: "mgt001299"
+    kind: "knowledge"
+    concepts:
+      - "deep-value-learning"
+      - "projected-policy-evaluation"
+    statement: "Visitation-weighted approximate value objectives and semi-gradients lead to DQN replay/target/terminal contracts, Double DQN selection versus evaluation, prioritized replay/importance correction, dueling streams and Rainbow overview."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/mgt001299-introduction-to-deep-reinforcement-learning.md"
+        section: "Value-function approximation and deep Q-networks"
+      -
+        profile: "02_profiles/courses/mgt001299-introduction-to-deep-reinforcement-learning.md"
+        section: "Double DQN, prioritized replay, dueling networks, and Rainbow"
+    limitations:
+      - "No tabular-to-neural general convergence transfer; Rainbow distributional/noisy additions are overview only. Teaching CartPole code ignores time-limit truncation and does not establish achieved personal rewards."
+  -
+    id: "mgt001299:policy-gradients"
+    experience: "mgt001299"
+    kind: "knowledge"
+    concepts:
+      - "policy-gradient-credit-assignment"
+    statement: "Policy score identities, Gaussian/softmax derivatives, REINFORCE, action-independent baselines, Q/advantage actor–critic and compatible critic conditions are covered."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/mgt001299-introduction-to-deep-reinforcement-learning.md"
+        section: "Policy gradients, REINFORCE, and actor–critic theory"
+    limitations:
+      - "Objective/visitation normalization and full theorem proof are not supplied; compatible approximation is not a guarantee for arbitrary neural critics or exploration."
+  -
+    id: "mgt001299:multistep-credit"
+    experience: "mgt001299"
+    kind: "knowledge"
+    concepts:
+      - "policy-gradient-credit-assignment"
+    statement: "n-step/lambda returns, state/parameter eligibility traces, fixed-weight forward/backward equivalence, online counterexamples and the TD-error/GAE structure are covered."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/mgt001299-introduction-to-deep-reinforcement-learning.md"
+        section: "Multi-step learning, TD(λ), and eligibility traces"
+    limitations:
+      - "Exact equivalence uses held-fixed values/end-of-episode accumulation and the stated terminal terms, not arbitrary online updates."
+  -
+    id: "mgt001299:policy-optimization"
+    experience: "mgt001299"
+    kind: "knowledge"
+    concepts:
+      - "policy-optimization-geometry"
+    statement: "A2C/A3C, entropy, TRPO KL/Fisher geometry, PPO-Penalty/Clip and repeated-batch training are contrasted with DDPG/Polyak and overview SAC continuous-action methods."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/mgt001299-introduction-to-deep-reinforcement-learning.md"
+        section: "Parallel actor–critic, trust regions, and PPO"
+      -
+        profile: "02_profiles/courses/mgt001299-introduction-to-deep-reinforcement-learning.md"
+        section: "Continuous-action actor–critic: DDPG and SAC"
+    limitations:
+      - "PPO clipping is not a hard KL/ratio constraint or transferred TRPO guarantee. Supplied actors are collected sequentially with reward/termination-specialized buffering; DDPG/SAC code and full SAC updates are absent."
+  -
+    id: "mgt001299:planning-learning"
+    experience: "mgt001299"
+    kind: "knowledge"
+    concepts:
+      - "heuristic-adversarial-search"
+    statement: "MCTS/AlphaGo variants, inverse/hierarchical/transfer/multitask/multi-agent learning and centralized-training/decentralized-execution case studies connect planning with learned evaluation."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/mgt001299-introduction-to-deep-reinforcement-learning.md"
+        section: "Planning–learning combinations, extensions, and applications"
+    limitations:
+      - "Portfolio/driving/delivery/pricing and hide-and-seek are teaching/research examples, not personal outcomes or deployments; outlook algorithm names do not establish complete methods."
+  -
+    id: "mgt001299:teaching-tools"
+    experience: "mgt001299"
+    kind: "knowledge"
+    concepts:
+      - "neural-training-data-contracts"
+      - "deep-value-learning"
+      - "policy-optimization-geometry"
+    statement: "Supplied Python tasks cover search/tabular learning, TensorFlow/Keras supervised models, CartPole DQN and PPO with explicit replay/logits/discounted-buffer mechanics and configurable experiments."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/mgt001299-introduction-to-deep-reinforcement-learning.md"
+        section: "Computational work and tools"
+    limitations:
+      - "Templates and solutions, not personally authored submissions or verified runs. Mixed Gym/Gymnasium and TensorFlow/Keras versions, target leakage, ignored truncation and specialized PPO masks limit reuse; source inputs partly absent."
+    tools:
+      - "Python"
+      - "NumPy"
+      - "pandas"
+      - "scikit-learn"
+      - "Matplotlib"
+      - "TensorFlow/Keras"
+      - "GradientTape"
+      - "Adam"
+      - "SGD"
+      - "RMSprop"
+      - "Gym"
+      - "Gymnasium"
+      - "Pygame"
+      - "SciPy signal.lfilter"
+      - "collections.deque"
+      - "random.sample"
+      - "argparse"

@@ -1,0 +1,155 @@
+experience: "ma6015"
+claims:
+  -
+    id: "ma6015:mlmc-foundations"
+    experience: "ma6015"
+    kind: "knowledge"
+    concepts:
+      - "multilevel-multifidelity-estimation"
+    statement: "Random PDE/QoI setup, shared-input coupled telescoping, bias/variance splitting, optimal square-root allocation and the three alpha/beta/gamma complexity regimes with alpha >= min(beta,gamma)/2 are covered."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma6015-advanced-seminar-course.md"
+        section: "Random PDE uncertainty and Monte Carlo foundations"
+      -
+        profile: "02_profiles/courses/ma6015-advanced-seminar-course.md"
+        section: "Algorithms and numerical methods"
+    limitations:
+      - "Use the consistent P1/P2 generic theorem, not P3's reversed beta/gamma labels; no participant MLMC implementation is evidenced."
+  -
+    id: "ma6015:lognormal-fem-analysis"
+    experience: "ma6015"
+    kind: "knowledge"
+    concepts:
+      - "stochastic-pde-discretization"
+      - "sobolev-distributions"
+      - "random-fields-sampling"
+    statement: "P2 covers pathwise lognormal diffusion, coefficient-dependent elliptic regularity/integrability, conforming FEM energy error O(h^s) for s<t and bounded-linear-QoI MLMC rates alpha=s and beta=2s."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma6015-advanced-seminar-course.md"
+        section: "Elliptic PDEs with lognormal random coefficients and finite elements"
+    limitations:
+      - "P2's handout conflicts with its detailed presentation; the profile follows the latter. No universal rate without the regularity/integrability setting is inferred."
+  -
+    id: "ma6015:finite-volume-cgv"
+    experience: "ma6015"
+    kind: "knowledge"
+    concepts:
+      - "stochastic-pde-discretization"
+      - "multilevel-multifidelity-estimation"
+    statement: "Random-layered Darcy flow, cell-centered finite volume/FEM-quadrature equivalence, bounded-linear-functional rates s<1/2, AMG-PCG, circulant costs and unbiased stationary coarse-grid variates using 2^d coarse subvectors are covered."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma6015-advanced-seminar-course.md"
+        section: "Finite-volume MLMC and coarse-grid variates"
+    limitations:
+      - "Rough-layer rates differ from P2; less-than-roughly-double correction cost is setting-specific. These are seminar research examples, not personal runs."
+  -
+    id: "ma6015:hierarchy-optimization"
+    experience: "ma6015"
+    kind: "knowledge"
+    concepts:
+      - "multilevel-multifidelity-estimation"
+    statement: "P4 optimizes meshes, level count, sample allocation and bias/statistical split under a probabilistic tolerance using Lindeberg–Feller, model exponents, log-mesh difference equations and continuous relaxation before integer allocation; geometric and nongeometric hierarchies are compared."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma6015-advanced-seminar-course.md"
+        section: "Optimization of MLMC hierarchies"
+      -
+        profile: "02_profiles/courses/ma6015-advanced-seminar-course.md"
+        section: "Applications and model problems"
+    limitations:
+      - "Reported practical benefit of optimizing the split is not a personal benchmark. GMRES/MUMPS/CMLMC are discussed numerical methods, not established user software use."
+  -
+    id: "ma6015:blue-multifidelity"
+    experience: "ma6015"
+    kind: "knowledge"
+    concepts:
+      - "multilevel-multifidelity-estimation"
+    statement: "P6 formulates coupled model groups as a linear model, GLS/BLUE information-matrix variance, covariance-pilot versus reuse effects, SAOB budget/group allocation and a fixed-high-fidelity variance lower bound; MC/MLMC/CV/MFMC are compared."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma6015-advanced-seminar-course.md"
+        section: "Multilevel best linear unbiased estimation"
+    limitations:
+      - "Covariance invertibility and finite model moments are required; potential 2^L-1 groups carry costs beyond classical MLMC. No personal allocation implementation is inferred."
+  -
+    id: "ma6015:sensitivity"
+    experience: "ma6015"
+    kind: "knowledge"
+    concepts:
+      - "sensitivity-rare-event-estimation"
+    statement: "Independent-input ANOVA/HDMR, Sobol main/total effects and Owen estimation are combined with cost/correlation-managed MFMC for means, variances and sensitivity, using Ishigami and uncertain hydrogen-combustion models."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma6015-advanced-seminar-course.md"
+        section: "Multifidelity variance and global sensitivity estimation"
+      -
+        profile: "02_profiles/courses/ma6015-advanced-seminar-course.md"
+        section: "Applications and model problems"
+    limitations:
+      - "No exact sensitivity indices, personal performance results or arbitrary dependent-input extension is established."
+  -
+    id: "ma6015:rare-events"
+    experience: "ma6015"
+    kind: "knowledge"
+    concepts:
+      - "sensitivity-rare-event-estimation"
+      - "random-fields-sampling"
+      - "stochastic-pde-discretization"
+    statement: "P12 covers Bernoulli failure estimation, inverse-probability relative sampling cost, adaptive subset/MH conditional sampling, nonnested multilevel Bayes factorization and variable-KL-dimensional MLE-var with Raviart–Thomas flow examples."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma6015-advanced-seminar-course.md"
+        section: "Rare-event probability estimation"
+      -
+        profile: "02_profiles/courses/ma6015-advanced-seminar-course.md"
+        section: "Algorithms and numerical methods"
+    limitations:
+      - "The O(N^-1) relative bias/variance analysis is conditional; exact assumptions and numerical outcomes beyond profile depth are not invented. No personal solver or MCMC run is evidenced."
+  -
+    id: "ma6015:p2-presentation"
+    experience: "ma6015"
+    kind: "contribution"
+    concepts:
+      - "stochastic-pde-discretization"
+      - "sobolev-distributions"
+      - "multilevel-multifidelity-estimation"
+    statement: "Pablo Yeste Blesa's named P2 presentation on 12 June 2025 explains lognormal elliptic regularity, finite-element error analysis and the link from energy error to MLMC rates, with a paired handout in the passed seminar."
+    basis: "project_report"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/courses/ma6015-advanced-seminar-course.md"
+        section: "Elliptic PDEs with lognormal random coefficients and finite elements"
+      -
+        profile: "02_profiles/courses/ma6015-advanced-seminar-course.md"
+        section: "Seminar and assessment evidence"
+      -
+        profile: "02_profiles/courses/ma6015-advanced-seminar-course.md"
+        section: "Computational work and tools"
+    limitations:
+      - "This supports personal mathematical exposition and research-method analysis, not original authorship of the paper's theorems, executable solver implementation or personal reproduction of its experiments. Supplied LaTeX/Beamer and handout templates do not establish authorship of every template component."

@@ -1,0 +1,43 @@
+experience: "tum-dynamical-systems"
+claims:
+  -
+    id: "tum-dynamical-systems:local-reduction"
+    experience: "tum-dynamical-systems"
+    kind: "knowledge"
+    concepts:
+      - "dynamical-flows-bifurcations"
+    statement: "Flows/maps/orbits/stability, invariant manifolds/local conjugacy/return maps, structural stability, bifurcations/resonances/normal forms and center-manifold reduction are mapped, with transcritical exercise evidence."
+    basis: "supplementary_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/supplementary/dynamical_systems.md"
+        section: "Flows, maps and local qualitative behavior"
+      -
+        profile: "02_profiles/supplementary/dynamical_systems.md"
+        section: "Bifurcations, normal forms and dimension reduction"
+    limitations:
+      - "Exact hyperbolicity/smoothness/nondegeneracy hypotheses and reduced equations are absent at this selective profile depth; named results are not expanded into invented theorems."
+  -
+    id: "tum-dynamical-systems:global-statistical"
+    experience: "tum-dynamical-systems"
+    kind: "knowledge"
+    concepts:
+      - "invariant-measures-chaos"
+    statement: "Global connections/horseshoes/Melnikov/symbolic chaos, Conley structure, invariant measures/recurrence/ergodicity/mixing and partition entropy are mapped with late Fourier/toral-automorphism exercises."
+    basis: "supplementary_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/supplementary/dynamical_systems.md"
+        section: "Global dynamics and chaos"
+      -
+        profile: "02_profiles/supplementary/dynamical_systems.md"
+        section: "Topological and measure-theoretic dynamics"
+      -
+        profile: "02_profiles/supplementary/dynamical_systems.md"
+        section: "Mathematical methods, computation and applications"
+    limitations:
+      - "No exact Melnikov integral, perturbative threshold, full ergodic/entropy hypotheses or personal computation is supplied; those details are not reconstructed."

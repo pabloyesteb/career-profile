@@ -18,7 +18,7 @@
 
 Academic metadata comes from `01_inventory/courses.csv`, based on the configured transcript. The user confirms the pyLowOrder–MA8102 association. Contribution dates describe Git evidence, **not formal internship duration or employment dates**; not every commit is assigned to the credited internship.
 
-Sources: the configured local repository `/home/pablo/pyLowOrder`; `02_profiles/projects/_analysis/pyloworder_analysis.md`; and `01_inventory/pyloworder_commits.csv`, which records full hashes, author metadata and affected paths for 242 associated commits (241 non-merge plus one merge). Repository-relative paths below resolve against that external checkout. Short hashes identify commits expanded in the inventory. **NN** abbreviates `pyLOM/NN/`; **G** abbreviates `pyLOM/NN/gns/`. Validation date: 2026-10-14. The inspected repository is clean; no project code, tests or training were executed for profiling.
+Sources: the configured local repository `/home/pablo/UPM/pyLowOrder`; `02_profiles/projects/_analysis/pyloworder_analysis.md`; and `01_inventory/pyloworder_commits.csv`, which records full hashes, author metadata and affected paths for 242 associated commits (241 non-merge plus one merge). Repository-relative paths below resolve against that external checkout. Short hashes identify commits expanded in the inventory. **NN** abbreviates `pyLOM/NN/`; **G** abbreviates `pyLOM/NN/gns/`. Validation date: 2026-10-14. The inspected repository is clean; no project code, tests or training were executed for profiling.
 
 ## Scientific purpose and individual contribution
 

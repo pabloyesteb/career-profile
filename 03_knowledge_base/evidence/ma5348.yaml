@@ -1,0 +1,113 @@
+experience: "ma5348"
+claims:
+  -
+    id: "ma5348:probability-fields"
+    experience: "ma5348"
+    kind: "knowledge"
+    concepts:
+      - "random-fields-sampling"
+    statement: "Function-valued probability, Pettis/Bochner measurability and integration, convergence modes, Gaussian vectors and Hilbert-valued variables, covariance kernels, stationarity, versions and Kolmogorov regularity are covered."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma5348-numerical-methods-uncertainty-quantification.md"
+        section: "Probability in function spaces"
+      -
+        profile: "02_profiles/courses/ma5348-numerical-methods-uncertainty-quantification.md"
+        section: "Random fields and regularity"
+      -
+        profile: "02_profiles/courses/ma5348-numerical-methods-uncertainty-quantification.md"
+        section: "Exercise and assessment evidence"
+    limitations:
+      - "Complete continuity-theorem constants and assumptions absent from the profile are not reconstructed."
+  -
+    id: "ma5348:field-sampling"
+    experience: "ma5348"
+    kind: "knowledge"
+    concepts:
+      - "random-fields-sampling"
+      - "compact-operator-spectral-theory"
+    statement: "Cholesky/spectral covariance sampling, positive-semidefinite circulant embedding and FFT, Hilbert–Schmidt/Mercer covariance operators, KL convergence/optimal truncation and quadrature/collocation eigenpairs are covered."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma5348-numerical-methods-uncertainty-quantification.md"
+        section: "Discretization and sampling of random fields"
+      -
+        profile: "02_profiles/courses/ma5348-numerical-methods-uncertainty-quantification.md"
+        section: "Algorithms and numerical methods"
+    limitations:
+      - "Embedding positivity and distinction between mean-square/uniform convergence are material; teaching code is not evidence of personal authorship."
+  -
+    id: "ma5348:random-pde-galerkin"
+    experience: "ma5348"
+    kind: "knowledge"
+    concepts:
+      - "stochastic-pde-discretization"
+      - "sobolev-distributions"
+    statement: "Weak elliptic well-posedness, pathwise lognormal coefficients/Fernique integrability, FEM best approximation, stochastic Galerkin tensor/total-degree polynomial spaces, Legendre recurrence, Kronecker systems, mean-based preconditioning and coefficient/spatial/stochastic error decomposition are covered."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma5348-numerical-methods-uncertainty-quantification.md"
+        section: "Elliptic PDEs with uncertain coefficients"
+      -
+        profile: "02_profiles/courses/ma5348-numerical-methods-uncertainty-quantification.md"
+        section: "Stochastic Galerkin methods"
+      -
+        profile: "02_profiles/courses/ma5348-numerical-methods-uncertainty-quantification.md"
+        section: "Applications and model problems"
+    limitations:
+      - "Full preconditioner inequalities, detailed coupled-system coefficients and all regularity hypotheses are not present at profile depth; none are inferred."
+  -
+    id: "ma5348:mc-multifidelity"
+    experience: "ma5348"
+    kind: "knowledge"
+    concepts:
+      - "multilevel-multifidelity-estimation"
+    statement: "Scalar/Hilbert/field MC and confidence intervals separate sampling error from bias; quadrature, sparse grids and quasi-MC are contrasted with MC; antithetic/control variates, MLMC allocation/complexity, nested MFMC and group-based MLBLUE are covered."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma5348-numerical-methods-uncertainty-quantification.md"
+        section: "Monte Carlo and variance reduction"
+      -
+        profile: "02_profiles/courses/ma5348-numerical-methods-uncertainty-quantification.md"
+        section: "Multilevel and multifidelity estimators"
+      -
+        profile: "02_profiles/courses/ma5348-numerical-methods-uncertainty-quantification.md"
+        section: "Algorithms and numerical methods"
+    limitations:
+      - "Dimension-independent sampling rates do not imply constant model cost; estimator savings depend on coupling, rates, correlations and model costs."
+  -
+    id: "ma5348:teaching-code"
+    experience: "ma5348"
+    kind: "knowledge"
+    concepts:
+      - "stochastic-pde-discretization"
+      - "random-fields-sampling"
+      - "multilevel-multifidelity-estimation"
+    statement: "Supplied MATLAB examples cover covariance/KL sampling, 1D FEM and MC-FEM, Euler IVP MLMC rates/confidence intervals, Legendre/multi-index factors and matrix-free preconditioned conjugate gradients for stochastic Galerkin."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma5348-numerical-methods-uncertainty-quantification.md"
+        section: "Computational work and tools"
+      -
+        profile: "02_profiles/courses/ma5348-numerical-methods-uncertainty-quantification.md"
+        section: "Exercise and assessment evidence"
+    limitations:
+      - "Static source-profile evidence of teaching resources only, not personally authored/passing programs or reproduced experiments. Surveyed packages are not established participant tools."
+    tools:
+      - "MATLAB"
+      - "pcg"

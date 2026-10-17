@@ -1,0 +1,458 @@
+experience: "scientific_paper"
+claims:
+  -
+    id: "scientific_paper:seeded-data-sampling"
+    experience: "scientific_paper"
+    kind: "implementation"
+    concepts:
+      - "reproducible-data-sampling"
+    statement: "Added sampling_datasets.py with indexed CSV loading, pandas row sampling, optional seed, output-path normalization and CLI configuration."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "Identifiable individual implementation contributions"
+        locator: "sampling_datasets.py; 3d92c269134eec3aa3ff990bcd4d43ce57775bfe"
+    limitations:
+      - "No completed experiment or data-quality/performance improvement is inferred."
+      - "No stratification or representative-sampling guarantee is established."
+    tools:
+      - "Python"
+      - "pandas"
+      - "argparse"
+  -
+    id: "scientific_paper:structured-artifacts"
+    experience: "scientific_paper"
+    kind: "implementation"
+    concepts:
+      - "reproducible-validation-workflows"
+    statement: "Organized validation outputs by model/dataset/template, saved per-run configurations and latest HTML reports, and placed appendix exports under per-run media."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "Identifiable individual implementation contributions"
+        locator: "628aaf2d10996ec42f11839b5bff8f3d0efab45b"
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "Project identity and software architecture"
+    limitations:
+      - "Changes extend a collaborative validation engine, not sole authorship of the library."
+      - "Saved artifacts are not independently reproduced paper results."
+  -
+    id: "scientific_paper:paper-interval-intersection"
+    experience: "scientific_paper"
+    kind: "knowledge"
+    concepts:
+      - "prediction-interval-aggregation"
+    statement: "The paper proposes intersecting global, output-conditioned and per-input uncertainty intervals; the profile records the printed formula without endorsing conservative coverage."
+    basis: "project_report"
+    actor: "team"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "11. Calibrated multiscale prediction intervals — node 10"
+        locator: "Eq. (10); GUM/oMUM/iMUM"
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "Material mathematical/notation cautions found during validation"
+        locator: "Intersection/coverage caution"
+    limitations:
+      - "Intersections narrow constituent intervals and may reduce coverage."
+      - "No full-intersection or simultaneous multi-output coverage validation is established."
+    related_claims:
+      -
+        type: "contrasts_with"
+        target: "scientific_paper:widest-interval-code"
+  -
+    id: "scientific_paper:widest-interval-code"
+    experience: "scientific_paper"
+    kind: "implementation"
+    concepts:
+      - "prediction-interval-aggregation"
+    statement: "The inspected NGValidation code selects the widest candidate interval by nanargmax of width for each sample/output, unlike the paper's intersection."
+    basis: "project_code"
+    actor: "unspecified"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "Uncertainty modeling and paper/code distinctions"
+        locator: "BinnedUncertaintyModel.combine_model_predictions"
+    limitations:
+      - "Individual authorship of this routine is not assigned by the profile."
+      - "2023 code is not established as the exact version of the 2025 publication experiments."
+      - "Widest selection is not automatically a union/envelope or calibration guarantee."
+  -
+    id: "scientific_paper:engineering-context"
+    experience: "scientific_paper"
+    kind: "knowledge"
+    concepts:
+      - "surrogate-domain-split-validation"
+      - "residual-statistical-diagnostics"
+    statement: "A ten-node validation/refinement workflow audits six aerostructural reserve-factor outputs from 26 load/maneuver inputs; it supports assurance evidence, not achieved certification or calibrated failure probabilities."
+    basis: "project_report"
+    actor: "team"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "Research problem, motivation, and contribution"
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "Aerostructural surrogate task"
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "Nature of comparisons and reported experiments"
+    limitations:
+      - "Exact full splits and feature identities are not disclosed; a 22-feature PFI illustration is not explained as a reduction of 26."
+      - "Industrial data cannot be redistributed; schematic figures are not measured model benchmarks."
+  -
+    id: "scientific_paper:regression-preparation"
+    experience: "scientific_paper"
+    kind: "knowledge"
+    concepts:
+      - "surrogate-domain-split-validation"
+      - "neural-training-data-contracts"
+      - "matrix-low-rank-pca"
+    statement: "Parameterized multi-output regression, MSE/MAE and stated L1/L2 conventions, backpropagation/GD/Adam context and train-only normalization/PCA complement geometry-aware frame/stringer encoding and uncertainty-based augmentation."
+    basis: "project_report"
+    actor: "team"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "1. Supervised regression, parameterization, and optimization"
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "2. Data preparation, uncertainty, and geometric encoding — node 1"
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "4. Architecture, loss, and training-duration choices — node 3"
+    limitations:
+      - "Paper prints an unsquared L2 norm; component aggregation and exact trained architecture/optimizer settings are not fully disclosed."
+      - "Latin-hypercube design and architecture alternatives are guidance, not established full experimental configurations."
+  -
+    id: "scientific_paper:domain-split-method"
+    experience: "scientific_paper"
+    kind: "knowledge"
+    concepts:
+      - "surrogate-domain-split-validation"
+    statement: "Categorical VTPM partitions, residual-voxel/chi-square checks, nearest-neighbor percentile proximity flags and applicability-range/hull/classifier layers distinguish distribution compatibility, geometry and error-based use restrictions."
+    basis: "project_report"
+    actor: "team"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "3. Train–test adequacy, interpolation, and VTPM — node 2"
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "10. Iterative model/data improvement and applicability — node 9"
+    limitations:
+      - "Nonrejection/hull membership are not generalization certificates."
+      - "Distance/tie/sparse-voxel details and exact illustration statistics are incomplete."
+  -
+    id: "scientific_paper:domain-code"
+    experience: "scientific_paper"
+    kind: "implementation"
+    concepts:
+      - "surrogate-domain-split-validation"
+    statement: "The split template implements within-voxel numerical ranges, relative neighbor proximity, staged PCA99/ambient hull checks and a Mann–Whitney comparison; chmp_lp solves nonnegative barycentric linear feasibility through SciPy HiGHS dual simplex."
+    basis: "project_code"
+    actor: "unspecified"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "Geometric split validation and numerical statistics"
+    limitations:
+      - "Library-level routines are not all individually attributed to the user."
+      - "PCA-index/small-voxel numerical behavior and exact correspondence to the 2025 paper are not verified."
+  -
+    id: "scientific_paper:residual-methods"
+    experience: "scientific_paper"
+    kind: "knowledge"
+    concepts:
+      - "residual-statistical-diagnostics"
+      - "prediction-interval-aggregation"
+    statement: "Signed reserve-factor residuals, marginal and input-/output-conditioned distributions, KS/AD family comparisons, tail counts/gESD and bootstrap percentile uncertainty preserve the distinction between an estimated quantile's confidence interval and prediction coverage."
+    basis: "project_report"
+    actor: "team"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "5. Pointwise performance and safety-relevant residual signs — node 4"
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "6. Marginal residual distributions, outliers, and bootstrap quantiles — node 5"
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "7. Conditional residuals in input space — node 6"
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "8. Conditional residuals in output space — node 7"
+    limitations:
+      - "Printed Johnson normalization, unconditional bootstrap-Gaussian and midpoint-improvement wording are not accepted as valid general results."
+      - "Conditional settings/parameter-fit p-value calibration are insufficient for independent reproduction."
+  -
+    id: "scientific_paper:diagnostic-refinement"
+    experience: "scientific_paper"
+    kind: "knowledge"
+    concepts:
+      - "residual-statistical-diagnostics"
+      - "statistical-risk-model-selection"
+    statement: "PFI shuffles one held-out feature and compares MSE; conditional diagnostics guide fixed-test learning curves, feature/data/model refinement, applicability checks and proposed relative/correlation losses."
+    basis: "project_report"
+    actor: "team"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "9. Explainability and permutation feature importance — node 8"
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "10. Iterative model/data improvement and applicability — node 9"
+    limitations:
+      - "PFI may decrease loss and does not identify causal effects; exact feature identities/importance scores are unavailable."
+      - "Relative-loss zero handling, dependence-penalty benefit, VAE/GAN augmentation, PINNs and drift detection are not established implemented improvements."
+  -
+    id: "scientific_paper:statistical-library"
+    experience: "scientific_paper"
+    kind: "implementation"
+    concepts:
+      - "residual-statistical-diagnostics"
+      - "reproducible-validation-workflows"
+    statement: "Repository routines cover distribution fits/outlier and conditional statistics, masks/expression metrics and permutation diagnostics; Python/SciPy/statsmodels/sklearn/joblib/reporting tools are code-backed rather than inferred from the publication."
+    basis: "project_code"
+    actor: "unspecified"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "Geometric split validation and numerical statistics"
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "Computational tools and technical knowledge represented"
+    limitations:
+      - "General statistical-library authorship is not assigned personally."
+      - "Declared environment choices do not establish successful GPU execution or a passing software suite."
+  -
+    id: "scientific_paper:calibration-method"
+    experience: "scientific_paper"
+    kind: "knowledge"
+    concepts:
+      - "prediction-interval-aggregation"
+    statement: "Training/calibration/validation separate ANN fit, residual-quantile estimation and independent interval coverage; GUM, predicted-output oMUM and per-input iMUM have different conditioning information."
+    basis: "project_report"
+    actor: "team"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "11. Calibrated multiscale prediction intervals — node 10"
+    limitations:
+      - "Marginal calibration is not exact conditional/simultaneous coverage; full intersection coverage is unreported."
+      - "Lower residual quantile is added to prediction; a positive lower width requires negating it."
+  -
+    id: "scientific_paper:binned-coverage-code"
+    experience: "scientific_paper"
+    kind: "implementation"
+    concepts:
+      - "prediction-interval-aggregation"
+    statement: "BinnedUncertaintyModel uses numerical/categorical bins and calibration masks; ModelCoverage supports exact/Wilson binomial intervals and bootstrap coverage, with exact as inspected default. Johnson outlier code uses arcsinh and delta, unlike the printed transform."
+    basis: "project_code"
+    actor: "unspecified"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "Uncertainty modeling and paper/code distinctions"
+    limitations:
+      - "Code snapshot is not the exact established publication experiment; its default is not necessarily the paper's bootstrap procedure."
+      - "Authorship of these library routines is unspecified."
+  -
+    id: "scientific_paper:split-robustness"
+    experience: "scientific_paper"
+    kind: "implementation"
+    concepts:
+      - "surrogate-domain-split-validation"
+      - "reproducible-validation-workflows"
+    statement: "Added numerical-only/dummy-category single-voxel handling, explicit training copies and split-template reporting/requirements corrections."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "Identifiable individual implementation contributions"
+        locator: "bc657f66af254e745ae32d7f1de2b01852393695; 8628a2f41f090713b98a5030ea2aba4abfa47c34"
+    limitations:
+      - "Implemented edge-case handling is not an independently measured universal fix."
+  -
+    id: "scientific_paper:configuration-portability"
+    experience: "scientific_paper"
+    kind: "implementation"
+    concepts:
+      - "reproducible-validation-workflows"
+    statement: "Resolved from_file inputs against the run root with existence checks, consolidated surrogate settings into the master config and adapted paths in the existing GitPython synchronization workflow."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "Identifiable individual implementation contributions"
+        locator: "74bda52b955bc32a44fc360543e63ef644f241c0; d752fe7d7db9fc0210511734ad134d4e6472dc36; 06964bb86e39f50ae83789ec49982ed1840ff1a8"
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "Engineering significance and implementation limits"
+    limitations:
+      - "Synchronization adaptation is not sole authorship or proof of deployed production integration."
+      - "Root dependency files and older paths remain inconsistent in the inspected snapshot."
+  -
+    id: "scientific_paper:aggregate-fit"
+    experience: "scientific_paper"
+    kind: "result"
+    concepts:
+      - "residual-statistical-diagnostics"
+    statement: "The published industrial illustration reports strong aggregate fit without establishing tail safety or all-output accuracy."
+    basis: "project_report"
+    actor: "team"
+    verification: "reported_not_reproduced"
+    references:
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "5. Pointwise performance and safety-relevant residual signs — node 4"
+    limitations:
+      - "Team-reported paper result, not independently reproduced or individually attributed."
+      - "Does not establish dangerous-tail absence, regulatory certification or identical fit for all six outputs."
+    result:
+      metric: "Coefficient of determination R²"
+      values:
+        -
+          method: "Illustrated failure-mode output"
+          value: 0.999
+      unit: "dimensionless"
+      evaluation_context: "One of six reserve-factor outputs; approximately one million plotted test points, not a disclosed exact validation denominator or full split."
+  -
+    id: "scientific_paper:bootstrap-quantiles"
+    experience: "scientific_paper"
+    kind: "result"
+    concepts:
+      - "residual-statistical-diagnostics"
+      - "prediction-interval-aggregation"
+    statement: "Published residual percentile estimates and bootstrap endpoints motivate a nominal-90% interval, separate from later nominal-95% calibration."
+    basis: "project_report"
+    actor: "team"
+    verification: "reported_not_reproduced"
+    references:
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "6. Marginal residual distributions, outliers, and bootstrap quantiles — node 5"
+    limitations:
+      - "Bootstrap uncertainty of a quantile differs from prediction coverage."
+      - "Midpoint accuracy improvement and an unconditional Gaussian bootstrap theorem are not established."
+    result:
+      metric: "Residual percentile estimate and bootstrap endpoints"
+      values:
+        -
+          method: "5th percentile"
+          value: -0.0432
+        -
+          method: "5th percentile bootstrap lower"
+          value: -0.0548
+        -
+          method: "5th percentile bootstrap upper"
+          value: -0.0353
+        -
+          method: "95th percentile"
+          value: 0.0448
+        -
+          method: "95th percentile bootstrap lower"
+          value: 0.0379
+        -
+          method: "95th percentile bootstrap upper"
+          value: 0.0586
+        -
+          method: "Rounded lower residual offset"
+          value: -0.045
+        -
+          method: "Rounded upper residual offset"
+          value: 0.048
+      unit: "reserve-factor output units"
+      evaluation_context: "Paper §4.5 example; endpoints reordered low-to-high as in authoritative profile. Bootstrap repetition count/sample sizes not disclosed; resulting illustrated interval is [prediction−0.045,prediction+0.048] at intended 90% coverage."
+  -
+    id: "scientific_paper:conditional-diagnostics"
+    experience: "scientific_paper"
+    kind: "result"
+    concepts:
+      - "residual-statistical-diagnostics"
+    statement: "The illustrated load lacks a significant linear trend but has significant binned residual mean differences."
+    basis: "project_report"
+    actor: "team"
+    verification: "reported_not_reproduced"
+    references:
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "7. Conditional residuals in input space — node 6"
+    limitations:
+      - "A nonsignificant linear trend is not evidence of homogeneous or independent errors."
+      - "Team-published diagnostics, not individually performed or independently reproduced experiments."
+    result:
+      metric: "Reported residual association-test p-values"
+      values:
+        -
+          method: "Linear trend"
+          value: 0.59
+        -
+          method: "Binned means ANOVA"
+          value: 0.01
+      unit: "dimensionless p-value"
+      evaluation_context: "Illustrated industrial load; exact sample count/bin specification is unavailable. Separate categorical stringer ANOVA/Levene tests are reported below p=0.005, not as exact numeric p-values."
+  -
+    id: "scientific_paper:coverage-intervals"
+    experience: "scientific_paper"
+    kind: "result"
+    concepts:
+      - "prediction-interval-aggregation"
+    statement: "Global and conditional interval illustrations have bootstrap CI95 ranges around nominal 95% coverage."
+    basis: "project_report"
+    actor: "team"
+    verification: "reported_not_reproduced"
+    references:
+      -
+        profile: "02_profiles/projects/ngvalidation.md"
+        section: "11. Calibrated multiscale prediction intervals — node 10"
+    limitations:
+      - "Reported constituent-model illustrations, not full-intersection or simultaneous all-six-output coverage."
+      - "Containing nominal 95% in a confidence interval differs from proving true coverage≥95% or exact distribution-free conditional coverage."
+    result:
+      metric: "Bootstrap 95% confidence interval endpoints for empirical coverage"
+      values:
+        -
+          method: "GUM lower endpoint"
+          value: 94.63
+        -
+          method: "GUM upper endpoint"
+          value: 95.44
+        -
+          method: "oMUM lower endpoint"
+          value: 94.77
+        -
+          method: "oMUM upper endpoint"
+          value: 95.56
+        -
+          method: "One-load iMUM lower endpoint"
+          value: 94.68
+        -
+          method: "One-load iMUM upper endpoint"
+          value: 95.09
+      unit: "percent coverage"
+      evaluation_context: "Paper Figure 17A/B/C; separate validation data after training/calibration; denominators/bootstrap repetitions not disclosed. Values are confidence endpoints, not exact empirical coverage point estimates."

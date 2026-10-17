@@ -1,0 +1,83 @@
+experience: "ma4502"
+claims:
+  -
+    id: "ma4502:graph-greedy"
+    experience: "ma4502"
+    kind: "knowledge"
+    concepts:
+      - "graph-greedy-matroid-optimization"
+    statement: "Shortest-path prerequisites, encoded-input complexity, cut/cycle MST optimality and matroid exchange/greedy characterization, including the notes' implementation-specific runtime bounds."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma4502-combinatorial-optimization.md"
+        section: "Algorithmic and optimization foundations"
+      -
+        profile: "02_profiles/courses/ma4502-combinatorial-optimization.md"
+        section: "Minimum spanning trees and matroids"
+    limitations:
+      - "Coverage establishes taught technical knowledge, not individual authorship of supplied software or personally performed experiments."
+  -
+    id: "ma4502:network-flows"
+    experience: "ma4502"
+    kind: "knowledge"
+    concepts:
+      - "network-flow-cost-optimality"
+    statement: "Residual max-flow/min-cut, integral flows, Edmonds–Karp/Dinic/push–relabel, feasible b-flow reductions, negative-cycle minimum-cost optimality and minimum-mean-cycle/successive-shortest-path methods."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma4502-combinatorial-optimization.md"
+        section: "Maximum flow"
+      -
+        profile: "02_profiles/courses/ma4502-combinatorial-optimization.md"
+        section: "Minimum-cost flow and circulations"
+    limitations:
+      - "Coverage establishes taught technical knowledge, not individual authorship of supplied software or personally performed experiments."
+  -
+    id: "ma4502:matching-routing"
+    experience: "ma4502"
+    kind: "knowledge"
+    concepts:
+      - "matching-assignment-routing"
+    statement: "Hall/König, augmentation/Hopcroft–Karp, Hungarian dual potentials and weighted reductions, general matching via T-joins, order-preserving matching and Chinese-postman Eulerian augmentation."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma4502-combinatorial-optimization.md"
+        section: "Matching theory"
+      -
+        profile: "02_profiles/courses/ma4502-combinatorial-optimization.md"
+        section: "Applications and model problems"
+    limitations:
+      - "Coverage establishes taught technical knowledge, not individual authorship of supplied software or personally performed experiments."
+  -
+    id: "ma4502:algorithm-code"
+    experience: "ma4502"
+    kind: "knowledge"
+    concepts:
+      - "graph-greedy-matroid-optimization"
+      - "network-flow-cost-optimality"
+      - "matching-assignment-routing"
+    statement: "Python 3 adjacency/custom graph scaffolds and completed references cover six exercise families; all eleven sheet/solution pairs complement the four-chapter theory and its complexity distinctions."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma4502-combinatorial-optimization.md"
+        section: "Algorithms and complexity results"
+      -
+        profile: "02_profiles/courses/ma4502-combinatorial-optimization.md"
+        section: "Computational work and tools"
+      -
+        profile: "02_profiles/courses/ma4502-combinatorial-optimization.md"
+        section: "Exercise and assessment evidence"
+    limitations:
+      - "Coverage establishes taught technical knowledge, not individual authorship of supplied software or personally performed experiments."

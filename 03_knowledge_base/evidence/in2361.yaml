@@ -1,0 +1,208 @@
+experience: "in2361"
+claims:
+  -
+    id: "in2361:text-statistics"
+    experience: "in2361"
+    kind: "knowledge"
+    concepts:
+      - "text-tokenization-language-statistics"
+    statement: "Regex/normalization/BPE and cost-specific edit-distance DP; n-gram estimation/smoothing/backoff, normalized probabilities versus heuristic scores, and entropy/perplexity under appropriate sequence assumptions."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/in2361-natural-language-processing.md"
+        section: "Text representation, regular expressions, and string algorithms"
+      -
+        profile: "02_profiles/courses/in2361-natural-language-processing.md"
+        section: "Probabilistic language modeling and information measures"
+    limitations:
+      - "Coverage establishes taught technical knowledge, not individual authorship of supplied software or personally performed experiments."
+      - "Current slides take precedence over historical-only material; no local programming assignments are supplied."
+  -
+    id: "in2361:classification-evaluation"
+    experience: "in2361"
+    kind: "knowledge"
+    concepts:
+      - "generative-discriminative-classification"
+      - "statistical-risk-model-selection"
+      - "text-tokenization-language-statistics"
+    statement: "Multinomial Naive Bayes versus logistic/softmax prediction, lexical features and cross-entropy regularization; precision/recall/F1/ROC/AUC and paired bootstrap comparison retain aggregation and matched-sample distinctions."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/in2361-natural-language-processing.md"
+        section: "Text classification, estimation, and evaluation"
+    limitations:
+      - "Coverage establishes taught technical knowledge, not individual authorship of supplied software or personally performed experiments."
+      - "Current slides take precedence over historical-only material; no local programming assignments are supplied."
+  -
+    id: "in2361:lexical-representations"
+    experience: "in2361"
+    kind: "knowledge"
+    concepts:
+      - "distributional-lexical-representations"
+      - "matrix-low-rank-pca"
+    statement: "TF–IDF/PMI/count versus SGNS/dense or SVD representations, semantic evaluation/bias; affect axes, SentProp, bootstrapping and prior-smoothed log-odds lexicons."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/in2361-natural-language-processing.md"
+        section: "Distributional semantics and learned word representations"
+      -
+        profile: "02_profiles/courses/in2361-natural-language-processing.md"
+        section: "Affect, connotation, and lexicon induction"
+    limitations:
+      - "Coverage establishes taught technical knowledge, not individual authorship of supplied software or personally performed experiments."
+      - "Current slides take precedence over historical-only material; no local programming assignments are supplied."
+  -
+    id: "in2361:sequence-models"
+    experience: "in2361"
+    kind: "knowledge"
+    concepts:
+      - "neural-sequence-language-models"
+      - "neural-training-data-contracts"
+    statement: "Feedforward/RNN/BPTT/LSTM/GRU and encoder–decoder attention, Transformer QKV/masks/positions, pretraining/LoRA/decoding/KV caching and translation alignment/back-translation/evaluation."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/in2361-natural-language-processing.md"
+        section: "Neural language models and recurrent sequence architectures"
+      -
+        profile: "02_profiles/courses/in2361-natural-language-processing.md"
+        section: "Transformers, pretraining, and generation"
+      -
+        profile: "02_profiles/courses/in2361-natural-language-processing.md"
+        section: "Machine translation"
+    limitations:
+      - "Coverage establishes taught technical knowledge, not individual authorship of supplied software or personally performed experiments."
+      - "Current slides take precedence over historical-only material; no local programming assignments are supplied."
+  -
+    id: "in2361:alignment"
+    experience: "in2361"
+    kind: "knowledge"
+    concepts:
+      - "neural-sequence-language-models"
+      - "policy-optimization-geometry"
+    statement: "Instruction/prompt conditioning differs from training; Bradley–Terry preference modeling, KL/PPO RLHF and reference-adjusted DPO are covered without endorsing the malformed reward/KL formula."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/in2361-natural-language-processing.md"
+        section: "Instruction following, prompting, and preference alignment"
+    limitations:
+      - "Coverage establishes taught technical knowledge, not individual authorship of supplied software or personally performed experiments."
+      - "Current slides take precedence over historical-only material; no local programming assignments are supplied."
+  -
+    id: "in2361:structured-inference"
+    experience: "in2361"
+    kind: "knowledge"
+    concepts:
+      - "structured-sequence-parsing"
+    statement: "HMM sum/max inference, CRF global normalization, CKY/CCG/span parsing, transition and directed-spanning-tree dependency parsing preserve tree/path constraints, exactness and evaluation distinctions."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/in2361-natural-language-processing.md"
+        section: "Sequence labeling and hidden-state inference"
+      -
+        profile: "02_profiles/courses/in2361-natural-language-processing.md"
+        section: "Constituency syntax and chart parsing"
+      -
+        profile: "02_profiles/courses/in2361-natural-language-processing.md"
+        section: "Dependency syntax and structured prediction"
+    limitations:
+      - "Coverage establishes taught technical knowledge, not individual authorship of supplied software or personally performed experiments."
+      - "Current slides take precedence over historical-only material; no local programming assignments are supplied."
+  -
+    id: "in2361:retrieval-dialogue"
+    experience: "in2361"
+    kind: "knowledge"
+    concepts:
+      - "retrieval-grounded-dialogue"
+    statement: "Sparse/BM25/dense/ColBERT/reranking, QA/RAG and ranking versus answer metrics; dialogue discourse, state/slot/policy/NLG architecture and user-evaluation methods."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/in2361-natural-language-processing.md"
+        section: "Information retrieval, question answering, and RAG"
+      -
+        profile: "02_profiles/courses/in2361-natural-language-processing.md"
+        section: "Dialogue and conversational systems"
+    limitations:
+      - "Coverage establishes taught technical knowledge, not individual authorship of supplied software or personally performed experiments."
+      - "Current slides take precedence over historical-only material; no local programming assignments are supplied."
+  -
+    id: "in2361:semantic-extraction"
+    experience: "in2361"
+    kind: "knowledge"
+    concepts:
+      - "semantic-knowledge-extraction"
+    statement: "Model-theoretic/first-order/event/description-logic semantics; supervised, bootstrapped, distant/open relation extraction, Allen/Reichenbach/TimeML temporal models, semantic roles and KL selectional preferences."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/in2361-natural-language-processing.md"
+        section: "Logical meaning representations"
+      -
+        profile: "02_profiles/courses/in2361-natural-language-processing.md"
+        section: "Relation, event, and temporal information extraction"
+      -
+        profile: "02_profiles/courses/in2361-natural-language-processing.md"
+        section: "Semantic roles, frames, and selectional preferences"
+    limitations:
+      - "Coverage establishes taught technical knowledge, not individual authorship of supplied software or personally performed experiments."
+      - "Current slides take precedence over historical-only material; no local programming assignments are supplied."
+  -
+    id: "in2361:entity-discourse"
+    experience: "in2361"
+    kind: "knowledge"
+    concepts:
+      - "entity-discourse-coherence"
+    statement: "Coreference/antecedent marginalization and B-cubed, TAGME/ELQ linking, RST/PDTB/discourse parsing, centering/entity grids and support/attack argument mining."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/in2361-natural-language-processing.md"
+        section: "Coreference, entity linking, and knowledge access"
+      -
+        profile: "02_profiles/courses/in2361-natural-language-processing.md"
+        section: "Discourse coherence and argument structure"
+    limitations:
+      - "Coverage establishes taught technical knowledge, not individual authorship of supplied software or personally performed experiments."
+      - "Current slides take precedence over historical-only material; no local programming assignments are supplied."
+  -
+    id: "in2361:language-resources"
+    experience: "in2361"
+    kind: "knowledge"
+    concepts:
+      - "neural-sequence-language-models"
+      - "semantic-knowledge-extraction"
+    statement: "Named language/semantic resources and historical exam calculations establish conceptual/algorithmic coverage, not a local programming lab or achieved personal model performance."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/in2361-natural-language-processing.md"
+        section: "Computational tools, applications, and evidence limits"
+    limitations:
+      - "Coverage establishes taught technical knowledge, not individual authorship of supplied software or personally performed experiments."
+      - "Current slides take precedence over historical-only material; no local programming assignments are supplied."

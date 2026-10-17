@@ -95,12 +95,12 @@ def main() -> None:
                 or project_table.get("Grade") != row["grade"]
                 or project_table.get("Profile status") != "complete_validated"):
             errors.append(f"{cid}: related project metadata/status mismatch")
-    expected_projects = set(project_profiles.values()) | set(related_projects.values()) | {"02_profiles/projects/scientific_paper.md"}
+    expected_projects = set(project_profiles.values()) | set(related_projects.values()) | {"02_profiles/projects/ngvalidation.md"}
     actual_projects = {str(p.relative_to(ROOT)) for p in (ROOT / "02_profiles/projects").iterdir()
                        if p.is_file()}
     if actual_projects != expected_projects:
         errors.append(f"Project root differs from definitive set: {sorted(actual_projects ^ expected_projects)}")
-    paper = ROOT / "02_profiles/projects/scientific_paper.md"
+    paper = ROOT / "02_profiles/projects/ngvalidation.md"
     if paper.is_file() and not re.search(
         r"^\|\s*Profile status\s*\|\s*complete_validated\s*\|", paper.read_text(), re.M
     ):

@@ -4,8 +4,9 @@ Inventory date: 2026-10-13. Repositories were inspected read-only. Revisions are
 
 | Source | Configured local path | Access | Branch | Revision | Worktree | Origin |
 |---|---|---|---|---|---|---|
+| NGValidation | `/home/pablo/UPM/NGValidation/UPM-NGValidation` | Accessible Git repository | `main` | `746a0a7a4ffa6ebb1b9a4b9b2417b8f9bab38458` | Clean | `https://github.com/pabloyesteb/UPM-NGValidation.git` |
 | Master's thesis | `/home/pablo/TUM/SoSe 26/TFM/contact-rich-control` | Accessible Git repository | `kleff` | `57efc6aa6119cd5ae969ed83fc67efcb40c71672` | Dirty (105 status entries) | `git@code.siemens.com:Autonomous-Systems-Control/students/masterthesis-2026-pablo-yeste-blesa/contact-rich-control.git` |
-| pyLowOrder | `/home/pablo/pyLowOrder` | Accessible Git repository | `140-GNN-implementation` | `f79ad1d67660eb9502c17398aa5c196cda90cc97` | Clean | `https://github.com/ArnauMiro/pyLowOrder.git` |
+| pyLowOrder | `/home/pablo/UPM/pyLowOrder` | Accessible Git repository | `140-GNN-implementation` | `f79ad1d67660eb9502c17398aa5c196cda90cc97` | Clean | `https://github.com/ArnauMiro/pyLowOrder.git` |
 | Case studies | `/home/pablo/TUM/SoSe 25/Case Studies/NLOTrajectories` | Accessible Git repository | `main` | `934956c78c03d5581505a50652b2ab4302e6baa5` | Dirty (6 status entries) | `https://github.com/pyMSE/NLOTrajectories.git` |
 
 The thesis PDF, thesis presentation PDF and LaTeX source, article PDF, previous CV, and case-studies PDF are separately recorded in `files_manifest.csv`.
@@ -15,6 +16,14 @@ The thesis PDF, thesis presentation PDF and LaTeX source, article PDF, previous 
 Definitive project profile completed at `02_profiles/projects/case_studies_optimization.md`, paired with existing course profile under `cit413042`. Original report `/home/pablo/TUM/SoSe 25/Case Studies/Trajectories-4.pdf` is registered as `case_studies_final_report` and hash-identical to the existing local report copy. Repository remains at `934956c78c03d5581505a50652b2ab4302e6baa5`; tracked files clean and the same six untracked status entries retained. Targeted author/diff inspection establishes personal SIREN/metric/benchmark/integration evidence while retaining team attribution. No repository/report content was modified or executed.
 
 ## pyLowOrder contribution checkpoint — 2026-10-14
+
+Path reconciliation (2026-10-15): current checkout is `/home/pablo/UPM/pyLowOrder`, still clean at the same revision/branch. Only operational path references were updated; the contribution analysis, commit evidence and technical conclusions were not repeated or regenerated.
+
+## NGValidation implementation checkpoint — 2026-10-15
+
+The paper and software are one NGValidation project, retaining stable `scientific_paper` and `article_pdf` identifiers. Definitive file renamed to `02_profiles/projects/ngvalidation.md` with paper findings preserved and code/targeted author-diff evidence added. Main snapshot is clean at the revision above; 2023 source chronology is not equated to the 2025 paper's exact experiments. Actual paper PDF is `/home/pablo/UPM/NGValidation/1-s2.0-S0957417425007912-main.pdf` and its SHA-256 matches the earlier source. The requested `00_sources/NGValidation/` location does not exist. No original source/repository was modified or executed.
+
+### Earlier pyLowOrder checkpoint (preserved history)
 
 Subsequent same-day completion: `02_profiles/projects/pyloworder.md` is complete_validated and MA8102 project profiling is complete. The checkpoint paragraph below records the earlier analysis stage; its final-profile deferral is now superseded. Source revision and clean worktree are unchanged.
 

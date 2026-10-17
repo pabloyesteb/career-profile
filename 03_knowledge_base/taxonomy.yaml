@@ -1,0 +1,40 @@
+domains:
+  - 
+    id: "mathematical-analysis"
+    title: "Functional and operator analysis"
+  - 
+    id: "optimization"
+    title: "Mathematical optimization"
+  - 
+    id: "numerical-mathematics"
+    title: "Numerical mathematics"
+  - 
+    id: "probability-statistics-uq"
+    title: "Probability, statistics and uncertainty quantification"
+  - 
+    id: "dynamical-systems"
+    title: "Dynamical systems"
+  - 
+    id: "control-estimation"
+    title: "Control and estimation"
+  - 
+    id: "robotics-planning-geometry"
+    title: "Robotics, planning and geometry"
+  - 
+    id: "machine-learning"
+    title: "Machine learning"
+  - 
+    id: "reinforcement-learning"
+    title: "Reinforcement learning"
+  - 
+    id: "language-vision-cognition"
+    title: "Language, vision and cognition"
+  - 
+    id: "computational-neuroscience"
+    title: "Computational neuroscience"
+  - 
+    id: "aerospace-engineering"
+    title: "Aerospace engineering"
+  - 
+    id: "scientific-software-data-engineering"
+    title: "Scientific software and data engineering"

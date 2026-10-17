@@ -1,0 +1,398 @@
+experiences:
+  -
+    id: "ma3001"
+    title: "Functional Analysis"
+    profiles:
+      -
+        path: "02_profiles/courses/ma3001-functional-analysis.md"
+        category: "accredited_coursework"
+        sha256: "64c8631f8848e9541c74cd7e1f29f6d5abe54769143c6444582df2daeb5bd4fc"
+    facets:
+      - "accredited_coursework"
+    academic_credit: "established"
+    learning_relationship: "completed_academic_course"
+    associated_module: "MA3001"
+    limitations:
+      - "Theoretical course coverage, not personally implemented software."
+  -
+    id: "ma6018"
+    title: "Master's thesis — Robust Contact Rich Control for Manipulation"
+    profiles:
+      -
+        path: "02_profiles/projects/thesis.md"
+        category: "documented_project_work"
+        sha256: "23c477d5975947f2ac8039fe093aa207e2a945c84ca56ebac47cd63dcd3b1b23"
+    facets:
+      - "documented_project_work"
+    academic_credit: "established"
+    learning_relationship: "completed_academic_project"
+    associated_module: "MA6018"
+    project_aliases:
+      - "thesis"
+    limitations:
+      - "Simulation-based frictionless/no-gravity hexagonal assembly; mostly planar offsets."
+      - "Reported results are not independently reproduced under the intended 2.5 mm criterion; saved classification has a known bug."
+      - "Offline planner is inherited; inspection HEAD is not an exact run revision."
+      - "Check disclosure of Siemens-marked details before public reuse."
+  -
+    id: "ma8102"
+    title: "pyLowOrder / MA8102 Internship"
+    profiles:
+      -
+        path: "02_profiles/projects/pyloworder.md"
+        category: "documented_project_work"
+        sha256: "dd23f8de392744deb369b75d5c7f4c7f279b9a3be9331df3f9d9715a46690410"
+    facets:
+      - "documented_project_work"
+    academic_credit: "established"
+    learning_relationship: "completed_academic_project"
+    associated_module: "MA8102"
+    project_aliases:
+      - "pyloworder"
+    limitations:
+      - "Authored contribution scope only; third-party DLR results are separate."
+      - "No verified personal GNS accuracy/speedup or passing-test run is established."
+      - "Git dates are not formal internship dates."
+  -
+    id: "scientific_paper"
+    title: "NGValidation"
+    profiles:
+      -
+        path: "02_profiles/projects/ngvalidation.md"
+        category: "documented_project_work"
+        sha256: "3f8ce760eb8e0f535404ada308ecd23ba5ecf66fbbd7861c5e2df200303876c4"
+    facets:
+      - "documented_project_work"
+    academic_credit: "not_applicable"
+    learning_relationship: "coauthored_research_and_documented_software"
+    project_aliases:
+      - "ngvalidation"
+    limitations:
+      - "2023 code snapshot and 2025 paper are not the same frozen experimental version."
+      - "Team/personal/library contributions differ; industrial data redistribution is not authorized by local fixture access."
+      - "Printed interval intersection differs from code widest-interval selection."
+  -
+    id: "tum-approximate-dynamic-programming"
+    title: "Supplementary Approximate Dynamic Programming and Reinforcement Learning"
+    profiles:
+      -
+        path: "02_profiles/supplementary/approximate_dynamic_programming.md"
+        category: "supplementary_academic_material"
+        sha256: "da12134f5964a0426e60c6e19d7b5ffa4eb6df1fb5f88caeaa75360f445d48bd"
+    facets:
+      - "supplementary_academic_material"
+    academic_credit: "not_established"
+    learning_relationship: "unspecified"
+    source_category: "supplementary_academic_material"
+    limitations:
+      - "Source category is supplementary_academic_material; academic credit and individual learning relationship are not established."
+      - "Supplied exercises/code do not establish personal completion; detailed convergence assumptions remain incomplete."
+  -
+    id: "ma4800"
+    title: "Foundations of Data Analysis"
+    profiles:
+      -
+        path: "02_profiles/courses/ma4800-foundations-of-data-analysis.md"
+        category: "accredited_coursework"
+        sha256: "254356c3233003e703ffefc01e4909017e1d6d0078a386e2638c6de0b8c92362"
+    facets:
+      - "accredited_coursework"
+    academic_credit: "established"
+    learning_relationship: "completed_academic_course"
+    associated_module: "MA4800"
+    limitations:
+      - "Structured exercise/review coverage; no comprehensive lecture script or executable student solutions."
+      - "Referenced datasets/programs are partly absent; older review notes and current sheets do not establish identical teaching editions. Source formula typos are recorded in the profile."
+  -
+    id: "ma3503"
+    title: "Nonlinear Optimization"
+    profiles:
+      -
+        path: "02_profiles/courses/ma3503-nonlinear-optimization.md"
+        category: "accredited_coursework"
+        sha256: "1de04ca34416058f72d3aa68ee9bee30f7d67133830c680a6d7e0b9fcaa3e11c"
+    facets:
+      - "accredited_coursework"
+    academic_credit: "established"
+    learning_relationship: "completed_academic_course"
+    associated_module: "MA3503"
+    limitations:
+      - "Seven exercise/solution pairs only; lecture notes, three referenced Moodle tests and examination absent."
+      - "Analytical algorithm knowledge; no personal programming or solver implementation evidenced."
+  -
+    id: "ma5348"
+    title: "Numerical Methods for Uncertainty Quantification"
+    profiles:
+      -
+        path: "02_profiles/courses/ma5348-numerical-methods-uncertainty-quantification.md"
+        category: "accredited_coursework"
+        sha256: "831f075b001558991e9a347a390f6a909de655b2d1df3e143d8a4bb3dd55834a"
+    facets:
+      - "accredited_coursework"
+    academic_credit: "established"
+    learning_relationship: "completed_academic_course"
+    associated_module: "MA5348"
+    limitations:
+      - "Supplied MATLAB code and numerical experiments are course resources, not established personal authorship or reproduced results."
+      - "Surveyed UQ packages are not established personal tools."
+  -
+    id: "ma6015"
+    title: "Advanced Seminar Course — Multilevel Monte Carlo Methods for UQ"
+    profiles:
+      -
+        path: "02_profiles/courses/ma6015-advanced-seminar-course.md"
+        category: "accredited_coursework"
+        sha256: "0690a75eb8c27696e6bc4ffced23772448ae25914d1dea12e4a75c1211b981cb"
+    facets:
+      - "accredited_coursework"
+    academic_credit: "established"
+    learning_relationship: "completed_academic_course"
+    associated_module: "MA6015"
+    limitations:
+      - "Seven of thirteen listed research topics are locally supported; missing topics P5, P8–P11 and P13 are not reconstructed."
+      - "Named P2 presentation supports personal exposition; other participants' research examples are seminar knowledge, not personal implementation."
+      - "P2 handout rates conflict with its detailed slides; P3 generic complexity labels conflict with P1/P2. Follow the profile's stated resolution."
+      - "No participant numerical solver source or raw experimental data is available."
+  -
+    id: "cit413042"
+    title: "Case Studies Optimization — Trajectory Optimization in Learned Environments"
+    profiles:
+      -
+        path: "02_profiles/courses/cit413042-case-studies-optimization.md"
+        category: "accredited_coursework"
+        sha256: "02fcba7a338de5836fdb295942464f049b3a4f406ef94e5d182fcd9c10f292f7"
+      -
+        path: "02_profiles/projects/case_studies_optimization.md"
+        category: "documented_project_work"
+        sha256: "c845f204aa8e3ec6c518358f71956be2ebc722ff2ddc99089b94a3a687ca8b2d"
+    facets:
+      - "accredited_coursework"
+      - "documented_project_work"
+    academic_credit: "established"
+    learning_relationship: "completed_academic_project"
+    associated_module: "CIT413042"
+    project_aliases:
+      - "case_studies_optimization"
+    limitations:
+      - "One academic experience with two complementary profiles; do not duplicate credit or achievements."
+      - "Five-person team methods/results are distinct from the user's attributable SIREN, Hausdorff, model-selection/logging and integration contributions."
+      - "Report/code geometry, initialization, sampling and second-order car-model discrepancies limit safety/reproduction claims; no hardware, real-time or continuous collision certification."
+      - "Inspected revision 934956c78c03d5581505a50652b2ab4302e6baa5 does not freeze untracked report/presentation/results; no experiments/tests rerun."
+  -
+    id: "in2138"
+    title: "Robot Motion Planning"
+    profiles:
+      -
+        path: "02_profiles/courses/in2138-robot-motion-planning.md"
+        category: "accredited_coursework"
+        sha256: "06fc088de21cbd8cbf3d27965f9f39e85490da585ff70dfedc1cca8312c7317c"
+    facets:
+      - "accredited_coursework"
+    academic_credit: "established"
+    learning_relationship: "completed_academic_course"
+    associated_module: "IN2138"
+    limitations:
+      - "Limited to the official Summer Semester 2024 syllabus; attendance term and identical delivery across editions are not established."
+      - "No local course archive, submitted assignments, executable programs, languages or personally implemented planning/filtering/SLAM methods are documented."
+      - "The syllabus names methods but supplies no detailed equations, algorithm guarantees or complete filter assumptions."
+  -
+    id: "tum-advanced-control"
+    title: "Supplementary Advanced Control (MW1420)"
+    profiles:
+      -
+        path: "02_profiles/supplementary/advanced_control.md"
+        category: "supplementary_academic_material"
+        sha256: "345841141e875dacf2536f4a0dff8bde817123415393c7b477c572ac1adada29"
+    facets:
+      - "supplementary_academic_material"
+    academic_credit: "not_established"
+    learning_relationship: "unspecified"
+    source_category: "supplementary_academic_material"
+    limitations:
+      - "Selective topic map and representative technical resources, not accredited completion or personal MATLAB/Simulink implementation."
+      - "Exact LQR, decoupling/invariant-zero and nonlinear zero-dynamics formulas/hypotheses are unavailable at this profile's depth; auxiliary/nested files and videos were not exhaustively extracted."
+  -
+    id: "mgt001299"
+    title: "Introduction to Deep Reinforcement Learning"
+    profiles:
+      -
+        path: "02_profiles/courses/mgt001299-introduction-to-deep-reinforcement-learning.md"
+        category: "accredited_coursework"
+        sha256: "8022c4222c0c8a1fa8347a78ba98e5e8589ade95a207ef7873daea24f1b7836c"
+    facets:
+      - "accredited_coursework"
+    academic_credit: "established"
+    learning_relationship: "completed_academic_course"
+    associated_module: "MGT001299"
+    limitations:
+      - "Supplied teaching code/application cases do not establish personal submissions, achieved rewards, trading outcomes or deployments."
+      - "Convergence conditions are qualified; bank target leakage, negative-Q selection, ignored Gymnasium truncation and specialized PPO buffers limit reuse."
+      - "WS2025/26 material reuses older versions and mixes Gym/TensorFlow with Gymnasium/Keras updates; no workloads executed."
+  -
+    id: "ei7263"
+    title: "Biologically-Inspired Learning for Humanoid Robots"
+    profiles:
+      -
+        path: "02_profiles/courses/ei7263-biologically-inspired-learning-humanoid-robots.md"
+        category: "accredited_coursework"
+        sha256: "8fa6746e48ce35546422fe181a002a238616ae2422c872765455b0429cbb91f3"
+    facets:
+      - "accredited_coursework"
+    academic_credit: "established"
+    learning_relationship: "completed_academic_course"
+    associated_module: "EI7263"
+    limitations:
+      - "Named presentation supports personal exposition; Team E comparison supports collaborative analysis, not individual authorship of all robot/ML/RL code."
+      - "Available lectures 1–7/tutorials 1–5 and the supplied presentation define scope; offered paper collections/dissertation and advertised extra sessions are not fully delivered/read content."
+      - "CMAC conventions, RL-DT incomplete sweep, missing modules, normalization/model paths and mixed AiNex/NAO/date labels qualify implementation; no robots/models/code executed."
+  -
+    id: "tum-dynamical-systems"
+    title: "Supplementary Dynamical Systems (MA3081)"
+    profiles:
+      -
+        path: "02_profiles/supplementary/dynamical_systems.md"
+        category: "supplementary_academic_material"
+        sha256: "0ee089d8408d9d47f7f4e513657c4bd64d0a78c45b31ef8c08a89901a0cbf60e"
+    facets:
+      - "supplementary_academic_material"
+    academic_credit: "not_established"
+    learning_relationship: "unspecified"
+    source_category: "supplementary_academic_material"
+    limitations:
+      - "Selective 23-section topic map and representative exercises, not accredited completion or personal computation."
+      - "Exact hyperbolicity/smoothness/nondegeneracy, Melnikov and ergodic/entropy hypotheses absent upstream are not reconstructed."
+  -
+    id: "tum-mobile-robotics"
+    title: "Supplementary Mobile Robotics (IN2404)"
+    profiles:
+      -
+        path: "02_profiles/supplementary/mobile_robotics.md"
+        category: "supplementary_academic_material"
+        sha256: "5bf73626234d2adecdcf32cca69faaa730bdb2cf3130a3a8678d9c2e27291e55"
+    facets:
+      - "supplementary_academic_material"
+    academic_credit: "not_established"
+    learning_relationship: "unspecified"
+    source_category: "supplementary_academic_material"
+    limitations:
+      - "Separate supplementary source from accredited IN2138; individual relationship unspecified, no personal exercise implementation or results."
+      - "Selective 13-lecture map; exact Jacobian/perturbation/filter/mapping/QP/rewiring contracts unavailable at profile depth remain limited."
+      - "Historical/duplicate decks, recordings and byte-identical exercise/solution material do not establish separate experiences; no code/videos/experiments executed."
+  -
+    id: "ma4802"
+    title: "Statistical Learning"
+    profiles:
+      -
+        path: "02_profiles/courses/ma4802-statistical-learning.md"
+        category: "accredited_coursework"
+        sha256: "7b833c3bd914ecb74f94acf1786020493a0b4ab3e1ba0359617bb0bab12f1e59"
+    facets:
+      - "accredited_coursework"
+    academic_credit: "established"
+    learning_relationship: "completed_academic_course"
+    associated_module: "MA4802"
+    limitations:
+      - "Completed accredited coursework; teaching code does not establish personally authored implementations."
+  -
+    id: "cit4230003"
+    title: "Advanced Machine Learning: Deep Generative Models"
+    profiles:
+      -
+        path: "02_profiles/courses/cit4230003-advanced-machine-learning-deep-generative-models.md"
+        category: "accredited_coursework"
+        sha256: "90a4fb79c0a7200faf103953e58bf841d178f41fe8973f1b063ef234ca1cefa3"
+    facets:
+      - "accredited_coursework"
+    academic_credit: "established"
+    learning_relationship: "completed_academic_course"
+    associated_module: "CIT4230003"
+    limitations:
+      - "Completed accredited coursework; teaching code does not establish personally authored implementations."
+  -
+    id: "additional-foml"
+    title: "Fundamentals of Optimization for Machine Learning"
+    profiles:
+      -
+        path: "02_profiles/courses/additional-foml-fundamentals-of-optimization-for-machine-learning.md"
+        category: "accredited_coursework"
+        sha256: "d43781e4b0889bf6061ffc91f333ccac5d73bafd75834b10cb7467baaae73da4"
+    facets:
+      - "accredited_coursework"
+    academic_credit: "established"
+    learning_relationship: "completed_academic_course"
+    limitations:
+      - "Confirmed transcript/archive association; no official module code established. Imported MIT/MLSS/PKU slides need not coincide completely with the TUM delivery."
+  -
+    id: "tum-machine-learning-optimization"
+    title: "Supplementary Machine Learning and Optimization"
+    profiles:
+      -
+        path: "02_profiles/supplementary/machine_learning.md"
+        category: "supplementary_academic_material"
+        sha256: "e3cdd4a6ac4f4f1980da233506b62d613e04e0e2293b775b2dcb27498941095a"
+    facets:
+      - "supplementary_academic_material"
+    academic_credit: "not_established"
+    learning_relationship: "unspecified"
+    source_category: "supplementary_academic_material"
+    limitations:
+      - "Supplementary material; unspecified learning relationship and no established academic credit."
+  -
+    id: "ma4502"
+    title: "Combinatorial Optimization"
+    profiles:
+      -
+        path: "02_profiles/courses/ma4502-combinatorial-optimization.md"
+        category: "accredited_coursework"
+        sha256: "652760b1a2a07616a35811d5386ef2f77f790f7697b2d0dbd8b3dce2b85e01bd"
+    facets:
+      - "accredited_coursework"
+    academic_credit: "established"
+    learning_relationship: "completed_academic_course"
+    associated_module: "MA4502"
+    limitations:
+      - "Lecture/exercise and Python scaffold/reference coverage; no individually completed implementation or benchmark is inferred. Numeric-supply complexity is distinguished from encoded-input complexity."
+  -
+    id: "in2361"
+    title: "Natural Language Processing"
+    profiles:
+      -
+        path: "02_profiles/courses/in2361-natural-language-processing.md"
+        category: "accredited_coursework"
+        sha256: "4cd76c3131b5a52b4258b7e795f9dcab44542a7f1c0bbca02e4f9cbdfa483d0d"
+    facets:
+      - "accredited_coursework"
+    academic_credit: "established"
+    learning_relationship: "completed_academic_course"
+    associated_module: "IN2361"
+    limitations:
+      - "24 current decks establish content; numbering gaps/historical versions and malformed RLHF/CRF displays remain qualified. No local implementation evidence."
+  -
+    id: "ei7646"
+    title: "Computational Neuroscience"
+    profiles:
+      -
+        path: "02_profiles/courses/ei7646-computational-neuroscience.md"
+        category: "accredited_coursework"
+        sha256: "85c1429a3c1dab625692537f65473ba5fc0ef87f8700d3d47d7411ec3e560e1f"
+    facets:
+      - "accredited_coursework"
+    academic_credit: "established"
+    learning_relationship: "completed_academic_course"
+    associated_module: "EI7646"
+    limitations:
+      - "Conceptual/experimental-methods teaching, not personal fabrication/clinical/recording work. Missing blackboard derivation, untranscribed videos and a plasticity bound typo remain source limits."
+  -
+    id: "additional-cognitive-systems"
+    title: "Technical Cognitive Systems"
+    profiles:
+      -
+        path: "02_profiles/courses/additional-cognitive-systems-technical-cognitive-systems.md"
+        category: "accredited_coursework"
+        sha256: "98fa75e5e4a3fd285d740de63dbba561c20cb159490a180ab076a594befdac64"
+    facets:
+      - "accredited_coursework"
+    academic_credit: "established"
+    learning_relationship: "completed_academic_course"
+    limitations:
+      - "Additional-credit transcript course; user-confirmed archive association. No official transcript code; source IN2222 is not promoted to one. Mixed teaching versions and missing referenced notebooks/NRP packages limit runnable reconstruction."

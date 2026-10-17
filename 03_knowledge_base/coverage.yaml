@@ -1,0 +1,3443 @@
+profiles:
+  -
+    profile: "02_profiles/courses/ma4502-combinatorial-optimization.md"
+    sha256: "652760b1a2a07616a35811d5386ef2f77f790f7697b2d0dbd8b3dce2b85e01bd"
+    status: "reviewed"
+    sections:
+      -
+        section: "Module metadata"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Source identity, academic metadata or attribution context retained in the experience registry and claim boundaries."
+      -
+        section: "Evidence base and material structure"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Material organization, thematic navigation or repeated summary; substantive technical content is represented in the mapped sections."
+      -
+        section: "Technical content"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Organizational parent; technical knowledge is mapped under its named subsections."
+      -
+        section: "Algorithmic and optimization foundations"
+        disposition: "mapped"
+        concepts:
+          - "graph-greedy-matroid-optimization"
+        evidence_refs:
+          - "ma4502:graph-greedy"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Minimum spanning trees and matroids"
+        disposition: "mapped"
+        concepts:
+          - "graph-greedy-matroid-optimization"
+        evidence_refs:
+          - "ma4502:graph-greedy"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Maximum flow"
+        disposition: "mapped"
+        concepts:
+          - "network-flow-cost-optimality"
+        evidence_refs:
+          - "ma4502:network-flows"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Minimum-cost flow and circulations"
+        disposition: "mapped"
+        concepts:
+          - "network-flow-cost-optimality"
+        evidence_refs:
+          - "ma4502:network-flows"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Matching theory"
+        disposition: "mapped"
+        concepts:
+          - "matching-assignment-routing"
+        evidence_refs:
+          - "ma4502:matching-routing"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Algorithms and complexity results"
+        disposition: "mapped"
+        concepts:
+          - "graph-greedy-matroid-optimization"
+          - "matching-assignment-routing"
+          - "network-flow-cost-optimality"
+        evidence_refs:
+          - "ma4502:algorithm-code"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Computational work and tools"
+        disposition: "mapped"
+        concepts:
+          - "graph-greedy-matroid-optimization"
+          - "matching-assignment-routing"
+          - "network-flow-cost-optimality"
+        evidence_refs:
+          - "ma4502:algorithm-code"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Applications and model problems"
+        disposition: "mapped"
+        concepts:
+          - "matching-assignment-routing"
+        evidence_refs:
+          - "ma4502:matching-routing"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Exercise and assessment evidence"
+        disposition: "mapped"
+        concepts:
+          - "graph-greedy-matroid-optimization"
+          - "matching-assignment-routing"
+          - "network-flow-cost-optimality"
+        evidence_refs:
+          - "ma4502:algorithm-code"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Thematic categories"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Material organization, thematic navigation or repeated summary; substantive technical content is represented in the mapped sections."
+      -
+        section: "Coverage validation"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Source/coverage qualifications retained in concept text, registry and claim limitations; no unsupported missing formula or experiment is reconstructed."
+      -
+        section: "Sources"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Source/coverage qualifications retained in concept text, registry and claim limitations; no unsupported missing formula or experiment is reconstructed."
+  -
+    profile: "02_profiles/courses/in2361-natural-language-processing.md"
+    sha256: "4cd76c3131b5a52b4258b7e795f9dcab44542a7f1c0bbca02e4f9cbdfa483d0d"
+    status: "reviewed"
+    sections:
+      -
+        section: "Module metadata and identity"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Source identity, academic metadata or attribution context retained in the experience registry and claim boundaries."
+      -
+        section: "Evidence base and material structure"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Material organization, thematic navigation or repeated summary; substantive technical content is represented in the mapped sections."
+      -
+        section: "Technical content"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Organizational parent; technical knowledge is mapped under its named subsections."
+      -
+        section: "Text representation, regular expressions, and string algorithms"
+        disposition: "mapped"
+        concepts:
+          - "text-tokenization-language-statistics"
+        evidence_refs:
+          - "in2361:text-statistics"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Probabilistic language modeling and information measures"
+        disposition: "mapped"
+        concepts:
+          - "text-tokenization-language-statistics"
+        evidence_refs:
+          - "in2361:text-statistics"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Text classification, estimation, and evaluation"
+        disposition: "mapped"
+        concepts:
+          - "generative-discriminative-classification"
+          - "statistical-risk-model-selection"
+          - "text-tokenization-language-statistics"
+        evidence_refs:
+          - "in2361:classification-evaluation"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Distributional semantics and learned word representations"
+        disposition: "mapped"
+        concepts:
+          - "distributional-lexical-representations"
+          - "matrix-low-rank-pca"
+        evidence_refs:
+          - "in2361:lexical-representations"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Neural language models and recurrent sequence architectures"
+        disposition: "mapped"
+        concepts:
+          - "neural-sequence-language-models"
+          - "neural-training-data-contracts"
+        evidence_refs:
+          - "in2361:sequence-models"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Transformers, pretraining, and generation"
+        disposition: "mapped"
+        concepts:
+          - "neural-sequence-language-models"
+          - "neural-training-data-contracts"
+        evidence_refs:
+          - "in2361:sequence-models"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Instruction following, prompting, and preference alignment"
+        disposition: "mapped"
+        concepts:
+          - "neural-sequence-language-models"
+          - "policy-optimization-geometry"
+        evidence_refs:
+          - "in2361:alignment"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Machine translation"
+        disposition: "mapped"
+        concepts:
+          - "neural-sequence-language-models"
+          - "neural-training-data-contracts"
+        evidence_refs:
+          - "in2361:sequence-models"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Information retrieval, question answering, and RAG"
+        disposition: "mapped"
+        concepts:
+          - "retrieval-grounded-dialogue"
+        evidence_refs:
+          - "in2361:retrieval-dialogue"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Dialogue and conversational systems"
+        disposition: "mapped"
+        concepts:
+          - "retrieval-grounded-dialogue"
+        evidence_refs:
+          - "in2361:retrieval-dialogue"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Sequence labeling and hidden-state inference"
+        disposition: "mapped"
+        concepts:
+          - "structured-sequence-parsing"
+        evidence_refs:
+          - "in2361:structured-inference"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Constituency syntax and chart parsing"
+        disposition: "mapped"
+        concepts:
+          - "structured-sequence-parsing"
+        evidence_refs:
+          - "in2361:structured-inference"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Dependency syntax and structured prediction"
+        disposition: "mapped"
+        concepts:
+          - "structured-sequence-parsing"
+        evidence_refs:
+          - "in2361:structured-inference"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Logical meaning representations"
+        disposition: "mapped"
+        concepts:
+          - "semantic-knowledge-extraction"
+        evidence_refs:
+          - "in2361:semantic-extraction"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Relation, event, and temporal information extraction"
+        disposition: "mapped"
+        concepts:
+          - "semantic-knowledge-extraction"
+        evidence_refs:
+          - "in2361:semantic-extraction"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Semantic roles, frames, and selectional preferences"
+        disposition: "mapped"
+        concepts:
+          - "semantic-knowledge-extraction"
+        evidence_refs:
+          - "in2361:semantic-extraction"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Affect, connotation, and lexicon induction"
+        disposition: "mapped"
+        concepts:
+          - "distributional-lexical-representations"
+          - "matrix-low-rank-pca"
+        evidence_refs:
+          - "in2361:lexical-representations"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Coreference, entity linking, and knowledge access"
+        disposition: "mapped"
+        concepts:
+          - "entity-discourse-coherence"
+        evidence_refs:
+          - "in2361:entity-discourse"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Discourse coherence and argument structure"
+        disposition: "mapped"
+        concepts:
+          - "entity-discourse-coherence"
+        evidence_refs:
+          - "in2361:entity-discourse"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Computational tools, applications, and evidence limits"
+        disposition: "mapped"
+        concepts:
+          - "neural-sequence-language-models"
+          - "semantic-knowledge-extraction"
+        evidence_refs:
+          - "in2361:language-resources"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Coverage validation and source limitations"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Source review and limitation context, not an additional implemented method."
+      -
+        section: "Thematic categories"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Material organization, thematic navigation or repeated summary; substantive technical content is represented in the mapped sections."
+      -
+        section: "Source register"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Source/coverage qualifications retained in concept text, registry and claim limitations; no unsupported missing formula or experiment is reconstructed."
+  -
+    profile: "02_profiles/courses/ei7646-computational-neuroscience.md"
+    sha256: "85c1429a3c1dab625692537f65473ba5fc0ef87f8700d3d47d7411ec3e560e1f"
+    status: "reviewed"
+    sections:
+      -
+        section: "Academic identity and evidence scope"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Source identity, academic metadata or attribution context retained in the experience registry and claim boundaries."
+      -
+        section: "Technical knowledge"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Organizational parent; every scientific topic block is mapped separately."
+      -
+        section: "Modeling levels, neural representations, and spatial decoding"
+        disposition: "mapped"
+        concepts:
+          - "information-coding-sensory-inference"
+        evidence_refs:
+          - "ei7646:coding-decoding"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Anatomical and cellular foundations"
+        disposition: "mapped"
+        concepts:
+          - "spiking-neuron-plasticity"
+        evidence_refs:
+          - "ei7646:cellular-models"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Information theory, efficient coding, and active sensing"
+        disposition: "mapped"
+        concepts:
+          - "information-coding-sensory-inference"
+        evidence_refs:
+          - "ei7646:coding-decoding"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Development, Hebbian learning, and synaptic plasticity"
+        disposition: "mapped"
+        concepts:
+          - "spiking-neuron-plasticity"
+        evidence_refs:
+          - "ei7646:plasticity"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Probabilistic perception and sensorimotor inference"
+        disposition: "mapped"
+        concepts:
+          - "biological-motor-action-models"
+          - "information-coding-sensory-inference"
+        evidence_refs:
+          - "ei7646:probabilistic-perception"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Bioelectronic interfaces and cell–chip communication"
+        disposition: "mapped"
+        concepts:
+          - "bioelectronic-neural-interfaces"
+        evidence_refs:
+          - "ei7646:cell-chip"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Neuroprostheses and neural stimulation"
+        disposition: "mapped"
+        concepts:
+          - "bioelectronic-neural-interfaces"
+        evidence_refs:
+          - "ei7646:stimulation"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Cochlear implant coding and auditory-nerve models"
+        disposition: "mapped"
+        concepts:
+          - "bioelectronic-neural-interfaces"
+        evidence_refs:
+          - "ei7646:auditory-prostheses"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Systems electrophysiology, attractor dynamics, and memory"
+        disposition: "mapped"
+        concepts:
+          - "population-dynamics-neural-memory"
+        evidence_refs:
+          - "ei7646:population-memory"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Tools, applications, and thematic categories"
+        disposition: "mapped"
+        concepts:
+          - "bioelectronic-neural-interfaces"
+          - "population-dynamics-neural-memory"
+        evidence_refs:
+          - "ei7646:experimental-tools"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Source register and validation"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Source/coverage qualifications retained in concept text, registry and claim limitations; no unsupported missing formula or experiment is reconstructed."
+  -
+    profile: "02_profiles/courses/additional-cognitive-systems-technical-cognitive-systems.md"
+    sha256: "98fa75e5e4a3fd285d740de63dbba561c20cb159490a180ab076a594befdac64"
+    status: "reviewed"
+    sections:
+      -
+        section: "Module metadata and identity"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Source identity, academic metadata or attribution context retained in the experience registry and claim boundaries."
+      -
+        section: "Evidence base and material structure"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Material organization, thematic navigation or repeated summary; substantive technical content is represented in the mapped sections."
+      -
+        section: "Technical content"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Organizational parent; technical knowledge is mapped under its named subsections."
+      -
+        section: "Cognitive systems, representation, and modeling paradigms"
+        disposition: "mapped"
+        concepts:
+          - "cognitive-architectures-binding"
+        evidence_refs:
+          - "additional-cognitive-systems:cognitive-architectures"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Brain organization, experimental evidence, and neuron models"
+        disposition: "mapped"
+        concepts:
+          - "spiking-neuron-plasticity"
+        evidence_refs:
+          - "additional-cognitive-systems:spiking-models"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Neural coding, simulation, plasticity, and neuromorphic computation"
+        disposition: "mapped"
+        concepts:
+          - "information-coding-sensory-inference"
+          - "matrix-low-rank-pca"
+          - "spiking-neuron-plasticity"
+        evidence_refs:
+          - "additional-cognitive-systems:plasticity-simulation"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Statistical learning, generalization, and feature representations"
+        disposition: "mapped"
+        concepts:
+          - "ensemble-margin-kernel-methods"
+          - "neural-training-data-contracts"
+          - "regularized-linear-inference"
+          - "statistical-risk-model-selection"
+        evidence_refs:
+          - "additional-cognitive-systems:statistical-examples"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Deep feature learning, convolutional networks, and binding"
+        disposition: "mapped"
+        concepts:
+          - "cognitive-architectures-binding"
+          - "neural-training-data-contracts"
+        evidence_refs:
+          - "additional-cognitive-systems:feature-binding"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Reinforcement learning and neural Q approximation"
+        disposition: "mapped"
+        concepts:
+          - "bellman-policy-evaluation"
+          - "deep-value-learning"
+          - "temporal-difference-learning"
+        evidence_refs:
+          - "additional-cognitive-systems:rl-teaching"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Embodied neurorobotics and central pattern generators"
+        disposition: "mapped"
+        concepts:
+          - "biological-motor-action-models"
+          - "robot-perception-control-interfaces"
+        evidence_refs:
+          - "additional-cognitive-systems:embodied-platform"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Cognitive architectures and ACT-R"
+        disposition: "mapped"
+        concepts:
+          - "cognitive-architectures-binding"
+        evidence_refs:
+          - "additional-cognitive-systems:cognitive-architectures"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Language models, evaluation, quantization, and retrieval augmentation"
+        disposition: "mapped"
+        concepts:
+          - "neural-sequence-language-models"
+          - "retrieval-grounded-dialogue"
+        evidence_refs:
+          - "additional-cognitive-systems:language-evaluation"
+          - "additional-cognitive-systems:retrieval-workflow"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Guest lecture: neural code and dynamic-link representations"
+        disposition: "mapped"
+        concepts:
+          - "cognitive-architectures-binding"
+        evidence_refs:
+          - "additional-cognitive-systems:dynamic-binding"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Tools, applications, and thematic categories"
+        disposition: "mapped"
+        concepts:
+          - "neural-sequence-language-models"
+          - "robot-perception-control-interfaces"
+          - "spiking-neuron-plasticity"
+        evidence_refs:
+          - "additional-cognitive-systems:computational-scope"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Source register"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Source/coverage qualifications retained in concept text, registry and claim limitations; no unsupported missing formula or experiment is reconstructed."
+      -
+        section: "Coverage validation and limitations"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Source/coverage qualifications retained in concept text, registry and claim limitations; no unsupported missing formula or experiment is reconstructed."
+  -
+    profile: "02_profiles/courses/ma4802-statistical-learning.md"
+    sha256: "7b833c3bd914ecb74f94acf1786020493a0b4ab3e1ba0359617bb0bab12f1e59"
+    status: "reviewed"
+    sections:
+      -
+        section: "Module metadata"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Academic identity/provenance retained in the experience registry; no additional technical claim."
+      -
+        section: "Evidence base and material structure"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Material organization, source index or category/navigation context; substantive technical sections mapped separately."
+      -
+        section: "Technical content"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Organizational parent; technical content is mapped in its named subsections."
+      -
+        section: "Statistical decision theory and generalization"
+        disposition: "mapped"
+        concepts:
+          - "statistical-risk-model-selection"
+        evidence_refs:
+          - "ma4802:risk-selection"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Linear inference, shrinkage, and sparse high-dimensional regression"
+        disposition: "mapped"
+        concepts:
+          - "proximal-block-optimization"
+          - "regularized-linear-inference"
+        evidence_refs:
+          - "ma4802:linear-inference"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Model selection, validation, and statistical comparison"
+        disposition: "mapped"
+        concepts:
+          - "statistical-risk-model-selection"
+        evidence_refs:
+          - "ma4802:risk-selection"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Generative and discriminative classification"
+        disposition: "mapped"
+        concepts:
+          - "first-order-stochastic-optimization"
+          - "generative-discriminative-classification"
+        evidence_refs:
+          - "ma4802:classification"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Trees, random forests, boosting, and margin methods"
+        disposition: "mapped"
+        concepts:
+          - "ensemble-margin-kernel-methods"
+        evidence_refs:
+          - "ma4802:ensembles-margins"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Perceptrons, multilayer networks, and convolutional learning"
+        disposition: "mapped"
+        concepts:
+          - "neural-training-data-contracts"
+        evidence_refs:
+          - "ma4802:neural-architectures"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Transformers and introductory foundation-model applications"
+        disposition: "mapped"
+        concepts:
+          - "neural-training-data-contracts"
+        evidence_refs:
+          - "ma4802:neural-architectures"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Latent mixture models, EM, and clustering"
+        disposition: "mapped"
+        concepts:
+          - "mixtures-latent-inference"
+        evidence_refs:
+          - "ma4802:mixtures"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Factor analysis, PCA, and independent component analysis"
+        disposition: "mapped"
+        concepts:
+          - "latent-factors-independent-components"
+          - "matrix-low-rank-pca"
+        evidence_refs:
+          - "ma4802:latent-factors"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Autoencoders and deep generative representation learning"
+        disposition: "mapped"
+        concepts:
+          - "invertible-generative-flows"
+          - "minimax-adversarial-learning"
+          - "variational-generative-inference"
+        evidence_refs:
+          - "ma4802:generative-representations"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Graphical models and causal reasoning"
+        disposition: "mapped"
+        concepts:
+          - "causal-graphical-models"
+        evidence_refs:
+          - "ma4802:causal-models"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Computational work and tools"
+        disposition: "mapped"
+        concepts:
+          - "neural-training-data-contracts"
+          - "statistical-risk-model-selection"
+        evidence_refs:
+          - "ma4802:teaching-tools"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Thematic categories"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Material organization, source index or category/navigation context; substantive technical sections mapped separately."
+      -
+        section: "Coverage validation"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Source/validation qualifications retained in registry, concept text and claim limitations; not an independent technical achievement."
+      -
+        section: "Source limitations and unresolved issues"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Source/validation qualifications retained in registry, concept text and claim limitations; not an independent technical achievement."
+      -
+        section: "Sources"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Material organization, source index or category/navigation context; substantive technical sections mapped separately."
+  -
+    profile: "02_profiles/courses/cit4230003-advanced-machine-learning-deep-generative-models.md"
+    sha256: "90a4fb79c0a7200faf103953e58bf841d178f41fe8973f1b063ef234ca1cefa3"
+    status: "reviewed"
+    sections:
+      -
+        section: "Module metadata"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Academic identity/provenance retained in the experience registry; no additional technical claim."
+      -
+        section: "Evidence base and material structure"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Material organization, source index or category/navigation context; substantive technical sections mapped separately."
+      -
+        section: "Technical content"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Organizational parent; technical content is mapped in its named subsections."
+      -
+        section: "Generative-model formulation and design criteria"
+        disposition: "mapped"
+        concepts:
+          - "mixtures-latent-inference"
+          - "variational-generative-inference"
+        evidence_refs:
+          - "cit4230003:variational-inference"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Normalizing flows"
+        disposition: "mapped"
+        concepts:
+          - "invertible-generative-flows"
+        evidence_refs:
+          - "cit4230003:flows"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Latent-variable models and variational inference"
+        disposition: "mapped"
+        concepts:
+          - "mixtures-latent-inference"
+          - "variational-generative-inference"
+        evidence_refs:
+          - "cit4230003:variational-inference"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Variational autoencoders"
+        disposition: "mapped"
+        concepts:
+          - "variational-generative-inference"
+        evidence_refs:
+          - "cit4230003:vae"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Likelihood-free learning and generative adversarial networks"
+        disposition: "mapped"
+        concepts:
+          - "minimax-adversarial-learning"
+        evidence_refs:
+          - "cit4230003:adversarial"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Denoising diffusion and score-based models"
+        disposition: "mapped"
+        concepts:
+          - "diffusion-score-probability-flows"
+        evidence_refs:
+          - "cit4230003:diffusion"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Conditional flow matching and continuous normalizing flows"
+        disposition: "mapped"
+        concepts:
+          - "invertible-generative-flows"
+        evidence_refs:
+          - "cit4230003:continuous-flows"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Algorithms and numerical methods"
+        disposition: "mapped"
+        concepts:
+          - "diffusion-score-probability-flows"
+          - "invertible-generative-flows"
+          - "variational-generative-inference"
+        evidence_refs:
+          - "cit4230003:generative-teaching"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Computational work and tools"
+        disposition: "mapped"
+        concepts:
+          - "diffusion-score-probability-flows"
+          - "invertible-generative-flows"
+          - "variational-generative-inference"
+        evidence_refs:
+          - "cit4230003:generative-teaching"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Applications and model problems"
+        disposition: "mapped"
+        concepts:
+          - "diffusion-score-probability-flows"
+          - "invertible-generative-flows"
+          - "variational-generative-inference"
+        evidence_refs:
+          - "cit4230003:generative-teaching"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Exercise, project, and assessment evidence"
+        disposition: "mapped"
+        concepts:
+          - "diffusion-score-probability-flows"
+          - "invertible-generative-flows"
+          - "variational-generative-inference"
+        evidence_refs:
+          - "cit4230003:generative-teaching"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Thematic categories"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Material organization, source index or category/navigation context; substantive technical sections mapped separately."
+      -
+        section: "Coverage validation"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Source/validation qualifications retained in registry, concept text and claim limitations; not an independent technical achievement."
+      -
+        section: "Sources"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Material organization, source index or category/navigation context; substantive technical sections mapped separately."
+  -
+    profile: "02_profiles/courses/additional-foml-fundamentals-of-optimization-for-machine-learning.md"
+    sha256: "d43781e4b0889bf6061ffc91f333ccac5d73bafd75834b10cb7467baaae73da4"
+    status: "reviewed"
+    sections:
+      -
+        section: "Module metadata"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Academic identity/provenance retained in the experience registry; no additional technical claim."
+      -
+        section: "Evidence base and material structure"
+        disposition: "mapped"
+        concepts:
+          - "first-order-stochastic-optimization"
+          - "nonconvex-geometric-optimization"
+        evidence_refs:
+          - "additional-foml:source-scope"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Technical content"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Organizational parent; technical content is mapped in its named subsections."
+      -
+        section: "Convex analysis and mathematical foundations"
+        disposition: "mapped"
+        concepts:
+          - "constrained-nonlinear-optimization"
+          - "convex-conjugacy-sparse-optimization"
+        evidence_refs:
+          - "additional-foml:convex-foundations"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Convex problem classes, duality, and optimality"
+        disposition: "mapped"
+        concepts:
+          - "constrained-nonlinear-optimization"
+          - "convex-conjugacy-sparse-optimization"
+        evidence_refs:
+          - "additional-foml:convex-foundations"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Nonconvex optimality and structured nonconvex problems"
+        disposition: "mapped"
+        concepts:
+          - "nonconvex-geometric-optimization"
+        evidence_refs:
+          - "additional-foml:nonconvex-geometry"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Gradient, subgradient, and stochastic methods"
+        disposition: "mapped"
+        concepts:
+          - "first-order-stochastic-optimization"
+        evidence_refs:
+          - "additional-foml:first-order"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Constrained, composite, coordinate, and majorization methods"
+        disposition: "mapped"
+        concepts:
+          - "mixtures-latent-inference"
+          - "proximal-block-optimization"
+        evidence_refs:
+          - "additional-foml:composite-methods"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Gradient flow, sampling, and optimization over probability measures"
+        disposition: "mapped"
+        concepts:
+          - "diffusion-score-probability-flows"
+        evidence_refs:
+          - "additional-foml:probability-geometry"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Convex–concave and nonconvex minimax optimization"
+        disposition: "mapped"
+        concepts:
+          - "minimax-adversarial-learning"
+        evidence_refs:
+          - "additional-foml:minimax"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Riemannian and geodesic optimization"
+        disposition: "mapped"
+        concepts:
+          - "nonconvex-geometric-optimization"
+        evidence_refs:
+          - "additional-foml:nonconvex-geometry"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Neural-network optimization"
+        disposition: "mapped"
+        concepts:
+          - "first-order-stochastic-optimization"
+          - "neural-training-data-contracts"
+        evidence_refs:
+          - "additional-foml:network-optimization"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Newton and interior-point methods"
+        disposition: "mapped"
+        concepts:
+          - "constrained-nonlinear-optimization"
+        evidence_refs:
+          - "additional-foml:newton-barriers"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Algorithms and convergence results"
+        disposition: "mapped"
+        concepts:
+          - "constrained-nonlinear-optimization"
+        evidence_refs:
+          - "additional-foml:newton-barriers"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Computational work and tools"
+        disposition: "mapped"
+        concepts:
+          - "first-order-stochastic-optimization"
+          - "nonconvex-geometric-optimization"
+        evidence_refs:
+          - "additional-foml:source-scope"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Applications and model problems"
+        disposition: "mapped"
+        concepts:
+          - "first-order-stochastic-optimization"
+          - "nonconvex-geometric-optimization"
+        evidence_refs:
+          - "additional-foml:source-scope"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Exercise, project, and assessment evidence"
+        disposition: "mapped"
+        concepts:
+          - "first-order-stochastic-optimization"
+          - "nonconvex-geometric-optimization"
+        evidence_refs:
+          - "additional-foml:source-scope"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Thematic categories"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Material organization, source index or category/navigation context; substantive technical sections mapped separately."
+      -
+        section: "Coverage validation"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Source/validation qualifications retained in registry, concept text and claim limitations; not an independent technical achievement."
+      -
+        section: "Sources"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Material organization, source index or category/navigation context; substantive technical sections mapped separately."
+  -
+    profile: "02_profiles/supplementary/machine_learning.md"
+    sha256: "e3cdd4a6ac4f4f1980da233506b62d613e04e0e2293b775b2dcb27498941095a"
+    status: "reviewed"
+    sections:
+      -
+        section: "Identity and provenance"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Academic identity/provenance retained in the experience registry; no additional technical claim."
+      -
+        section: "Available materials and extraction approach"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Material organization, source index or category/navigation context; substantive technical sections mapped separately."
+      -
+        section: "Technical topic map"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Organizational parent; technical content is mapped in its named subsections."
+      -
+        section: "Regression, regularization and evaluation"
+        disposition: "mapped"
+        concepts:
+          - "ensemble-margin-kernel-methods"
+          - "regularized-linear-inference"
+          - "statistical-risk-model-selection"
+        evidence_refs:
+          - "tum-machine-learning-optimization:regression-kernels"
+          - "tum-machine-learning-optimization:risk-data"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Optimization algorithms"
+        disposition: "mapped"
+        concepts:
+          - "first-order-stochastic-optimization"
+        evidence_refs:
+          - "tum-machine-learning-optimization:optimizers"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Margins, kernels and nonlinear predictors"
+        disposition: "mapped"
+        concepts:
+          - "ensemble-margin-kernel-methods"
+          - "regularized-linear-inference"
+        evidence_refs:
+          - "tum-machine-learning-optimization:regression-kernels"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Neural networks and vision"
+        disposition: "mapped"
+        concepts:
+          - "neural-training-data-contracts"
+        evidence_refs:
+          - "tum-machine-learning-optimization:neural-tools"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Training data and language-model context"
+        disposition: "mapped"
+        concepts:
+          - "statistical-risk-model-selection"
+        evidence_refs:
+          - "tum-machine-learning-optimization:risk-data"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Computational material, tools and applications"
+        disposition: "mapped"
+        concepts:
+          - "neural-training-data-contracts"
+        evidence_refs:
+          - "tum-machine-learning-optimization:neural-tools"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Relationships and potential professional relevance"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Cross-domain synthesis and navigation; underlying technical content is mapped in the substantive sections."
+      -
+        section: "Source index and deeper-extraction priorities"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Material organization, source index or category/navigation context; substantive technical sections mapped separately."
+  -
+    profile: "02_profiles/courses/ma3001-functional-analysis.md"
+    sha256: "64c8631f8848e9541c74cd7e1f29f6d5abe54769143c6444582df2daeb5bd4fc"
+    status: "reviewed"
+    sections:
+      -
+        section: "Module metadata"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: academic identity remains in the authoritative profile and experience registry; not a separate technical concept."
+      -
+        section: "Evidence base and material structure"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: source organization and extraction limitations are retained in the profile/registry rather than duplicated as knowledge entities."
+      -
+        section: "Technical content"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: structural parent heading; all technical child sections are mapped below."
+      -
+        section: "Normed, Banach, and operator spaces"
+        concepts:
+          - "banach-duality-weak-compactness"
+          - "neumann-series"
+        evidence_refs:
+          - "ma3001:neumann-inversion"
+          - "ma3001:banach-duality"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Hilbert-space geometry"
+        concepts:
+          - "hilbert-projection"
+        evidence_refs:
+          - "ma3001:hilbert-projection"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Fundamental principles of functional analysis"
+        concepts:
+          - "banach-duality-weak-compactness"
+        evidence_refs:
+          - "ma3001:banach-duality"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Duality, extension, reflexivity, and separation"
+        concepts:
+          - "banach-duality-weak-compactness"
+        evidence_refs:
+          - "ma3001:banach-duality"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Compactness and weak topologies"
+        concepts:
+          - "banach-duality-weak-compactness"
+        evidence_refs:
+          - "ma3001:weak-compactness"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Distributions and Sobolev spaces"
+        concepts:
+          - "sobolev-distributions"
+        evidence_refs:
+          - "ma3001:sobolev-regularization"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Compact, adjoint, and Fredholm operators"
+        concepts:
+          - "compact-operator-spectral-theory"
+        evidence_refs:
+          - "ma3001:compact-fredholm-spectrum"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Spectrum and compact-operator decomposition"
+        concepts:
+          - "compact-operator-spectral-theory"
+        evidence_refs:
+          - "ma3001:compact-fredholm-spectrum"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Algorithms and numerical methods"
+        concepts:
+          - "compact-operator-spectral-theory"
+          - "neumann-series"
+          - "sobolev-distributions"
+        evidence_refs:
+          - "ma3001:neumann-inversion"
+          - "ma3001:sobolev-regularization"
+          - "ma3001:compact-fredholm-spectrum"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Applications and model problems"
+        concepts:
+          - "banach-duality-weak-compactness"
+          - "compact-operator-spectral-theory"
+        evidence_refs:
+          - "ma3001:weak-compactness"
+          - "ma3001:compact-fredholm-spectrum"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Exercise and assessment evidence"
+        concepts:
+          - "banach-duality-weak-compactness"
+        evidence_refs:
+          - "ma3001:banach-duality"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Thematic categories"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: indexing is consolidated into the existing controlled non-exclusive taxonomy."
+      -
+        section: "Coverage validation"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: source-profile audit table is not another technical result; all available technical blocks are represented."
+      -
+        section: "Sources"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: original-source register remains in 02_profiles; claims resolve to exact profile sections."
+  -
+    profile: "02_profiles/projects/thesis.md"
+    sha256: "23c477d5975947f2ac8039fe093aa207e2a945c84ca56ebac47cd63dcd3b1b23"
+    status: "reviewed"
+    sections:
+      -
+        section: "Identity, sources and attribution"
+        concepts:
+          - "nonlinear-model-predictive-control"
+        evidence_refs:
+          - "ma6018:impedance-formulation"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Research problem and principal contributions"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Overview consolidated into impedance/NMPC, progress/recovery and contact-model claims below rather than a duplicate experience summary."
+      -
+        section: "Technical scope and mathematical foundations"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Structural parent; pose/impedance/planner child sections are mapped below."
+      -
+        section: "Rigid-part model and uncertainty"
+        concepts:
+          - "impedance-contact-dynamics"
+          - "rigid-body-pose-kinematics"
+        evidence_refs:
+          - "ma6018:pose-impedance"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Cartesian impedance and compliance"
+        concepts:
+          - "impedance-contact-dynamics"
+          - "rigid-body-pose-kinematics"
+        evidence_refs:
+          - "ma6018:pose-impedance"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Inherited robust planning interface"
+        concepts:
+          - "nonlinear-model-predictive-control"
+          - "optimal-control-transcription"
+          - "rigid-body-pose-kinematics"
+        evidence_refs:
+          - "ma6018:reference-interpolation"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Impedance-aware nonlinear model predictive control"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Structural parent; formulation, transcription and operating-point sections are mapped below."
+      -
+        section: "Optimal control formulation"
+        concepts:
+          - "nonlinear-model-predictive-control"
+        evidence_refs:
+          - "ma6018:impedance-formulation"
+          - "ma6018:impedance-in-prediction"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Numerical transcription and reference interpolation"
+        concepts:
+          - "nonlinear-model-predictive-control"
+          - "optimal-control-transcription"
+          - "rigid-body-pose-kinematics"
+        evidence_refs:
+          - "ma6018:impedance-in-prediction"
+          - "ma6018:reference-interpolation"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Main operating point"
+        concepts:
+          - "nonlinear-model-predictive-control"
+          - "optimal-control-transcription"
+          - "rigid-body-pose-kinematics"
+        evidence_refs:
+          - "ma6018:reference-interpolation"
+          - "ma6018:runtime-study"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Contact-aware prediction and model extensions"
+        concepts:
+          - "impedance-contact-dynamics"
+          - "nonlinear-model-predictive-control"
+        evidence_refs:
+          - "ma6018:contact-prediction"
+          - "ma6018:adaptive-model-extensions"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Reference management and progress feedback"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Structural parent; projection and detector child sections are mapped below."
+      -
+        section: "Local horizon and scenario projection"
+        concepts:
+          - "progress-triggered-recovery"
+        evidence_refs:
+          - "ma6018:progress-projection"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Stagnation detector"
+        concepts:
+          - "nonlinear-model-predictive-control"
+          - "progress-triggered-recovery"
+        evidence_refs:
+          - "ma6018:recovery-versus-prediction"
+          - "ma6018:recovery-state-machines"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Recovery strategies and diagnostic comparisons"
+        concepts:
+          - "progress-triggered-recovery"
+        evidence_refs:
+          - "ma6018:recovery-state-machines"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Tangential reference displacement"
+        concepts:
+          - "progress-triggered-recovery"
+        evidence_refs:
+          - "ma6018:recovery-state-machines"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Discrete and continuous spiral search"
+        concepts:
+          - "nonlinear-model-predictive-control"
+          - "progress-triggered-recovery"
+        evidence_refs:
+          - "ma6018:recovery-versus-prediction"
+          - "ma6018:recovery-state-machines"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Scenario switching and oracles"
+        concepts:
+          - "progress-triggered-recovery"
+        evidence_refs:
+          - "ma6018:recovery-state-machines"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Simulation, implementation and experimental methodology"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Structural parent; computational architecture and evaluation child sections are mapped below."
+      -
+        section: "Computational architecture"
+        concepts:
+          - "impedance-contact-dynamics"
+          - "nonlinear-model-predictive-control"
+          - "reproducible-validation-workflows"
+        evidence_refs:
+          - "ma6018:multirate-feedback"
+          - "ma6018:experiment-workflow"
+          - "ma6018:feedback-model-audits"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Evaluation design"
+        concepts:
+          - "nonlinear-model-predictive-control"
+          - "progress-triggered-recovery"
+          - "reproducible-validation-workflows"
+        evidence_refs:
+          - "ma6018:spiral-grid-result"
+          - "ma6018:experiment-workflow"
+          - "ma6018:comparison-sensitivities"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Principal findings and technical interpretation"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Structural parent; comparison and sensitivity results are mapped below."
+      -
+        section: "Controller, reference and recovery comparison"
+        concepts:
+          - "nonlinear-model-predictive-control"
+          - "progress-triggered-recovery"
+        evidence_refs:
+          - "ma6018:recovery-versus-prediction"
+          - "ma6018:comparison-sensitivities"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Search versus estimated-direction recovery"
+        concepts:
+          - "nonlinear-model-predictive-control"
+          - "progress-triggered-recovery"
+        evidence_refs:
+          - "ma6018:spiral-grid-result"
+          - "ma6018:comparison-sensitivities"
+          - "ma6018:sampled-region"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Sensitivity and dependence on planning"
+        concepts:
+          - "impedance-contact-dynamics"
+          - "nonlinear-model-predictive-control"
+          - "optimal-control-transcription"
+          - "progress-triggered-recovery"
+        evidence_refs:
+          - "ma6018:comparison-sensitivities"
+          - "ma6018:runtime-study"
+          - "ma6018:feedback-model-audits"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Technical knowledge represented by the work"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Structural parent; methods and their evidence are represented in the following summary and canonical pages."
+      -
+        section: "Formulated, implemented and evaluated"
+        concepts:
+          - "impedance-contact-dynamics"
+          - "rigid-body-pose-kinematics"
+        evidence_refs:
+          - "ma6018:pose-impedance"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Implemented extensions, theoretical foundations and research exposure"
+        concepts:
+          - "impedance-contact-dynamics"
+        evidence_refs:
+          - "ma6018:adaptive-model-extensions"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Applications and thematic categories"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Application/taxonomy summary consolidated into control/robotics/optimization themes and concept domains, not a new experience or a deployed GNC/actuarial claim."
+      -
+        section: "Limitations and proposed extensions"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Simulation, classification, safety and disclosure limits inherited by claims/registry. Hardware/friction/rotational/perception/learning extensions deliberately excluded from completed-implementation claims."
+      -
+        section: "Evidence note and profile validation"
+        concepts:
+          - "progress-triggered-recovery"
+        evidence_refs:
+          - "ma6018:spiral-grid-result"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+  -
+    profile: "02_profiles/projects/pyloworder.md"
+    sha256: "dd23f8de392744deb369b75d5c7f4c7f279b9a3be9331df3f9d9715a46690410"
+    status: "reviewed"
+    sections:
+      -
+        section: "Project identity, academic context and evidence"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Academic identity/provenance retained in the experience registry; no additional technical claim."
+      -
+        section: "Scientific purpose and individual contribution"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Scientific motivation and attribution scope consolidated in graph-learning concepts and the experience registry; detailed actions and reference results are mapped below."
+      -
+        section: "Technical contributions: mesh geometry and graph construction"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Organizational parent; technical content is mapped in its named subsections."
+      -
+        section: "Connectivity, adjacency and normals"
+        disposition: "mapped"
+        concepts:
+          - "geometry-conditioned-message-passing"
+        evidence_refs:
+          - "ma8102:mesh-geometry"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Geometry-conditioned graph representation"
+        disposition: "mapped"
+        concepts:
+          - "geometry-conditioned-message-passing"
+          - "reproducible-validation-workflows"
+        evidence_refs:
+          - "ma8102:gns-architecture"
+          - "ma8102:graph-persistence"
+          - "ma8102:mesh-geometry"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Scientific data processing and persistence"
+        disposition: "mapped"
+        concepts:
+          - "geometry-conditioned-message-passing"
+          - "reproducible-validation-workflows"
+        evidence_refs:
+          - "ma8102:graph-persistence"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Graph neural network architecture"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Organizational parent; technical content is mapped in its named subsections."
+      -
+        section: "Encoder–message passing–decoder"
+        disposition: "mapped"
+        concepts:
+          - "geometry-conditioned-message-passing"
+        evidence_refs:
+          - "ma8102:gns-architecture"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Two-axis batching and neighborhood sampling"
+        disposition: "mapped"
+        concepts:
+          - "graph-neighborhood-batching"
+        evidence_refs:
+          - "ma8102:disjoint-graph-injection"
+          - "ma8102:seed-target-alignment"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Training, losses and numerical techniques"
+        disposition: "mapped"
+        concepts:
+          - "neural-training-data-contracts"
+        evidence_refs:
+          - "ma8102:loss-scaling"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Regression objectives and checkpoint metrics"
+        disposition: "mapped"
+        concepts:
+          - "neural-training-data-contracts"
+        evidence_refs:
+          - "ma8102:loss-scaling"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Scaling and inverse transformations"
+        disposition: "mapped"
+        concepts:
+          - "neural-training-data-contracts"
+        evidence_refs:
+          - "ma8102:loss-scaling"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Hyperparameter optimization, configuration and reproducibility"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Organizational parent; technical content is mapped in its named subsections."
+      -
+        section: "Typed experiments and Optuna integration"
+        disposition: "mapped"
+        concepts:
+          - "neural-training-data-contracts"
+          - "reproducible-validation-workflows"
+        evidence_refs:
+          - "ma8102:typed-search"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Explicit randomness and traceable artifacts"
+        disposition: "mapped"
+        concepts:
+          - "reproducible-validation-workflows"
+        evidence_refs:
+          - "ma8102:reproducibility-contracts"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Software engineering, tools and integration"
+        disposition: "mapped"
+        concepts:
+          - "reproducible-validation-workflows"
+        evidence_refs:
+          - "ma8102:reproducibility-contracts"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Scientific-reference experiments and interpretation"
+        disposition: "mapped"
+        concepts:
+          - "geometry-conditioned-message-passing"
+        evidence_refs:
+          - "ma8102:dlr-cost"
+          - "ma8102:dlr-crm-pressure"
+          - "ma8102:dlr-data-scaling"
+          - "ma8102:dlr-loads"
+          - "ma8102:dlr-nlr-mae"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Tests, evaluation and supported outcomes"
+        disposition: "mapped"
+        concepts:
+          - "geometry-conditioned-message-passing"
+          - "neural-training-data-contracts"
+          - "reproducible-validation-workflows"
+        evidence_refs:
+          - "ma8102:dlr-nlr-mae"
+          - "ma8102:reproducibility-tests"
+        reason: "Represented at authoritative-profile depth in the linked concepts and bounded claims; source-specific assumptions and limitations retained."
+      -
+        section: "Technical knowledge and thematic categories"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Cross-domain synthesis and navigation; underlying technical content is mapped in the substantive sections."
+      -
+        section: "Profile validation"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Source/validation qualifications retained in registry, concept text and claim limitations; not an independent technical achievement."
+  -
+    profile: "02_profiles/projects/ngvalidation.md"
+    sha256: "3f8ce760eb8e0f535404ada308ecd23ba5ecf66fbbd7861c5e2df200303876c4"
+    status: "reviewed"
+    sections:
+      -
+        section: "Publication identity and evidence"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Source identity, academic metadata or attribution context retained in the experience registry and claim boundaries."
+      -
+        section: "Attribution and knowledge-use boundary"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "CRediT roles and complete-paper knowledge authorization are retained as context; specific personal actions use their own code-supported claims."
+      -
+        section: "Research problem, motivation, and contribution"
+        disposition: "mapped"
+        concepts:
+          - "residual-statistical-diagnostics"
+          - "surrogate-domain-split-validation"
+        evidence_refs:
+          - "scientific_paper:engineering-context"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Engineering application and experimental evidence"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Organizational parent; application, comparison scope and numerical findings are represented below."
+      -
+        section: "Aerostructural surrogate task"
+        disposition: "mapped"
+        concepts:
+          - "residual-statistical-diagnostics"
+          - "surrogate-domain-split-validation"
+        evidence_refs:
+          - "scientific_paper:engineering-context"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Nature of comparisons and reported experiments"
+        disposition: "mapped"
+        concepts:
+          - "residual-statistical-diagnostics"
+          - "surrogate-domain-split-validation"
+        evidence_refs:
+          - "scientific_paper:engineering-context"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Mathematical and computational methodology"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Organizational parent for all eleven mapped mathematical/methodology subsections."
+      -
+        section: "1. Supervised regression, parameterization, and optimization"
+        disposition: "mapped"
+        concepts:
+          - "matrix-low-rank-pca"
+          - "neural-training-data-contracts"
+          - "surrogate-domain-split-validation"
+        evidence_refs:
+          - "scientific_paper:regression-preparation"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "2. Data preparation, uncertainty, and geometric encoding — node 1"
+        disposition: "mapped"
+        concepts:
+          - "matrix-low-rank-pca"
+          - "neural-training-data-contracts"
+          - "surrogate-domain-split-validation"
+        evidence_refs:
+          - "scientific_paper:regression-preparation"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "3. Train–test adequacy, interpolation, and VTPM — node 2"
+        disposition: "mapped"
+        concepts:
+          - "surrogate-domain-split-validation"
+        evidence_refs:
+          - "scientific_paper:domain-split-method"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "4. Architecture, loss, and training-duration choices — node 3"
+        disposition: "mapped"
+        concepts:
+          - "matrix-low-rank-pca"
+          - "neural-training-data-contracts"
+          - "surrogate-domain-split-validation"
+        evidence_refs:
+          - "scientific_paper:regression-preparation"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "5. Pointwise performance and safety-relevant residual signs — node 4"
+        disposition: "mapped"
+        concepts:
+          - "prediction-interval-aggregation"
+          - "residual-statistical-diagnostics"
+        evidence_refs:
+          - "scientific_paper:aggregate-fit"
+          - "scientific_paper:residual-methods"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "6. Marginal residual distributions, outliers, and bootstrap quantiles — node 5"
+        disposition: "mapped"
+        concepts:
+          - "prediction-interval-aggregation"
+          - "residual-statistical-diagnostics"
+        evidence_refs:
+          - "scientific_paper:bootstrap-quantiles"
+          - "scientific_paper:residual-methods"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "7. Conditional residuals in input space — node 6"
+        disposition: "mapped"
+        concepts:
+          - "prediction-interval-aggregation"
+          - "residual-statistical-diagnostics"
+        evidence_refs:
+          - "scientific_paper:conditional-diagnostics"
+          - "scientific_paper:residual-methods"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "8. Conditional residuals in output space — node 7"
+        disposition: "mapped"
+        concepts:
+          - "prediction-interval-aggregation"
+          - "residual-statistical-diagnostics"
+        evidence_refs:
+          - "scientific_paper:residual-methods"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "9. Explainability and permutation feature importance — node 8"
+        disposition: "mapped"
+        concepts:
+          - "residual-statistical-diagnostics"
+          - "statistical-risk-model-selection"
+        evidence_refs:
+          - "scientific_paper:diagnostic-refinement"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "10. Iterative model/data improvement and applicability — node 9"
+        disposition: "mapped"
+        concepts:
+          - "residual-statistical-diagnostics"
+          - "statistical-risk-model-selection"
+          - "surrogate-domain-split-validation"
+        evidence_refs:
+          - "scientific_paper:diagnostic-refinement"
+          - "scientific_paper:domain-split-method"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "11. Calibrated multiscale prediction intervals — node 10"
+        disposition: "mapped"
+        concepts:
+          - "prediction-interval-aggregation"
+        evidence_refs:
+          - "scientific_paper:calibration-method"
+          - "scientific_paper:coverage-intervals"
+          - "scientific_paper:paper-interval-intersection"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Main findings and technical interpretation"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Summary of mapped collective methods/results; not another independent experiment."
+      -
+        section: "Assumptions, source ambiguities, and reproducibility limits"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Source/coverage qualifications retained in concept text, registry and claim limitations; no unsupported missing formula or experiment is reconstructed."
+      -
+        section: "Stated scope and evidence gaps"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Source/coverage qualifications retained in concept text, registry and claim limitations; no unsupported missing formula or experiment is reconstructed."
+      -
+        section: "Material mathematical/notation cautions found during validation"
+        disposition: "mapped"
+        concepts:
+          - "prediction-interval-aggregation"
+        evidence_refs:
+          - "scientific_paper:paper-interval-intersection"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Computational tools and technical knowledge represented"
+        disposition: "mapped"
+        concepts:
+          - "reproducible-validation-workflows"
+          - "residual-statistical-diagnostics"
+        evidence_refs:
+          - "scientific_paper:statistical-library"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "NGValidation software implementation and engineering evidence"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Organizational parent; architecture, numerical library and individual changes are mapped below."
+      -
+        section: "Project identity and software architecture"
+        disposition: "mapped"
+        concepts:
+          - "reproducible-validation-workflows"
+        evidence_refs:
+          - "scientific_paper:structured-artifacts"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Geometric split validation and numerical statistics"
+        disposition: "mapped"
+        concepts:
+          - "reproducible-validation-workflows"
+          - "residual-statistical-diagnostics"
+          - "surrogate-domain-split-validation"
+        evidence_refs:
+          - "scientific_paper:domain-code"
+          - "scientific_paper:statistical-library"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Uncertainty modeling and paper/code distinctions"
+        disposition: "mapped"
+        concepts:
+          - "prediction-interval-aggregation"
+        evidence_refs:
+          - "scientific_paper:binned-coverage-code"
+          - "scientific_paper:widest-interval-code"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Identifiable individual implementation contributions"
+        disposition: "mapped"
+        concepts:
+          - "reproducible-data-sampling"
+          - "reproducible-validation-workflows"
+          - "surrogate-domain-split-validation"
+        evidence_refs:
+          - "scientific_paper:configuration-portability"
+          - "scientific_paper:seeded-data-sampling"
+          - "scientific_paper:split-robustness"
+          - "scientific_paper:structured-artifacts"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Engineering significance and implementation limits"
+        disposition: "mapped"
+        concepts:
+          - "reproducible-validation-workflows"
+        evidence_refs:
+          - "scientific_paper:configuration-portability"
+        reason: "Materially relevant profile knowledge/actions/results represented in the linked canonical concepts and bounded claims; mathematical/source limits preserved."
+      -
+        section: "Relevant thematic categories"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Material organization, thematic navigation or repeated summary; substantive technical content is represented in the mapped sections."
+      -
+        section: "Complete-paper coverage and validation record"
+        disposition: "context_only"
+        concepts: []
+        evidence_refs: []
+        reason: "Source/coverage qualifications retained in concept text, registry and claim limitations; no unsupported missing formula or experiment is reconstructed."
+  -
+    profile: "02_profiles/supplementary/approximate_dynamic_programming.md"
+    sha256: "da12134f5964a0426e60c6e19d7b5ffa4eb6df1fb5f88caeaa75360f445d48bd"
+    status: "reviewed"
+    sections:
+      -
+        section: "Identity and provenance"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: identity/provenance, source structure or extraction audit retained upstream and in registry; not a separate technical entity. Offered readings, absent sessions and duplicate material are not extra taught subjects or outcomes."
+      -
+        section: "Materials and inspection"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: identity/provenance, source structure or extraction audit retained upstream and in registry; not a separate technical entity. Offered readings, absent sessions and duplicate material are not extra taught subjects or outcomes."
+      -
+        section: "Technical topic map"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: structural parent; all substantive technical child headings mapped below."
+      -
+        section: "Sequential decisions and exact dynamic programming"
+        concepts:
+          - "bellman-policy-evaluation"
+        evidence_refs:
+          - "tum-approximate-dynamic-programming:bellman-policy-operator"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Policy iteration and computational variants"
+        concepts:
+          - "bellman-policy-evaluation"
+        evidence_refs:
+          - "tum-approximate-dynamic-programming:bellman-policy-operator"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Function approximation and projected evaluation"
+        concepts:
+          - "projected-policy-evaluation"
+        evidence_refs:
+          - "tum-approximate-dynamic-programming:projected-policy-evaluation"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Sample-based learning and numerical linear algebra"
+        concepts:
+          - "policy-gradient-credit-assignment"
+          - "temporal-difference-learning"
+        evidence_refs:
+          - "tum-approximate-dynamic-programming:sample-linear-algebra"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Exercise, assignment and computational evidence"
+        concepts:
+          - "policy-gradient-credit-assignment"
+          - "projected-policy-evaluation"
+          - "temporal-difference-learning"
+        evidence_refs:
+          - "tum-approximate-dynamic-programming:norm-mismatch-example"
+          - "tum-approximate-dynamic-programming:sample-linear-algebra"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Connections and potential professional relevance"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: relevant relationships integrated into concept/theme synthesis and controlled domains; no extra academic credit, target-sector deployment or historical application inferred."
+      -
+        section: "Source references and deeper extraction"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: source-depth and implementation limits retained in registry/claims. Exact missing proofs/equations, uninspected code and proposed extensions are not reconstructed or promoted to experience."
+  -
+    profile: "02_profiles/courses/ma4800-foundations-of-data-analysis.md"
+    sha256: "254356c3233003e703ffefc01e4909017e1d6d0078a386e2638c6de0b8c92362"
+    status: "reviewed"
+    sections:
+      -
+        section: "Module metadata"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: academic identity remains in the authoritative profile and experience registry; not a separate technical concept."
+      -
+        section: "Evidence base and material structure"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: source organization and extraction limitations are retained in the profile/registry rather than duplicated as knowledge entities."
+      -
+        section: "Technical content"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: structural parent heading; all technical child sections are mapped below."
+      -
+        section: "Linear algebra, Hilbert-space geometry, and projections"
+        concepts:
+          - "hilbert-projection"
+        evidence_refs:
+          - "ma4800:projection-geometry"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Singular value decomposition, low-rank approximation, and PCA"
+        concepts:
+          - "matrix-low-rank-pca"
+        evidence_refs:
+          - "ma4800:svd-pca"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Alternating projections and convergence arguments"
+        concepts:
+          - "hilbert-projection"
+        evidence_refs:
+          - "ma4800:projection-geometry"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Probability, concentration, and high-dimensional geometry"
+        concepts:
+          - "concentration-random-embeddings"
+        evidence_refs:
+          - "ma4800:concentration-embeddings"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Random projections and Johnson–Lindenstrauss embeddings"
+        concepts:
+          - "concentration-random-embeddings"
+        evidence_refs:
+          - "ma4800:concentration-embeddings"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Convex analysis, conjugacy, sparse formulations, and duality"
+        concepts:
+          - "convex-conjugacy-sparse-optimization"
+        evidence_refs:
+          - "ma4800:convex-gradient"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Gradient methods and differential estimates"
+        concepts:
+          - "convex-conjugacy-sparse-optimization"
+        evidence_refs:
+          - "ma4800:convex-gradient"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Computational tools and applications"
+        concepts:
+          - "concentration-random-embeddings"
+          - "matrix-low-rank-pca"
+        evidence_refs:
+          - "ma4800:svd-pca"
+          - "ma4800:concentration-embeddings"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Thematic categories"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: indexing is consolidated into the existing controlled non-exclusive taxonomy."
+      -
+        section: "Coverage validation"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: source-profile audit table is not another technical result; all available technical blocks are represented."
+      -
+        section: "Sources and limitations"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: source register remains upstream; material formula/data/edition limitations are carried by the registry and affected claims."
+  -
+    profile: "02_profiles/courses/ma3503-nonlinear-optimization.md"
+    sha256: "1de04ca34416058f72d3aa68ee9bee30f7d67133830c680a6d7e0b9fcaa3e11c"
+    status: "reviewed"
+    sections:
+      -
+        section: "Module metadata"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: academic identity remains in the authoritative profile and experience registry; not a separate technical concept."
+      -
+        section: "Evidence base and material structure"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: source organization and extraction limitations are retained in the profile/registry rather than duplicated as knowledge entities."
+      -
+        section: "Technical content"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: structural parent heading; all technical child sections are mapped below."
+      -
+        section: "Existence, convexity, and variational optimality"
+        concepts:
+          - "constrained-nonlinear-optimization"
+          - "convex-conjugacy-sparse-optimization"
+          - "hilbert-projection"
+        evidence_refs:
+          - "ma3503:constraint-optimality"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Constraint geometry and constraint qualifications"
+        concepts:
+          - "constrained-nonlinear-optimization"
+          - "convex-conjugacy-sparse-optimization"
+          - "hilbert-projection"
+        evidence_refs:
+          - "ma3503:constraint-optimality"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "KKT theory and Lagrange multipliers"
+        concepts:
+          - "constrained-nonlinear-optimization"
+          - "convex-conjugacy-sparse-optimization"
+          - "hilbert-projection"
+        evidence_refs:
+          - "ma3503:constraint-optimality"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Second-order optimality and quadratic growth"
+        concepts:
+          - "constrained-nonlinear-optimization"
+          - "convex-conjugacy-sparse-optimization"
+          - "hilbert-projection"
+        evidence_refs:
+          - "ma3503:constraint-optimality"
+          - "ma3503:penalty-augmented"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Penalty and augmented-Lagrangian methods"
+        concepts:
+          - "constrained-nonlinear-optimization"
+        evidence_refs:
+          - "ma3503:penalty-augmented"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Sequential quadratic programming"
+        concepts:
+          - "constrained-nonlinear-optimization"
+        evidence_refs:
+          - "ma3503:sqp-barriers"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Elastic-mode SQP and logarithmic barriers"
+        concepts:
+          - "constrained-nonlinear-optimization"
+        evidence_refs:
+          - "ma3503:sqp-barriers"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Algorithms and numerical methods"
+        concepts:
+          - "constrained-nonlinear-optimization"
+        evidence_refs:
+          - "ma3503:penalty-augmented"
+          - "ma3503:sqp-barriers"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Computational work and tools"
+        concepts:
+          - "constrained-nonlinear-optimization"
+        evidence_refs:
+          - "ma3503:sqp-barriers"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Applications and model problems"
+        concepts:
+          - "constrained-nonlinear-optimization"
+          - "convex-conjugacy-sparse-optimization"
+          - "hilbert-projection"
+        evidence_refs:
+          - "ma3503:constraint-optimality"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Exercise and assessment evidence"
+        concepts:
+          - "constrained-nonlinear-optimization"
+        evidence_refs:
+          - "ma3503:sqp-barriers"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Thematic categories"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: indexing is consolidated into the existing controlled non-exclusive taxonomy."
+      -
+        section: "Coverage validation"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: source-profile audit table is not another technical result; all available technical blocks are represented."
+      -
+        section: "Sources"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: original-source register remains in 02_profiles; claims resolve to exact profile sections."
+  -
+    profile: "02_profiles/courses/ma5348-numerical-methods-uncertainty-quantification.md"
+    sha256: "831f075b001558991e9a347a390f6a909de655b2d1df3e143d8a4bb3dd55834a"
+    status: "reviewed"
+    sections:
+      -
+        section: "Module metadata"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: academic identity remains in the authoritative profile and experience registry; not a separate technical concept."
+      -
+        section: "Evidence base and material structure"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: source organization and extraction limitations are retained in the profile/registry rather than duplicated as knowledge entities."
+      -
+        section: "Technical content"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: structural parent heading; all technical child sections are mapped below."
+      -
+        section: "Probability in function spaces"
+        concepts:
+          - "random-fields-sampling"
+        evidence_refs:
+          - "ma5348:probability-fields"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Random fields and regularity"
+        concepts:
+          - "random-fields-sampling"
+        evidence_refs:
+          - "ma5348:probability-fields"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Discretization and sampling of random fields"
+        concepts:
+          - "compact-operator-spectral-theory"
+          - "random-fields-sampling"
+        evidence_refs:
+          - "ma5348:field-sampling"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Elliptic PDEs with uncertain coefficients"
+        concepts:
+          - "sobolev-distributions"
+          - "stochastic-pde-discretization"
+        evidence_refs:
+          - "ma5348:random-pde-galerkin"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Monte Carlo and variance reduction"
+        concepts:
+          - "multilevel-multifidelity-estimation"
+        evidence_refs:
+          - "ma5348:mc-multifidelity"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Multilevel and multifidelity estimators"
+        concepts:
+          - "multilevel-multifidelity-estimation"
+        evidence_refs:
+          - "ma5348:mc-multifidelity"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Stochastic Galerkin methods"
+        concepts:
+          - "sobolev-distributions"
+          - "stochastic-pde-discretization"
+        evidence_refs:
+          - "ma5348:random-pde-galerkin"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Algorithms and numerical methods"
+        concepts:
+          - "compact-operator-spectral-theory"
+          - "multilevel-multifidelity-estimation"
+          - "random-fields-sampling"
+        evidence_refs:
+          - "ma5348:field-sampling"
+          - "ma5348:mc-multifidelity"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Computational work and tools"
+        concepts:
+          - "multilevel-multifidelity-estimation"
+          - "random-fields-sampling"
+          - "stochastic-pde-discretization"
+        evidence_refs:
+          - "ma5348:teaching-code"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Applications and model problems"
+        concepts:
+          - "sobolev-distributions"
+          - "stochastic-pde-discretization"
+        evidence_refs:
+          - "ma5348:random-pde-galerkin"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Exercise and assessment evidence"
+        concepts:
+          - "multilevel-multifidelity-estimation"
+          - "random-fields-sampling"
+          - "stochastic-pde-discretization"
+        evidence_refs:
+          - "ma5348:probability-fields"
+          - "ma5348:teaching-code"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Thematic categories"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: indexing is consolidated into the existing controlled non-exclusive taxonomy."
+      -
+        section: "Coverage validation"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: source-profile audit table is not another technical result; all available technical blocks are represented."
+      -
+        section: "Sources"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: original-source register remains in 02_profiles; claims resolve to exact profile sections."
+  -
+    profile: "02_profiles/courses/ma6015-advanced-seminar-course.md"
+    sha256: "0690a75eb8c27696e6bc4ffced23772448ae25914d1dea12e4a75c1211b981cb"
+    status: "reviewed"
+    sections:
+      -
+        section: "Module metadata"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: academic identity remains in the authoritative profile and experience registry; not a separate technical concept."
+      -
+        section: "Evidence base and material structure"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: source organization and extraction limitations are retained in the profile/registry rather than duplicated as knowledge entities."
+      -
+        section: "Technical content"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: structural parent heading; all technical child sections are mapped below."
+      -
+        section: "Random PDE uncertainty and Monte Carlo foundations"
+        concepts:
+          - "multilevel-multifidelity-estimation"
+        evidence_refs:
+          - "ma6015:mlmc-foundations"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Elliptic PDEs with lognormal random coefficients and finite elements"
+        concepts:
+          - "multilevel-multifidelity-estimation"
+          - "random-fields-sampling"
+          - "sobolev-distributions"
+          - "stochastic-pde-discretization"
+        evidence_refs:
+          - "ma6015:lognormal-fem-analysis"
+          - "ma6015:p2-presentation"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Finite-volume MLMC and coarse-grid variates"
+        concepts:
+          - "multilevel-multifidelity-estimation"
+          - "stochastic-pde-discretization"
+        evidence_refs:
+          - "ma6015:finite-volume-cgv"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Optimization of MLMC hierarchies"
+        concepts:
+          - "multilevel-multifidelity-estimation"
+        evidence_refs:
+          - "ma6015:hierarchy-optimization"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Multilevel best linear unbiased estimation"
+        concepts:
+          - "multilevel-multifidelity-estimation"
+        evidence_refs:
+          - "ma6015:blue-multifidelity"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Multifidelity variance and global sensitivity estimation"
+        concepts:
+          - "sensitivity-rare-event-estimation"
+        evidence_refs:
+          - "ma6015:sensitivity"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Rare-event probability estimation"
+        concepts:
+          - "random-fields-sampling"
+          - "sensitivity-rare-event-estimation"
+          - "stochastic-pde-discretization"
+        evidence_refs:
+          - "ma6015:rare-events"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Algorithms and numerical methods"
+        concepts:
+          - "multilevel-multifidelity-estimation"
+          - "random-fields-sampling"
+          - "sensitivity-rare-event-estimation"
+          - "stochastic-pde-discretization"
+        evidence_refs:
+          - "ma6015:mlmc-foundations"
+          - "ma6015:rare-events"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Computational work and tools"
+        concepts:
+          - "multilevel-multifidelity-estimation"
+          - "sobolev-distributions"
+          - "stochastic-pde-discretization"
+        evidence_refs:
+          - "ma6015:p2-presentation"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Applications and model problems"
+        concepts:
+          - "multilevel-multifidelity-estimation"
+          - "sensitivity-rare-event-estimation"
+        evidence_refs:
+          - "ma6015:hierarchy-optimization"
+          - "ma6015:sensitivity"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Seminar and assessment evidence"
+        concepts:
+          - "multilevel-multifidelity-estimation"
+          - "sobolev-distributions"
+          - "stochastic-pde-discretization"
+        evidence_refs:
+          - "ma6015:p2-presentation"
+        disposition: "mapped"
+        reason: "mapped: represented at authoritative-profile depth in the linked canonical explanations and grouped claims; source-specific applications, exercises, assumptions and limits are retained. Proofs/formulas unavailable in the profile are explicitly not reconstructed."
+      -
+        section: "Thematic categories"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: indexing is consolidated into the existing controlled non-exclusive taxonomy."
+      -
+        section: "Coverage validation"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: source-profile audit table is not another technical result; all available technical blocks are represented."
+      -
+        section: "Sources"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: original-source register remains in 02_profiles; claims resolve to exact profile sections."
+  -
+    profile: "02_profiles/courses/cit413042-case-studies-optimization.md"
+    sha256: "02fcba7a338de5836fdb295942464f049b3a4f406ef94e5d182fcd9c10f292f7"
+    status: "reviewed"
+    sections:
+      -
+        section: "Module metadata"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Academic identity/metadata remains authoritative upstream and linked in the registry; no duplicated credit."
+      -
+        section: "Evidence base and reproducibility"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Original-source/revision/edition/dirty-worktree qualifications remain upstream and in the experience limitations."
+      -
+        section: "Technical content"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Structural parent; all material technical child sections are mapped below."
+      -
+        section: "Optimal-control formulation and direct transcription"
+        concepts:
+          - "optimal-control-transcription"
+          - "rigid-body-pose-kinematics"
+        evidence_refs:
+          - "cit413042:trajectory-models"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Point-mass, unicycle, and car kinematics"
+        concepts:
+          - "optimal-control-transcription"
+          - "rigid-body-pose-kinematics"
+        evidence_refs:
+          - "cit413042:trajectory-models"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Sampling-based initialization and trajectory refinement"
+        concepts:
+          - "geometric-sampling-motion-planning"
+          - "optimal-control-transcription"
+        evidence_refs:
+          - "cit413042:rrt-initialization"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Signed-distance geometry and differentiable approximations"
+        concepts:
+          - "signed-distance-neural-fields"
+        evidence_refs:
+          - "cit413042:distance-fields"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Neural implicit-field learning and solver integration"
+        concepts:
+          - "signed-distance-neural-fields"
+        evidence_refs:
+          - "cit413042:neural-training"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Nonlinear programming and primal–dual interior-point methods"
+        concepts:
+          - "constrained-nonlinear-optimization"
+          - "reproducible-validation-workflows"
+        evidence_refs:
+          - "cit413042:solver-architecture"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Evaluation methodology and engineering trade-offs"
+        concepts:
+          - "geometric-field-validation"
+          - "signed-distance-neural-fields"
+        evidence_refs:
+          - "cit413042:field-evaluation"
+          - "cit413042:representation-tradeoff"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Supplementary representations and collision-avoidance formulations"
+        concepts:
+          - "matrix-low-rank-pca"
+          - "signed-distance-neural-fields"
+        evidence_refs:
+          - "cit413042:representation-background"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Computational tools and thematic categories"
+        concepts:
+          - "constrained-nonlinear-optimization"
+          - "reproducible-validation-workflows"
+        evidence_refs:
+          - "cit413042:solver-architecture"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Coverage validation and unresolved source issues"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Source issues retained upstream and carried into affected claims/canonical pages; not separate technical achievements."
+  -
+    profile: "02_profiles/projects/case_studies_optimization.md"
+    sha256: "c845f204aa8e3ec6c518358f71956be2ebc722ff2ddc99089b94a3a687ca8b2d"
+    status: "reviewed"
+    sections:
+      -
+        section: "Project identity and academic context"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Same CIT413042 academic experience as the course profile; registry records both facets with actual hashes, not a second course/project achievement."
+      -
+        section: "Sources and reference convention"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Original source/revision register remains upstream; claims cite exact profile sections, with report/code limits inherited."
+      -
+        section: "Problem, objectives and project scope"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Problem overview consolidated into trajectory/SDF/validation concepts; static-planar scope and proposed extensions do not create implementation claims."
+      -
+        section: "Contributions and attribution"
+        concepts:
+          - "geometric-field-validation"
+          - "reproducible-validation-workflows"
+          - "signed-distance-neural-fields"
+        evidence_refs:
+          - "cit413042:siren-implementation"
+          - "cit413042:hausdorff-implementation"
+          - "cit413042:model-benchmark-integration"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Mathematical modeling and trajectory optimization"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Structural parent; continuous/discrete model and initialization sections are mapped below."
+      -
+        section: "Continuous problem and direct transcription"
+        concepts:
+          - "optimal-control-transcription"
+          - "rigid-body-pose-kinematics"
+        evidence_refs:
+          - "cit413042:trajectory-models"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Robot/vehicle models and footprints"
+        concepts:
+          - "optimal-control-transcription"
+          - "rigid-body-pose-kinematics"
+        evidence_refs:
+          - "cit413042:trajectory-models"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Sampling-based initialization"
+        concepts:
+          - "geometric-sampling-motion-planning"
+          - "optimal-control-transcription"
+        evidence_refs:
+          - "cit413042:rrt-initialization"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Signed-distance representations and neural field learning"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Structural parent; geometry and training child sections are mapped below."
+      -
+        section: "Reference geometry and differentiable surrogates"
+        concepts:
+          - "signed-distance-neural-fields"
+        evidence_refs:
+          - "cit413042:distance-fields"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Data generation and training"
+        concepts:
+          - "signed-distance-neural-fields"
+        evidence_refs:
+          - "cit413042:neural-training"
+          - "cit413042:siren-implementation"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Numerical solvers and computational architecture"
+        concepts:
+          - "constrained-nonlinear-optimization"
+          - "reproducible-validation-workflows"
+        evidence_refs:
+          - "cit413042:solver-architecture"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Experimental methodology and principal results"
+        concepts:
+          - "geometric-field-validation"
+        evidence_refs:
+          - "cit413042:field-evaluation"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Evaluation quantities"
+        concepts:
+          - "geometric-field-validation"
+        evidence_refs:
+          - "cit413042:hausdorff-implementation"
+          - "cit413042:field-evaluation"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Learned SDF and solver trade-offs"
+        concepts:
+          - "geometric-field-validation"
+          - "optimal-control-transcription"
+        evidence_refs:
+          - "cit413042:sampling-result"
+          - "cit413042:solver-tradeoff-result"
+          - "cit413042:geometry-result"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities. Representative sampling, objective/runtime and geometry comparisons retained; redundant secondary table rows remain upstream rather than creating extra claims with no new methodological content."
+      -
+        section: "Complex-corridor representation comparison"
+        concepts:
+          - "geometric-field-validation"
+          - "signed-distance-neural-fields"
+        evidence_refs:
+          - "cit413042:geometry-result"
+          - "cit413042:representation-tradeoff"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Technical findings, limitations and research extensions"
+        concepts:
+          - "geometric-field-validation"
+          - "matrix-low-rank-pca"
+          - "signed-distance-neural-fields"
+        evidence_refs:
+          - "cit413042:representation-background"
+          - "cit413042:representation-tradeoff"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Demonstrated technical knowledge and thematic categories"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Consolidated summary; detailed knowledge and narrower personal contributions mapped in preceding sections and existing competencies, without double-counting."
+      -
+        section: "Coverage and validation"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Upstream extraction audit; not independent experiment verification. Known limitations remain in registry/claims."
+  -
+    profile: "02_profiles/courses/in2138-robot-motion-planning.md"
+    sha256: "06fc088de21cbd8cbf3d27965f9f39e85490da585ff70dfedc1cca8312c7317c"
+    status: "reviewed"
+    sections:
+      -
+        section: "Module metadata"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Academic identity/metadata remains authoritative upstream and linked in the registry; no duplicated credit."
+      -
+        section: "Technical content"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Structural parent; all material technical child sections are mapped below."
+      -
+        section: "Configuration-space representation"
+        concepts:
+          - "geometric-sampling-motion-planning"
+        evidence_refs:
+          - "in2138:planning-syllabus"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Geometric planning and map assumptions"
+        concepts:
+          - "geometric-sampling-motion-planning"
+        evidence_refs:
+          - "in2138:planning-syllabus"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Sampling-based planning and connectivity"
+        concepts:
+          - "geometric-sampling-motion-planning"
+        evidence_refs:
+          - "in2138:planning-syllabus"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Uncertainty, filtering and mapping"
+        concepts:
+          - "state-feedback-observers"
+        evidence_refs:
+          - "in2138:uncertain-mapping"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Computational and assessment evidence"
+        concepts:
+          - "geometric-sampling-motion-planning"
+        evidence_refs:
+          - "in2138:planning-syllabus"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Thematic categories"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Indexing consolidated into controlled domains and existing themes."
+      -
+        section: "Coverage validation and source limits"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Syllabus-level extraction is complete; absent formulas, videos/homework and implementation evidence are not reconstructed. Limits travel with the claims/registry."
+      -
+        section: "Sources"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Original source register remains upstream; exact profile-section references resolve locally."
+  -
+    profile: "02_profiles/supplementary/advanced_control.md"
+    sha256: "345841141e875dacf2536f4a0dff8bde817123415393c7b477c572ac1adada29"
+    status: "reviewed"
+    sections:
+      -
+        section: "Identity and provenance"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Supplementary source category, unestablished credit and unspecified learning relationship retained in registry, not promoted to academic completion."
+      -
+        section: "Available materials and extraction scope"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Source-volume/selective-inspection metadata remains upstream. This task represents the existing map, not unseen auxiliary files."
+      -
+        section: "Structured technical topic map"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Structural parent; all five technical child sections are mapped below."
+      -
+        section: "State-space modeling and stability"
+        concepts:
+          - "state-feedback-observers"
+        evidence_refs:
+          - "tum-advanced-control:feedback-architectures"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "State feedback and optimal control"
+        concepts:
+          - "state-feedback-observers"
+        evidence_refs:
+          - "tum-advanced-control:feedback-architectures"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Observers, duality and decoupling"
+        concepts:
+          - "state-feedback-observers"
+        evidence_refs:
+          - "tum-advanced-control:feedback-architectures"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Disturbance rejection and tracking architectures"
+        concepts:
+          - "state-feedback-observers"
+        evidence_refs:
+          - "tum-advanced-control:feedback-architectures"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Nonlinear input–output linearization"
+        concepts:
+          - "state-feedback-observers"
+        evidence_refs:
+          - "tum-advanced-control:nonlinear-tools"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Computational methods, tools and examples"
+        concepts:
+          - "state-feedback-observers"
+        evidence_refs:
+          - "tum-advanced-control:nonlinear-tools"
+        disposition: "mapped"
+        reason: "mapped: relevant technical content consolidated in linked concepts/claims at source-profile depth, preserving actor, hypotheses and implementation/result boundaries; repeated overview details are not separate entities."
+      -
+        section: "Relationships and professional-domain relevance"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Connections incorporated into concepts/themes as editorial technical relationships, not another accredited experience or demonstrated target-sector deployment."
+      -
+        section: "Sources and deeper-extraction priorities"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: Source register/limitations retained. Exact LQR/decoupling/zero-dynamics derivations absent from the input cannot be supplied without separately authorized source extraction."
+  -
+    profile: "02_profiles/courses/mgt001299-introduction-to-deep-reinforcement-learning.md"
+    sha256: "8022c4222c0c8a1fa8347a78ba98e5e8589ade95a207ef7873daea24f1b7836c"
+    status: "reviewed"
+    sections:
+      -
+        section: "Module metadata"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: identity/provenance, source structure or extraction audit retained upstream and in registry; not a separate technical entity. Offered readings, absent sessions and duplicate material are not extra taught subjects or outcomes."
+      -
+        section: "Evidence base and material structure"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: identity/provenance, source structure or extraction audit retained upstream and in registry; not a separate technical entity. Offered readings, absent sessions and duplicate material are not extra taught subjects or outcomes."
+      -
+        section: "Technical content"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: structural parent; all substantive technical child headings mapped below."
+      -
+        section: "Rational agents, utilities, and search formulation"
+        concepts:
+          - "heuristic-adversarial-search"
+        evidence_refs:
+          - "mgt001299:search-utility"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Uninformed, heuristic, adversarial, and stochastic search"
+        concepts:
+          - "heuristic-adversarial-search"
+        evidence_refs:
+          - "mgt001299:search-utility"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Markov models and dynamic programming"
+        concepts:
+          - "bellman-policy-evaluation"
+        evidence_refs:
+          - "mgt001299:markov-planning"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Learning from interaction: model estimation, Monte Carlo, TD, and Q-learning"
+        concepts:
+          - "temporal-difference-learning"
+        evidence_refs:
+          - "mgt001299:sample-learning"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Neural approximation, supervised learning, and optimization"
+        concepts:
+          - "neural-training-data-contracts"
+        evidence_refs:
+          - "mgt001299:neural-training"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Value-function approximation and deep Q-networks"
+        concepts:
+          - "deep-value-learning"
+          - "projected-policy-evaluation"
+        evidence_refs:
+          - "mgt001299:deep-values"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Double DQN, prioritized replay, dueling networks, and Rainbow"
+        concepts:
+          - "deep-value-learning"
+          - "projected-policy-evaluation"
+        evidence_refs:
+          - "mgt001299:deep-values"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Policy gradients, REINFORCE, and actor–critic theory"
+        concepts:
+          - "policy-gradient-credit-assignment"
+        evidence_refs:
+          - "mgt001299:policy-gradients"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Multi-step learning, TD(λ), and eligibility traces"
+        concepts:
+          - "policy-gradient-credit-assignment"
+        evidence_refs:
+          - "mgt001299:multistep-credit"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Parallel actor–critic, trust regions, and PPO"
+        concepts:
+          - "policy-optimization-geometry"
+        evidence_refs:
+          - "mgt001299:policy-optimization"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Continuous-action actor–critic: DDPG and SAC"
+        concepts:
+          - "policy-optimization-geometry"
+        evidence_refs:
+          - "mgt001299:policy-optimization"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Planning–learning combinations, extensions, and applications"
+        concepts:
+          - "heuristic-adversarial-search"
+        evidence_refs:
+          - "mgt001299:planning-learning"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Computational work and tools"
+        concepts:
+          - "deep-value-learning"
+          - "neural-training-data-contracts"
+          - "policy-optimization-geometry"
+        evidence_refs:
+          - "mgt001299:teaching-tools"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Thematic categories"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: relevant relationships integrated into concept/theme synthesis and controlled domains; no extra academic credit, target-sector deployment or historical application inferred."
+      -
+        section: "Coverage validation"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: identity/provenance, source structure or extraction audit retained upstream and in registry; not a separate technical entity. Offered readings, absent sessions and duplicate material are not extra taught subjects or outcomes."
+      -
+        section: "Source limitations and unresolved issues"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: source-depth and implementation limits retained in registry/claims. Exact missing proofs/equations, uninspected code and proposed extensions are not reconstructed or promoted to experience."
+      -
+        section: "Sources"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: identity/provenance, source structure or extraction audit retained upstream and in registry; not a separate technical entity. Offered readings, absent sessions and duplicate material are not extra taught subjects or outcomes."
+  -
+    profile: "02_profiles/courses/ei7263-biologically-inspired-learning-humanoid-robots.md"
+    sha256: "8fa6746e48ce35546422fe181a002a238616ae2422c872765455b0429cbb91f3"
+    status: "reviewed"
+    sections:
+      -
+        section: "Module metadata and identity"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: identity/provenance, source structure or extraction audit retained upstream and in registry; not a separate technical entity. Offered readings, absent sessions and duplicate material are not extra taught subjects or outcomes."
+      -
+        section: "Evidence base and course structure"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: identity/provenance, source structure or extraction audit retained upstream and in registry; not a separate technical entity. Offered readings, absent sessions and duplicate material are not extra taught subjects or outcomes."
+      -
+        section: "Technical content"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: structural parent; all substantive technical child headings mapped below."
+      -
+        section: "Embodied learning and motor representations"
+        concepts:
+          - "biological-motor-action-models"
+        evidence_refs:
+          - "ei7263:embodied-circuits"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Cerebellar anatomy, coding, and supervised adaptation"
+        concepts:
+          - "biological-motor-action-models"
+        evidence_refs:
+          - "ei7263:embodied-circuits"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Internal models, feedback, and coordinated control"
+        concepts:
+          - "biological-motor-action-models"
+        evidence_refs:
+          - "ei7263:embodied-circuits"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Cerebellar Model Articulation Controller (CMAC)"
+        concepts:
+          - "local-adaptive-function-approximation"
+        evidence_refs:
+          - "ei7263:local-adaptation"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Basal ganglia, action selection, and biological evidence"
+        concepts:
+          - "biological-motor-action-models"
+        evidence_refs:
+          - "ei7263:embodied-circuits"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Sequential decision models and reinforcement-learning algorithms"
+        concepts:
+          - "bellman-policy-evaluation"
+          - "temporal-difference-learning"
+        evidence_refs:
+          - "ei7263:decision-models"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "RL-DT: factored model learning and robot soccer"
+        concepts:
+          - "temporal-difference-learning"
+        evidence_refs:
+          - "ei7263:factored-models"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Self-organizing maps, success/failure memory, and risk modulation"
+        concepts:
+          - "local-adaptive-function-approximation"
+        evidence_refs:
+          - "ei7263:local-adaptation"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Distributional reward coding: documented student presentation"
+        concepts:
+          - "distributional-value-coding"
+        evidence_refs:
+          - "ei7263:distributional-knowledge"
+          - "ei7263:distributional-presentation"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Computational methods, tools, and lab evidence"
+        concepts:
+          - "local-adaptive-function-approximation"
+          - "neural-training-data-contracts"
+          - "robot-perception-control-interfaces"
+        evidence_refs:
+          - "ei7263:robot-learning-tools"
+          - "ei7263:team-comparison"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Coverage validation and limitations"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: source-depth and implementation limits retained in registry/claims. Exact missing proofs/equations, uninspected code and proposed extensions are not reconstructed or promoted to experience."
+      -
+        section: "Thematic categories"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: relevant relationships integrated into concept/theme synthesis and controlled domains; no extra academic credit, target-sector deployment or historical application inferred."
+      -
+        section: "Source register"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: identity/provenance, source structure or extraction audit retained upstream and in registry; not a separate technical entity. Offered readings, absent sessions and duplicate material are not extra taught subjects or outcomes."
+  -
+    profile: "02_profiles/supplementary/dynamical_systems.md"
+    sha256: "0ee089d8408d9d47f7f4e513657c4bd64d0a78c45b31ef8c08a89901a0cbf60e"
+    status: "reviewed"
+    sections:
+      -
+        section: "Source identity and provenance"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: identity/provenance, source structure or extraction audit retained upstream and in registry; not a separate technical entity. Offered readings, absent sessions and duplicate material are not extra taught subjects or outcomes."
+      -
+        section: "Available materials and inspection scope"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: identity/provenance, source structure or extraction audit retained upstream and in registry; not a separate technical entity. Offered readings, absent sessions and duplicate material are not extra taught subjects or outcomes."
+      -
+        section: "Structured technical map"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: structural parent; all substantive technical child headings mapped below."
+      -
+        section: "Flows, maps and local qualitative behavior"
+        concepts:
+          - "dynamical-flows-bifurcations"
+        evidence_refs:
+          - "tum-dynamical-systems:local-reduction"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Bifurcations, normal forms and dimension reduction"
+        concepts:
+          - "dynamical-flows-bifurcations"
+        evidence_refs:
+          - "tum-dynamical-systems:local-reduction"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Global dynamics and chaos"
+        concepts:
+          - "invariant-measures-chaos"
+        evidence_refs:
+          - "tum-dynamical-systems:global-statistical"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Topological and measure-theoretic dynamics"
+        concepts:
+          - "invariant-measures-chaos"
+        evidence_refs:
+          - "tum-dynamical-systems:global-statistical"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Mathematical methods, computation and applications"
+        concepts:
+          - "invariant-measures-chaos"
+        evidence_refs:
+          - "tum-dynamical-systems:global-statistical"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Relationships and potential relevance"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: relevant relationships integrated into concept/theme synthesis and controlled domains; no extra academic credit, target-sector deployment or historical application inferred."
+      -
+        section: "References and deeper-extraction priorities"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: source-depth and implementation limits retained in registry/claims. Exact missing proofs/equations, uninspected code and proposed extensions are not reconstructed or promoted to experience."
+  -
+    profile: "02_profiles/supplementary/mobile_robotics.md"
+    sha256: "5bf73626234d2adecdcf32cca69faaa730bdb2cf3130a3a8678d9c2e27291e55"
+    status: "reviewed"
+    sections:
+      -
+        section: "Source identity and provenance"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: identity/provenance, source structure or extraction audit retained upstream and in registry; not a separate technical entity. Offered readings, absent sessions and duplicate material are not extra taught subjects or outcomes."
+      -
+        section: "Available materials and processing scope"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: identity/provenance, source structure or extraction audit retained upstream and in registry; not a separate technical entity. Offered readings, absent sessions and duplicate material are not extra taught subjects or outcomes."
+      -
+        section: "Structured technical map"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: structural parent; all substantive technical child headings mapped below."
+      -
+        section: "Foundations: state, geometry, sensors and motion"
+        concepts:
+          - "rigid-body-pose-kinematics"
+          - "robot-perception-control-interfaces"
+        evidence_refs:
+          - "tum-mobile-robotics:representations-tools"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Probabilistic nonlinear least squares"
+        concepts:
+          - "probabilistic-slam-mapping"
+          - "state-feedback-observers"
+        evidence_refs:
+          - "tum-mobile-robotics:estimation-mapping"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Recursive estimation and sparse visual SLAM"
+        concepts:
+          - "probabilistic-slam-mapping"
+          - "state-feedback-observers"
+        evidence_refs:
+          - "tum-mobile-robotics:estimation-mapping"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Dense, semantic and dynamic maps"
+        concepts:
+          - "probabilistic-slam-mapping"
+          - "state-feedback-observers"
+        evidence_refs:
+          - "tum-mobile-robotics:estimation-mapping"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Feedback and model-predictive control"
+        concepts:
+          - "nonlinear-model-predictive-control"
+          - "state-feedback-observers"
+        evidence_refs:
+          - "tum-mobile-robotics:feedback-control"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Planning, exploration and learned decisions"
+        concepts:
+          - "bellman-policy-evaluation"
+          - "geometric-sampling-motion-planning"
+          - "temporal-difference-learning"
+        evidence_refs:
+          - "tum-mobile-robotics:planning-learning"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Tools and represented exercise work"
+        concepts:
+          - "rigid-body-pose-kinematics"
+          - "robot-perception-control-interfaces"
+        evidence_refs:
+          - "tum-mobile-robotics:representations-tools"
+        disposition: "mapped"
+        reason: "mapped: substantive theories, methods, update structures and represented workflows consolidated at profile depth; exact missing conditions/formulas remain explicit limits. Personal/team artifacts are distinct from supplied code and scientific results."
+      -
+        section: "Relationships and potential professional relevance"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: relevant relationships integrated into concept/theme synthesis and controlled domains; no extra academic credit, target-sector deployment or historical application inferred."
+      -
+        section: "Source references and deeper-extraction priorities"
+        concepts: []
+        evidence_refs: []
+        disposition: "context_only"
+        reason: "context_only: source-depth and implementation limits retained in registry/claims. Exact missing proofs/equations, uninspected code and proposed extensions are not reconstructed or promoted to experience."

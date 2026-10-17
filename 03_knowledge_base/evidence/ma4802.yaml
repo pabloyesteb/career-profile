@@ -1,0 +1,176 @@
+experience: "ma4802"
+claims:
+  -
+    id: "ma4802:risk-selection"
+    experience: "ma4802"
+    kind: "knowledge"
+    concepts:
+      - "statistical-risk-model-selection"
+    statement: "Statistical decision losses, generalization, bias–variance, cross-validation, AIC/BIC and likelihood-ratio comparison, with assumptions distinguished from empirical model selection."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma4802-statistical-learning.md"
+        section: "Statistical decision theory and generalization"
+      -
+        profile: "02_profiles/courses/ma4802-statistical-learning.md"
+        section: "Model selection, validation, and statistical comparison"
+    limitations:
+      - "Taught/supplied material documents technical knowledge, not individual completion of every exercise or personal implementation."
+  -
+    id: "ma4802:linear-inference"
+    experience: "ma4802"
+    kind: "knowledge"
+    concepts:
+      - "regularized-linear-inference"
+      - "proximal-block-optimization"
+    statement: "Gaussian linear inference, ridge/Tikhonov shrinkage, Bayesian interpretation, Lasso/elastic net, LARS, Dantzig and grouped sparsity; supplied manual-code defects do not alter the intended mathematical methods."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma4802-statistical-learning.md"
+        section: "Linear inference, shrinkage, and sparse high-dimensional regression"
+    limitations:
+      - "Taught/supplied material documents technical knowledge, not individual completion of every exercise or personal implementation."
+  -
+    id: "ma4802:classification"
+    experience: "ma4802"
+    kind: "knowledge"
+    concepts:
+      - "generative-discriminative-classification"
+      - "first-order-stochastic-optimization"
+    statement: "LDA/QDA, covariance shrinkage, logistic likelihood gradients/Hessians and Newton/IRLS fitting; invertibility and separability conditions qualify the computations."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma4802-statistical-learning.md"
+        section: "Generative and discriminative classification"
+    limitations:
+      - "Taught/supplied material documents technical knowledge, not individual completion of every exercise or personal implementation."
+  -
+    id: "ma4802:ensembles-margins"
+    experience: "ma4802"
+    kind: "knowledge"
+    concepts:
+      - "ensemble-margin-kernel-methods"
+    statement: "CART, bagging, random forests/OOB, AdaBoost with corrected normalization, SVM margins/slack and perceptron convergence under separability."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma4802-statistical-learning.md"
+        section: "Trees, random forests, boosting, and margin methods"
+    limitations:
+      - "Taught/supplied material documents technical knowledge, not individual completion of every exercise or personal implementation."
+  -
+    id: "ma4802:neural-architectures"
+    experience: "ma4802"
+    kind: "knowledge"
+    concepts:
+      - "neural-training-data-contracts"
+    statement: "Multilayer learning, backpropagation, CNN channel/filter structure, pooling/normalization/residual variants, saliency, and introductory Transformer/ViT and HistoGPT applications."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma4802-statistical-learning.md"
+        section: "Perceptrons, multilayer networks, and convolutional learning"
+      -
+        profile: "02_profiles/courses/ma4802-statistical-learning.md"
+        section: "Transformers and introductory foundation-model applications"
+    limitations:
+      - "Taught/supplied material documents technical knowledge, not individual completion of every exercise or personal implementation."
+  -
+    id: "ma4802:mixtures"
+    experience: "ma4802"
+    kind: "knowledge"
+    concepts:
+      - "mixtures-latent-inference"
+    statement: "Latent-mixture responsibilities and EM likelihood improvement, Gaussian mixtures, hard k-means assignments and computational cost; local fitting is not global optimality."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma4802-statistical-learning.md"
+        section: "Latent mixture models, EM, and clustering"
+    limitations:
+      - "Taught/supplied material documents technical knowledge, not individual completion of every exercise or personal implementation."
+  -
+    id: "ma4802:latent-factors"
+    experience: "ma4802"
+    kind: "knowledge"
+    concepts:
+      - "latent-factors-independent-components"
+      - "matrix-low-rank-pca"
+    statement: "Factor analysis, probabilistic PCA, centered PCA reconstruction/SVD, and independent-component identifiability and fitting, keeping assumptions and scale/permutation ambiguities explicit."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma4802-statistical-learning.md"
+        section: "Factor analysis, PCA, and independent component analysis"
+    limitations:
+      - "Taught/supplied material documents technical knowledge, not individual completion of every exercise or personal implementation."
+      - "The source's ICA score-function notation is ambiguous; no missing update is reconstructed."
+  -
+    id: "ma4802:generative-representations"
+    experience: "ma4802"
+    kind: "knowledge"
+    concepts:
+      - "variational-generative-inference"
+      - "invertible-generative-flows"
+      - "minimax-adversarial-learning"
+    statement: "Autoencoder variants, RBM historical context, variational ELBO/reparameterization, invertible flows and adversarial generative representations; detailed later developments are consolidated with the dedicated generative-model course."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma4802-statistical-learning.md"
+        section: "Autoencoders and deep generative representation learning"
+    limitations:
+      - "Taught/supplied material documents technical knowledge, not individual completion of every exercise or personal implementation."
+  -
+    id: "ma4802:causal-models"
+    experience: "ma4802"
+    kind: "knowledge"
+    concepts:
+      - "causal-graphical-models"
+    statement: "DAG factorization/d-separation, Markov equivalence, faithfulness, structural causal equations, intervention and counterfactual reasoning; observation is not intervention."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma4802-statistical-learning.md"
+        section: "Graphical models and causal reasoning"
+    limitations:
+      - "Taught/supplied material documents technical knowledge, not individual completion of every exercise or personal implementation."
+  -
+    id: "ma4802:teaching-tools"
+    experience: "ma4802"
+    kind: "knowledge"
+    concepts:
+      - "neural-training-data-contracts"
+      - "statistical-risk-model-selection"
+    statement: "Supplied Python/scikit-learn/NumPy/pandas/Jupyter teaching resources and datasets complement the script; PyTorch tutorials and Keras examples are educational evidence, not individually completed software projects."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma4802-statistical-learning.md"
+        section: "Computational work and tools"
+    limitations:
+      - "Taught/supplied material documents technical knowledge, not individual completion of every exercise or personal implementation."
+

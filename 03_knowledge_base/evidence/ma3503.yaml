@@ -1,0 +1,82 @@
+experience: "ma3503"
+claims:
+  -
+    id: "ma3503:constraint-optimality"
+    experience: "ma3503"
+    kind: "knowledge"
+    concepts:
+      - "constrained-nonlinear-optimization"
+      - "convex-conjugacy-sparse-optimization"
+      - "hilbert-projection"
+    statement: "Existence/coercivity, variational inequalities and projected stationarity, tangent/linearized cones, ACQ/GCQ/MFCQ/LICQ/CQ2, KKT multipliers, strict complementarity and second-order quadratic growth are covered through proofs and degeneracy counterexamples."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma3503-nonlinear-optimization.md"
+        section: "Existence, convexity, and variational optimality"
+      -
+        profile: "02_profiles/courses/ma3503-nonlinear-optimization.md"
+        section: "Constraint geometry and constraint qualifications"
+      -
+        profile: "02_profiles/courses/ma3503-nonlinear-optimization.md"
+        section: "KKT theory and Lagrange multipliers"
+      -
+        profile: "02_profiles/courses/ma3503-nonlinear-optimization.md"
+        section: "Second-order optimality and quadratic growth"
+      -
+        profile: "02_profiles/courses/ma3503-nonlinear-optimization.md"
+        section: "Applications and model problems"
+    limitations:
+      - "The archive contains seven exercise/solution pairs but no lecture script, Moodle tests, examination or executable code; coverage is of the available analytical material."
+  -
+    id: "ma3503:penalty-augmented"
+    experience: "ma3503"
+    kind: "knowledge"
+    concepts:
+      - "constrained-nonlinear-optimization"
+    statement: "Local exact penalties, quadratic equality penalties, augmented-Lagrangian exactness at a correct multiplier under second-order sufficiency, Debreu's lemma and convergence-conditioned residual-multiplier analysis are covered."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma3503-nonlinear-optimization.md"
+        section: "Penalty and augmented-Lagrangian methods"
+      -
+        profile: "02_profiles/courses/ma3503-nonlinear-optimization.md"
+        section: "Second-order optimality and quadratic growth"
+      -
+        profile: "02_profiles/courses/ma3503-nonlinear-optimization.md"
+        section: "Algorithms and numerical methods"
+    limitations:
+      - "Local exactness with a sufficiently large penalty and correct multiplier is not a global convergence claim for arbitrary multiplier estimates."
+  -
+    id: "ma3503:sqp-barriers"
+    experience: "ma3503"
+    kind: "knowledge"
+    concepts:
+      - "constrained-nonlinear-optimization"
+    statement: "SQP quadratic/linearized subproblems, globalized steps and active sets, strict-complementarity identification, equality Lagrange–Newton, elastic feasibility restoration and logarithmic barrier continuation are covered analytically."
+    basis: "course_material"
+    actor: "not_applicable"
+    verification: "not_applicable"
+    references:
+      -
+        profile: "02_profiles/courses/ma3503-nonlinear-optimization.md"
+        section: "Sequential quadratic programming"
+      -
+        profile: "02_profiles/courses/ma3503-nonlinear-optimization.md"
+        section: "Elastic-mode SQP and logarithmic barriers"
+      -
+        profile: "02_profiles/courses/ma3503-nonlinear-optimization.md"
+        section: "Algorithms and numerical methods"
+      -
+        profile: "02_profiles/courses/ma3503-nonlinear-optimization.md"
+        section: "Exercise and assessment evidence"
+      -
+        profile: "02_profiles/courses/ma3503-nonlinear-optimization.md"
+        section: "Computational work and tools"
+    limitations:
+      - "No personally implemented solver or programming tool is evidenced. The barrier global-limit statement requires globally solved subproblems and the source's special strict-interior/feasible-set assumption."

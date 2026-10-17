@@ -1,0 +1,382 @@
+experience: "ma8102"
+claims:
+  -
+    id: "ma8102:gns-architecture"
+    experience: "ma8102"
+    kind: "implementation"
+    concepts:
+      - "geometry-conditioned-message-passing"
+    statement: "Implemented and evolved an encoder/message-passing/decoder aerodynamic pressure surrogate with geometric edge features, mean aggregation, MLP updates and GroupNorm."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/pyloworder.md"
+        section: "Encoder–message passing–decoder"
+        locator: "437eeab; 82eb033; 2f4abf7; layers.py"
+      -
+        profile: "02_profiles/projects/pyloworder.md"
+        section: "Geometry-conditioned graph representation"
+    limitations:
+      - "Published GNN methods are building blocks, not invented by the contributor."
+      - "Cell-dual surface graphs differ from imported NLR point graphs."
+      - "No PDE residual or conservation constraint is enforced."
+    tools:
+      - "Python"
+      - "PyTorch"
+      - "PyTorch Geometric"
+  -
+    id: "ma8102:seed-target-alignment"
+    experience: "ma8102"
+    kind: "implementation"
+    concepts:
+      - "graph-neighborhood-batching"
+    statement: "Corrected seeded supervision by viewing outputs as [B,N,F], restricting global targets through subset, and applying the same local seed indices with index_select."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/pyloworder.md"
+        section: "Two-axis batching and neighborhood sampling"
+        locator: "d0489f0; 4d84d88; _extract_seeded_output_targets"
+    limitations:
+      - "Implemented correctness guards are not proof of verified passing experiments."
+      - "Context nodes provide messages but are not automatically supervision targets."
+  -
+    id: "ma8102:disjoint-graph-injection"
+    experience: "ma8102"
+    kind: "implementation"
+    concepts:
+      - "graph-neighborhood-batching"
+    statement: "Vectorized a subgraph across B operating conditions, repeating geometry/features and offsetting edge indices by bN to create BN nodes and BE edges."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/pyloworder.md"
+        section: "Two-axis batching and neighborhood sampling"
+        locator: "InputsInjector.replicate_inject; 234144f; d17058c"
+    limitations:
+      - "No measured speedup is established."
+      - "The batch contains disjoint graph copies; replicas must not be accidentally connected."
+  -
+    id: "ma8102:dlr-nlr-mae"
+    experience: "ma8102"
+    kind: "result"
+    concepts:
+      - "geometry-conditioned-message-passing"
+    statement: "The external Hines-Bekemeyer DLR study reports NLR7301 pressure MAE 0.0061 for GNS versus 0.0126 for PODI."
+    basis: "external_reference"
+    actor: "third_party"
+    verification: "reported_not_reproduced"
+    references:
+      -
+        profile: "02_profiles/projects/pyloworder.md"
+        section: "Scientific-reference experiments and interpretation"
+        locator: "DLR Table 5; NLR data and pressure accuracy"
+      -
+        profile: "02_profiles/projects/pyloworder.md"
+        section: "Tests, evaluation and supported outcomes"
+    limitations:
+      - "These are DLR published results, not achieved metrics for the user's pyLOM implementation."
+      - "The profile does not establish saved pyLOM GNS benchmark metrics or reproduction."
+      - "Extrapolation and method-comparison qualifications remain in the profile."
+    result:
+      metric: "Mean absolute error of surface pressure coefficient"
+      values:
+        -
+          method: "DLR GNS"
+          value: 0.0061
+        -
+          method: "DLR POD interpolation"
+          value: 0.0126
+        -
+          method: "DLR MLP"
+          value: 0.0068
+        -
+          method: "DLR MLPN"
+          value: 0.0066
+      unit: "dimensionless pressure coefficient Cp"
+      evaluation_context: "NLR7301; 597 surface points; 98 converged cases split 39 training / 20 validation / 39 test."
+      sample_count: 39
+  -
+    id: "ma8102:mesh-geometry"
+    experience: "ma8102"
+    kind: "implementation"
+    concepts:
+      - "geometry-conditioned-message-passing"
+    statement: "Added Python edge-to-cell incidence, adjacency and BFS normal coherence, cross-product wall normals and mesh/graph integration with shape/type contracts."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/pyloworder.md"
+        section: "Connectivity, adjacency and normals"
+        locator: "0434ffe; d71b179; 5d546ce; c93fa41; 6ac4b42; 7c0ade0"
+      -
+        profile: "02_profiles/projects/pyloworder.md"
+        section: "Geometry-conditioned graph representation"
+        locator: "0434ffe; d71b179; 5d546ce; c93fa41; 6ac4b42; 7c0ade0"
+    limitations:
+      - "Outward tests assume convex polygonal cells; boundary-seeded coherence is not universal for disconnected/closed meshes."
+      - "Compiled geometry helpers are inherited integration, not sole Cython authorship."
+  -
+    id: "ma8102:graph-persistence"
+    experience: "ma8102"
+    kind: "implementation"
+    concepts:
+      - "geometry-conditioned-message-passing"
+      - "reproducible-validation-workflows"
+    statement: "Implemented named graph feature validation/filtering and graph_flat_v2 HDF5 save/load with explicit feature ordering and shape/schema checks; adapted inherited NetCDF/NPZ conversion and NN Dataset loading/filtering."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/pyloworder.md"
+        section: "Geometry-conditioned graph representation"
+        locator: "Graph.filter; io_h5.py; 1f53a37; b7384ab; 078acf4; e61101d; 8e295cb; 572d7a9"
+      -
+        profile: "02_profiles/projects/pyloworder.md"
+        section: "Scientific data processing and persistence"
+        locator: "Graph.filter; io_h5.py; 1f53a37; b7384ab; 078acf4; e61101d; 8e295cb; 572d7a9"
+    limitations:
+      - "Original converter, Dataset and general scientific I/O are collaborative/inherited; graph additions and adaptations are the attributable scope."
+  -
+    id: "ma8102:loss-scaling"
+    experience: "ma8102"
+    kind: "implementation"
+    concepts:
+      - "neural-training-data-contracts"
+    statement: "Added FocalMSE and target-weighted regression objectives, block/standard/robust scalers with inverse transforms, configurable loss/physical-output MAE checkpoint selection, best-state restoration, finite-value guards and clipping."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/pyloworder.md"
+        section: "Training, losses and numerical techniques"
+        locator: "0f3d8e0; 5b2de93; a65153f; ac9ebda; bac8c6d; d4b52d1; fd07c77; 5d50e4b; 7093c55"
+      -
+        profile: "02_profiles/projects/pyloworder.md"
+        section: "Regression objectives and checkpoint metrics"
+        locator: "0f3d8e0; 5b2de93; a65153f; ac9ebda; bac8c6d; d4b52d1; fd07c77; 5d50e4b; 7093c55"
+      -
+        profile: "02_profiles/projects/pyloworder.md"
+        section: "Scaling and inverse transformations"
+        locator: "0f3d8e0; 5b2de93; a65153f; ac9ebda; bac8c6d; d4b52d1; fd07c77; 5d50e4b; 7093c55"
+    limitations:
+      - "No empirical improvement from the loss additions is established."
+      - "Epoch metrics average batches rather than guarantee a sample-weighted dataset estimator; inverse-output MAE requires an explicit inverse function."
+      - "Near-zero standard deviation/IQR uses a unit denominator; robust percentiles are fitted on CPU."
+  -
+    id: "ma8102:typed-search"
+    experience: "ma8102"
+    kind: "implementation"
+    concepts:
+      - "reproducible-validation-workflows"
+      - "neural-training-data-contracts"
+    statement: "Added typed GNS intent/configuration and runtime resolution plus Optuna search integration, graph reuse, pruning/reporting and failed/pruned GPU-trial cleanup; objective and best-checkpoint semantics remain distinct."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/pyloworder.md"
+        section: "Typed experiments and Optuna integration"
+        locator: "d2742bf; 8a0727c; 9d3c143; 7a8768a; 1603450; 60632bf"
+    limitations:
+      - "100 trials is an example configuration, not 100 completed successful experiments."
+      - "Final logged validation loss is the trial objective even when the restored model uses a best checkpoint."
+  -
+    id: "ma8102:reproducibility-contracts"
+    experience: "ma8102"
+    kind: "implementation"
+    concepts:
+      - "reproducible-validation-workflows"
+    statement: "Integrated separate seeded operating/subgraph generators, explicit-generator shuffle requirements, order-sensitive topology fingerprints, checkpoint compatibility and configuration/scaler/metric artifacts; supplied GNS examples and documentation."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/pyloworder.md"
+        section: "Explicit randomness and traceable artifacts"
+        locator: "60632bf; da420a6; f0b7dad; 6dfb017; 3e9233e; a856048; 3f94d5c; bdd6184; 4ff3028; 45c20b7"
+      -
+        profile: "02_profiles/projects/pyloworder.md"
+        section: "Software engineering, tools and integration"
+        locator: "60632bf; da420a6; f0b7dad; 6dfb017; 3e9233e; a856048; 3f94d5c; bdd6184; 4ff3028; 45c20b7"
+    limitations:
+      - "Topology hash does not include all floating features or identify isomorphic graphs."
+      - "Existing seeding infrastructure is extended, not entirely authored; cross-device determinism and optional caller metadata are not universally guaranteed."
+  -
+    id: "ma8102:reproducibility-tests"
+    experience: "ma8102"
+    kind: "implementation"
+    concepts:
+      - "reproducible-validation-workflows"
+      - "neural-training-data-contracts"
+    statement: "Authored deterministic/evaluation/one- and multi-epoch state/loss tests, subgraph-sampling and rejection-of-unseeded-shuffle checks, with exact state comparisons."
+    basis: "project_code"
+    actor: "user"
+    verification: "statically_documented"
+    references:
+      -
+        profile: "02_profiles/projects/pyloworder.md"
+        section: "Tests, evaluation and supported outcomes"
+        locator: "0827701; G/test_gns_repro.py"
+    limitations:
+      - "Tests were documented by static source inspection, not executed or established as passing; no saved GNS benchmark accuracy, speedup or successful-trial count is supplied."
+  -
+    id: "ma8102:dlr-crm-pressure"
+    experience: "ma8102"
+    kind: "result"
+    concepts:
+      - "geometry-conditioned-message-passing"
+    statement: "The external DLR study compares CRM surface pressure surrogates; GNS is close to normal-aware MLPN, not uniformly best across engineering quantities."
+    basis: "external_reference"
+    actor: "third_party"
+    verification: "reported_not_reproduced"
+    references:
+      -
+        profile: "02_profiles/projects/pyloworder.md"
+        section: "Scientific-reference experiments and interpretation"
+        locator: "DLR §§4–6, Tables 6–9"
+    limitations:
+      - "External published results are not achieved pyLOM results."
+      - "Methods did not receive identical automated tuning; geometry-specific models and shock extrapolation errors limit generalization."
+    result:
+      metric: "Mean absolute error of surface pressure coefficient"
+      values:
+        -
+          method: "DLR GNS"
+          value: 0.0091
+        -
+          method: "DLR PODI"
+          value: 0.0198
+        -
+          method: "DLR MLP"
+          value: 0.0117
+        -
+          method: "DLR MLPN"
+          value: 0.0092
+      unit: "dimensionless pressure coefficient Cp"
+      evaluation_context: "Fixed 1-g CRM shape without vertical tailplane, six operating/control parameters, about 43 million volume and 454404 surface points; 149 cases split 75 train / 30 validation / 44 test."
+      sample_count: 44
+  -
+    id: "ma8102:dlr-loads"
+    experience: "ma8102"
+    kind: "result"
+    concepts:
+      - "geometry-conditioned-message-passing"
+    statement: "DLR evaluates integrated lift and pitching moment separately from pointwise pressure accuracy; improved pressure error does not imply every load metric improves."
+    basis: "external_reference"
+    actor: "third_party"
+    verification: "reported_not_reproduced"
+    references:
+      -
+        profile: "02_profiles/projects/pyloworder.md"
+        section: "Scientific-reference experiments and interpretation"
+        locator: "DLR §§4–6, Tables 6–9"
+    limitations:
+      - "Not personal implementation results; CL and Cm errors are distinct metrics, not a pooled error."
+      - "Separate Mach-0.82 eight-case polar has different conditions and denominator."
+    result:
+      metric: "Mean absolute error of aerodynamic coefficients"
+      values:
+        -
+          method: "GNS CL"
+          value: 0.0046
+        -
+          method: "PODI CL"
+          value: 0.0091
+        -
+          method: "MLPN CL"
+          value: 0.0044
+        -
+          method: "GNS Cm"
+          value: 0.0058
+        -
+          method: "PODI Cm"
+          value: 0.0058
+      unit: "dimensionless lift coefficient CL / pitching-moment coefficient Cm (method labels distinguish targets)"
+      evaluation_context: "CRM 44-case held-out test from 75/30/44 split; pressure fields integrated for loads."
+      sample_count: 44
+  -
+    id: "ma8102:dlr-data-scaling"
+    experience: "ma8102"
+    kind: "result"
+    concepts:
+      - "geometry-conditioned-message-passing"
+    statement: "DLR reports lower CRM GNS pressure error with more training data, but the evaluated test sets change."
+    basis: "external_reference"
+    actor: "third_party"
+    verification: "reported_not_reproduced"
+    references:
+      -
+        profile: "02_profiles/projects/pyloworder.md"
+        section: "Scientific-reference experiments and interpretation"
+        locator: "DLR §§4–6, Tables 6–9"
+    limitations:
+      - "Changing test sets prevent treating these numbers as a controlled fixed-test learning curve."
+      - "External research result, not a pyLOM training achievement."
+    result:
+      metric: "Mean absolute error of surface pressure coefficient"
+      values:
+        -
+          method: "37 training / 75 test"
+          value: 0.0153
+        -
+          method: "75 training / 44 test"
+          value: 0.0091
+        -
+          method: "104 training / 15 test"
+          value: 0.0081
+      unit: "dimensionless pressure coefficient Cp"
+      evaluation_context: "Different CRM training/test partitions; validation remains part of the study. Each method label retains its test denominator."
+  -
+    id: "ma8102:dlr-cost"
+    experience: "ma8102"
+    kind: "result"
+    concepts:
+      - "geometry-conditioned-message-passing"
+    statement: "DLR reports expensive training but short surrogate evaluation, motivating amortization rather than a hardware-normalized personal speedup."
+    basis: "external_reference"
+    actor: "third_party"
+    verification: "reported_not_reproduced"
+    references:
+      -
+        profile: "02_profiles/projects/pyloworder.md"
+        section: "Scientific-reference experiments and interpretation"
+        locator: "DLR §§4–6, Tables 6–9"
+    limitations:
+      - "Different hardware and upfront training/data costs prohibit a universal speedup or real-time guarantee."
+      - "PODI is cheaper still; these are external timings, not measurements of the user's code."
+    result:
+      metric: "Reference training and per-case evaluation wall time"
+      values:
+        -
+          method: "CFD per case, 64 CPU cores"
+          value: 19
+        -
+          method: "GNS training, RTX 2080"
+          value: 36
+        -
+          method: "GNS evaluation, RTX 2080"
+          value: 0.0005
+        -
+          method: "MLP training, RTX 2080"
+          value: 8
+        -
+          method: "MLPN training, RTX 2080"
+          value: 6
+        -
+          method: "MLP/MLPN evaluation, RTX 2080"
+          value: 0.00005
+      unit: "hours"
+      evaluation_context: "DLR CRM Table 9; CFD and neural timings use different hardware and distinguish training cost from evaluation cost."
