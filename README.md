@@ -1,22 +1,26 @@
 # Career Profile
 
-Evidence-based academic and technical profiles for later knowledge synthesis and tailored applications. Project instructions are in `AGENTS.md`; configured source locations are in `config/sources.yaml`.
+A source-grounded knowledge resource for understanding academic and technical experience, preparing interviews and developing tailored professional applications.
 
-## Current state
+## Redesign in progress
 
-Supplementary integration (2026-10-15): **16 definitive course profiles + 4 definitive project profiles + 5 supplementary material profiles = 25 corpus profiles**. The accredited/definitive total remains 20; no academic credits or transcript records were added. All five previously unmatched archives are now authorized supplementary sources, with exact learning relationships unspecified. See `01_inventory/supplementary_processing_manifest.csv` and the completion review; older scope-decision language below is superseded.
+The planned architecture separates:
 
-Updated on 2026-10-15: **20 definitive documents — 16 course profiles and 4 project profiles**. The 21 transcript entries comprise 18 `complete_validated` and three `metadata_only` language entries. IN2138 now has an official-syllabus-based profile with limited sources and an explicit Summer Semester 2024 edition qualification. The scientific paper is an additional non-transcript project. MA8102 is represented by pyLowOrder; CIT413042 Case Studies Optimization has both course and project views of the same academic work, not two independent experiences.
+- A centralized **Source registry** and source-specific hierarchical trees.
+- Relatively atomic **knowledge Items** extracted from those sources.
+- A cross-source semantic graph of **Topics and Competencies**.
+- A downstream **master professional profile** and application-specific outputs.
 
-See [profiles_completion_review.md](01_inventory/profiles_completion_review.md) for item-by-item coverage, remaining source/scope decisions and readiness qualifications. Definitive profiles are ready for source-qualified synthesis; five unmatched archives remain potentially relevant candidates awaiting a scope decision, not silently treated as profiled or irrelevant.
+The detailed data model has not been finalized or implemented by this cleanup. See [AGENTS.md](AGENTS.md) for current working instructions.
 
-## Profile organization
+## Existing reference material
 
-- `02_profiles/courses/`: definitive course profiles and `_template.md` (template only).
-- `02_profiles/supplementary/`: five supplementary academic-material topic maps; no established academic credit or personal assignment completion.
-- `02_profiles/projects/`: `scientific_paper.md`, `thesis.md`, `pyloworder.md`, and `case_studies_optimization.md`.
-- `02_profiles/projects/_analysis/`: internal thesis reconstruction and pyLowOrder contribution analysis, retained for evidence/review rather than counted as definitive profiles.
-- `01_inventory/`: transcript/source catalogs, processing manifest and review reports.
-- `prompts/projects/`: existing project workflows; organization preserved.
+- `00_sources/`: original documents and archives, treated as read-only.
+- `01_inventory/`: existing source catalogs and historical processing records.
+- `02_profiles/`: previously extracted academic and project knowledge, retained as reference—not as a template or classification for the new architecture.
+- `scripts/`: retained source-inspection, processing and inventory utilities; check legacy paths and assumptions before reuse.
+- `04_master_profile/` and `05_cv/`: preserved downstream directories.
 
-No thematic knowledge base, consolidated master profile or CV is produced by this reconciliation.
+[config/sources.yaml](config/sources.yaml) records existing local and external source locations. Relative paths are resolved against its directory. It remains unchanged and does not yet define the new Source registry.
+
+The former extraction workflows have been retired. Preserve their knowledge and provenance without carrying their methodology into the redesign.
