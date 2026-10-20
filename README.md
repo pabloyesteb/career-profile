@@ -15,13 +15,13 @@ The current focus is a first five-Item pilot in `01_tree/`; graph construction a
 
 ## Existing reference material
 
-- `00_sources/raw/`: original documents and archives, treated as read-only.
+- `00_sources/raw/` and `00_sources/aux/`: original project/course materials and auxiliary documents, treated as read-only.
 - `00_sources/inventory/`: `sources.yaml`, `courses.csv`, `archive_files.csv` and `archive_matches.csv`.
 - `docs/legacy_inventory/`: historical processing reports and catalogs retained for reference.
 - `00_sources/source_profiles/`: previously extracted academic and project knowledge, retained as reference—not as a template or classification for the new architecture.
 - `01_tree/`: source-specific trees and Items, populated only during authorized extraction.
 - `scripts/codex-helpers/`: source-inspection, processing and inventory utilities.
-- `04_master_profile/` and `05_cv/`: planned downstream directories, absent from the current checkout.
+- `03_master_profile/` and `04_cv/`: downstream professional-profile and application directories.
 
 [00_sources/inventory/sources.yaml](00_sources/inventory/sources.yaml) registers conceptual Sources with stable IDs, titles, broad types and primary locations. Related project documents and repositories share a Source; individual archive members are cataloged in [archive_files.csv](00_sources/inventory/archive_files.csv). Relative locations resolve against the registry directory.
 

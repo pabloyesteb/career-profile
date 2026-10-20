@@ -1,0 +1,9 @@
+# Fictional project fixture: not a real or registered personal Source.
+source: example-research-project
+nodes:
+  - id: example-project-architecture
+    title: System Architecture
+    parent: null
+  - id: example-project-solvers
+    title: Numerical Solver Components
+    parent: example-project-architecture

@@ -37,7 +37,7 @@ def main():
     for p in sorted((REPO / 'experiments/runs').rglob('config.yaml')):
         records.append({'path': str(p.relative_to(REPO)),
                         'sha256': hashlib.sha256(p.read_bytes()).hexdigest()})
-    source_root = Path(__file__).resolve().parents[2] / '00_sources/raw/master_thesis'
+    source_root = Path(__file__).resolve().parents[2] / '00_sources/raw/projects/master_thesis'
     local_sources = {p.name: hashlib.sha256(p.read_bytes()).hexdigest()
                      for p in sorted(source_root.iterdir()) if p.is_file()}
     (OUT / 'repository_snapshot.json').write_text(json.dumps({

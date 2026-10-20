@@ -1,0 +1,18 @@
+# Illustrative fixture: not a registered Source or a verified course extraction.
+source: example-optimization
+nodes:
+  - id: example-foundations
+    title: Mathematical Foundations
+    parent: null
+  - id: example-optimality
+    title: Optimality Conditions
+    parent: null
+  - id: example-unconstrained
+    title: Unconstrained Optimization
+    parent: example-optimality
+  - id: example-constrained
+    title: Constrained Optimization
+    parent: example-optimality
+  - id: example-algorithms
+    title: Numerical Algorithms
+    parent: null
