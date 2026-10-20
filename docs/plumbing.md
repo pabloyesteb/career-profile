@@ -33,7 +33,9 @@ career-profile/
     index.html                     # proposed generated production viewer
   scripts/
     codex-helpers/
-      tree.py                       # planned single-purpose helper
+      tree.py                       # planned CLI entry point
+      tree_data.py                  # planned shared loading and validation
+      tree_render.py                # planned static HTML generation
   docs/
     project_overview.md
     00_sources.md
@@ -63,7 +65,7 @@ Paths inside `sources.yaml` are resolved **relative to `00_sources/inventory/`**
 
 ## Tree plumbing: command interface (planned)
 
-One script is sufficient for the initial tree stage:
+A single CLI entry point is sufficient for the initial tree stage. Internally, keep reading/validation and rendering separate, using at most a few focused Python modules rather than a monolithic script or an installable application:
 
 ```sh
 python3 scripts/codex-helpers/tree.py validate
@@ -79,6 +81,18 @@ python3 scripts/codex-helpers/tree.py render --examples
 
 The example-mode syntax is an implementation convention proposed here; it is not an existing command until built. The example viewer writes a separate file, proposed `01_tree/example_tree/index.html`, while production rendering writes `01_tree/index.html`. Generated viewers are disposable outputs and can be regenerated from authoritative YAML/Markdown.
 
+### Minimal internal architecture
+
+The three proposed files have narrow responsibilities:
+
+- `tree.py`: `argparse` command interface, root discovery, mode selection, diagnostics and exit codes.
+- `tree_data.py`: one shared YAML/frontmatter reader, temporary in-memory representation and structural validation. `validate` and `render` must not use separate parsers.
+- `tree_render.py`: static HTML generation from the already-loaded, validated representation; it must not interpret the authoritative files independently.
+
+This is a **small collection of scripts**, not a Python package, backend, persistence layer or extensible framework. These filenames describe a practical initial split, not an obligation to create empty modules: consolidate or separate only where the resulting code remains easier to follow. Simple dictionaries or standard-library `dataclass` values may represent objects temporarily in memory; neither becomes a second source of truth. No ORM, database, schema framework, web server or JavaScript framework is required. Standard-library `argparse` and `unittest` are adequate for the CLI and focused tests.
+
+Each fact has one authoritative home: Source identity/locations in `sources.yaml`, TreeNode structure in the per-Source tree YAML, and Item identity/content/placement in Item Markdown. Derived in-memory objects and HTML must not be edited as knowledge records. Future Graph code may reuse the stable Item IDs and data reader, but current Tree plumbing must not anticipate an unspecified Graph implementation.
+
 ### Validation responsibilities
 
 Validation is structural, not a proof that a source was extracted completely or that a theorem is true. Its checks cover:
@@ -89,8 +103,9 @@ Validation is structural, not a proof that a source was extracted completely or 
 - TreeNode parent existence, same-Source ownership and acyclicity; `parent: null` is valid.
 - Item parent existence, valid `type` vocabulary, substantive Markdown body and an identifiable provenance section.
 - Clear diagnostics with file locations and nonzero exit status when invalid.
+- Safe handling of frontmatter delimiters, malformed metadata and IDs used in file paths; no path traversal outside the expected data roots.
 
-An empty production tree is valid during initial setup. Example validation is independent of the production registry and must not change or append to it.
+An empty production tree is valid during initial setup. TreeNodes with no Items are permitted during incremental extraction; an optional warning may flag branches still empty at final Source review. Structural validity does not certify completeness, provenance accuracy or technical correctness. Example validation is independent of the production registry and must not change or append to it.
 
 ### Rendering responsibilities
 
@@ -117,7 +132,11 @@ The explorer provides:
 - Search over Item titles and display of Item `type`.
 - Clear empty-state behavior when no production data exists.
 
-Sibling presentation order is for navigation convenience and does not assert an original teaching sequence; there is **no `order` field**. Renderers must treat Markdown content as data, not executable HTML or JavaScript. Math/Markdown rendering may use small established libraries, with offline/CDN behavior stated in the implementation report. No editing UI, backend server or authentication is required.
+Sibling presentation order is for navigation convenience and does not assert an original teaching sequence; there is **no `order` field**. Preserve the YAML listing order among sibling TreeNodes as a simple editorial display convention; sort sibling Items by title for a stable initial display. Neither ordering claims to reconstruct source chronology.
+
+Prefer converting Item Markdown to safe HTML **during Python rendering**, then using only small browser-side JavaScript for navigation, selection and title search. The generated explorer must not parse YAML or become a separate store of knowledge. A self-contained static HTML file is the preferred initial output. Keep the viewer usable offline: if math rendering or other assets are needed, use version-pinned local assets or embed them in the generated output rather than requiring a CDN at runtime. Established parsers (for example, PyYAML and a maintained Markdown renderer) and a small math renderer such as KaTeX are preferable to handwritten YAML, Markdown or TeX parsers. Any external dependency must have a documented purpose and reproducible version.
+
+Renderers must treat Markdown content as **untrusted data**, not executable HTML or JavaScript: escape or sanitize content and prevent script injection through titles, metadata or Markdown. `render` runs the shared structural validation first; on failure it exits nonzero and leaves any existing valid output untouched. No editing UI, backend server or authentication is required.
 
 ## Example workflow
 
@@ -149,4 +168,4 @@ Tree plumbing does not include archive extraction, PDF parsing, content segmenta
 
 ## Implementation verification
 
-A completed tree helper can be checked by validating and rendering isolated examples, testing broken parent/duplicate ID/invalid type/cycle cases, verifying production excludes fixtures, running commands from the repository root and another working directory, and running `git diff --check`. Report test outcomes and limitations rather than treating this planned description as evidence of a completed implementation.
+A completed tree helper can be checked by validating and rendering isolated examples; testing broken parent, duplicate ID, mismatched Source, invalid type, cycle, malformed frontmatter and unsafe path cases; verifying production excludes fixtures; confirming HTML/JavaScript in Item bodies cannot execute; confirming a failed render does not replace a prior valid explorer; running commands from the repository root and another working directory; and running `git diff --check`. A few focused `unittest` cases and end-to-end fixture tests suffice initially. Report test outcomes and limitations rather than treating this planned description as evidence of a completed implementation.

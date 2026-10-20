@@ -24,7 +24,7 @@ A TreeNode has three required fields:
 | `title` | Human-readable name of the division |
 | `parent` | ID of another TreeNode in the same Source, or `null` for a top-level division |
 
-Node-parent relationships form an acyclic forest within each Source; multiple `parent: null` nodes are valid.
+Node-parent relationships form an acyclic forest within each Source; multiple `parent: null` nodes are valid. Node IDs remain stable when branches are reorganized; their identity must not be derived from mutable parent paths or chapter positions. Nodes may remain empty during incremental extraction.
 
 ### Item
 
@@ -39,6 +39,8 @@ Every Item is a standalone Markdown file with five required YAML frontmatter fie
 | `parent` | Primary TreeNode ID in that Source |
 | `title` | Meaningful, human-readable title |
 | `type` | Dominant nature of the knowledge represented |
+
+Item IDs remain stable across file moves or TreeNode reorganizations. In particular, Item identity must not depend on the `parent` path. Use human-readable IDs with a simple portable convention (lowercase ASCII letters, digits and hyphens); do not introduce opaque UUIDs or path-derived identifiers.
 
 The `type` vocabulary is deliberately small:
 
@@ -123,7 +125,7 @@ nodes:
     parent: null
 ```
 
-An example Item associated with `example-constrained` carries the relation in its own frontmatter. The association is therefore stored **once**, not repeated as an `items:` list in the tree YAML. Nodes can be added incrementally as a source's actual structure becomes clear. YAML listing order and alphabetical Item filename order do not promise the source's original teaching chronology.
+An example Item associated with `example-constrained` carries the relation in its own frontmatter. The association is therefore stored **once**, not repeated as an `items:` list in the tree YAML. Nodes can be added incrementally as a source's actual structure becomes clear. A viewer may preserve YAML listing order among sibling TreeNodes and sort Items by title for convenience; neither order promises the source's original teaching chronology.
 
 ## Item Markdown format and worked examples
 
