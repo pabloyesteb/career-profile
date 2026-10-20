@@ -1,5 +1,7 @@
 # Slide-processing validation: Fundamentals of Optimization for Machine Learning
 
+Historical reference retained during inventory simplification. Links and source locations have been updated; dated processing statuses and workflow instructions below describe the retired extraction phase. The active registry is `01_inventory/sources.yaml`; document fingerprints remain in the relevant project profiles.
+
 Validation completed: 2026-10-13. Scope is limited to course ID `additional-foml` and archive `00_sources/tum/archives/fund_opt_ML_CIT413031.zip`.
 
 ## Result

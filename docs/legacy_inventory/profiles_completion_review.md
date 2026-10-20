@@ -1,5 +1,7 @@
 # Individual profile completion review
 
+Historical reference retained during inventory simplification. Links and source locations have been updated; dated processing statuses and workflow instructions below describe the retired extraction phase. The active registry is `01_inventory/sources.yaml`; document fingerprints remain in the relevant project profiles.
+
 Latest integration (2026-10-15): **16 definitive course profiles, four definitive project profiles and five supplementary academic-material profiles**. Total synthesis corpus: **25 profiles**, of which 20 are the existing definitive course/project set. All five formerly scope-unresolved archives are now user-authorized supplementary sources. Their academic credit is not established and their individual learning relationships remain unspecified. No transcript item, ECTS or accredited course was added. Separate supplementary tracking is in `supplementary_processing_manifest.csv`; prior checkpoint statements below are superseded where they request an inclusion decision.
 
 Current review: **2026-10-15**, after adding the official IN2138 syllabus profile. IN2138 is now complete for limited syllabus evidence (Summer Semester 2024); no matching archive or personal implementation evidence is implied. This supersedes its earlier missing-source disposition. Prior checkpoint: scientific-reference enrichment of pyLowOrder. Counts and academic mappings below were checked against actual definitive files and the current inventories. The complete Hines–Bekemeyer DLR paper is registered as `pyloworder_dlr_reference`; targeted additions explain aerodynamic motivation, geometric/message-passing methodology, its translation into pyLOM, and separately attributed published experiments. It is a supporting reference, not a fifth project or new academic record. Existing contribution analysis and unrelated completed profiles were not reopened.
@@ -24,7 +26,7 @@ All 19 course archives are accounted for: 12 exact transcript matches, two user-
 
 ## 2. Item-by-item completion inventory
 
-Source identifiers in the table resolve to actual paths/hashes in `files_manifest.csv`; ZIPs are under `00_sources/tum/archives/`. `transcript` identifies the authoritative academic record. Repository keys resolve through `config/sources.yaml`, relative to that configuration's directory. Statuses are the existing manifest conventions; qualifiers do not create new states.
+The table retains historical material identifiers. Current conceptual Source IDs and locations are in `01_inventory/sources.yaml`; document fingerprints are retained in project profiles, and ZIPs are under `00_sources/tum/archives/`. `transcript` identifies the authoritative academic record. Repository locations are grouped under their conceptual Sources in `01_inventory/sources.yaml`, relative to the registry directory. Statuses are the existing manifest conventions; qualifiers do not create new states.
 
 | Stable ID / official item | Associated source material | Current status / definitive profile | Further action genuinely necessary? |
 |---|---|---|---|
@@ -151,7 +153,7 @@ Changes performed:
 - Updated the MA6018 next-action reference to the relocated internal report; definitive profile/status unchanged.
 - Corrected `summary.md`'s current-status notice, which still mentioned deferred projects, and marked original readiness prose as historical.
 - Corrected the current MA8102 review bullet that still said deferred; added a current disposition above historical review sections.
-- Updated analysis references in inventory/repository notes and the presentation-source note. `files_manifest.csv` source paths/hashes/pages remain unchanged.
+- Updated analysis references in inventory/repository notes and the presentation-source note. Source locations and document fingerprints are now retained in the registry and relevant project profiles.
 - Preserved `courses.csv` and `archive_matches.csv`: academic metadata, archive absence, confirmed mappings and unmatched decisions are already accurate.
 - Preserved `slide_processing_report.md`: its completed FOML profile and provenance limitation remain current.
 - Preserved historical stage reports rather than rewriting their completion dates or retroactively describing later projects as already done.
@@ -164,7 +166,7 @@ References were updated in:
 
 - `02_profiles/projects/thesis.md` and `pyloworder.md` — reference-path substitutions only; technical content unchanged.
 - `prompts/projects/thesis_analysis.md`, `thesis_profile.md`, `pyloworder_analysis.md`, `pyloworder_profile.md` — analysis paths only, preserving organization/workflow.
-- `01_inventory/processing_manifest.csv`, `review_issues.md`, `repositories.md`, `files_manifest.csv`.
+- `docs/legacy_inventory/processing_manifest.csv`, `review_issues.md`, `repositories.md`, `01_inventory/sources.yaml`.
 - `AGENTS.md` — distinguishes definitive project profiles and internal `_analysis/`.
 - `README.md` — previously empty; now provides a minimal current-state/layout index and links to this review.
 

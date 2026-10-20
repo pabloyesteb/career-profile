@@ -16,11 +16,12 @@ The detailed data model has not been finalized or implemented by this cleanup. S
 ## Existing reference material
 
 - `00_sources/`: original documents and archives, treated as read-only.
-- `01_inventory/`: existing source catalogs and historical processing records.
+- `01_inventory/`: `sources.yaml`, `courses.csv`, `archive_files.csv` and `archive_matches.csv`.
+- `docs/legacy_inventory/`: historical processing reports and catalogs retained for reference.
 - `02_profiles/`: previously extracted academic and project knowledge, retained as reference—not as a template or classification for the new architecture.
 - `scripts/`: retained source-inspection, processing and inventory utilities; check legacy paths and assumptions before reuse.
 - `04_master_profile/` and `05_cv/`: preserved downstream directories.
 
-[config/sources.yaml](config/sources.yaml) records existing local and external source locations. Relative paths are resolved against its directory. It remains unchanged and does not yet define the new Source registry.
+[01_inventory/sources.yaml](01_inventory/sources.yaml) registers conceptual Sources with stable IDs, titles, broad types and primary locations. Related project documents and repositories share a Source; individual archive members are cataloged in `archive_files.csv`. Relative locations resolve against the registry directory.
 
 The former extraction workflows have been retired. Preserve their knowledge and provenance without carrying their methodology into the redesign.

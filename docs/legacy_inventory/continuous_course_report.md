@@ -1,5 +1,7 @@
 # Continuous course-profiling completion and recovery report
 
+Historical reference retained during inventory simplification. Links and source locations have been updated; dated processing statuses and workflow instructions below describe the retired extraction phase. The active registry is `01_inventory/sources.yaml`; document fingerprints remain in the relevant project profiles.
+
 Final state checked: **2026-10-14**.
 
 ## Recovery result
@@ -46,7 +48,7 @@ Automated checks establish structural consistency, not the truth of every mathem
 
 ## Remaining limitations
 
-Detailed issues remain in `01_inventory/review_issues.md` and individual profiles. Material limitations include missing lecture/practical components, mixed course versions, formula/implementation defects, and limitations on attributing group work. In particular:
+Detailed issues remain in `docs/legacy_inventory/review_issues.md` and individual profiles. Material limitations include missing lecture/practical components, mixed course versions, formula/implementation defects, and limitations on attributing group work. In particular:
 
 - FOML's archive match is user-confirmed, but all supplied slides have MIT/MLSS/PKU rather than TUM internal branding; exact TUM-delivered subsets remain unresolved.
 - NLP preserves current-slide versus historical-exam provenance and flags malformed RLHF/CRF displays rather than reconstructing missing equations.
@@ -59,8 +61,8 @@ No thesis, article, pyLowOrder, thematic synthesis or CV work was started. The n
 ## Files changed in this recovery execution
 
 - Created `scripts/validate_profile_state.py` for repeatable whole-manifest checkpoint checks.
-- Created this report, `01_inventory/continuous_course_report.md`.
-- Added a current-status notice to `01_inventory/summary.md`, preserving its historical inventory findings.
-- Clarified historical inventory-versus-profiling wording in `01_inventory/review_issues.md`.
+- Created this report, `docs/legacy_inventory/continuous_course_report.md`.
+- Added a current-status notice to `docs/legacy_inventory/summary.md`, preserving its historical inventory findings.
+- Clarified historical inventory-versus-profiling wording in `docs/legacy_inventory/review_issues.md`.
 
 The already accurate processing manifest and all validated course profiles were left unchanged in this recovery execution.

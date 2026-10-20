@@ -1,5 +1,7 @@
 # Course profile extraction methodology
 
+Historical reference retained during inventory simplification. Links and source locations have been updated; dated processing statuses and workflow instructions below describe the retired extraction phase. The active registry is `01_inventory/sources.yaml`; document fingerprints remain in the relevant project profiles.
+
 ## Purpose and scope
 
 This methodology converts heterogeneous course archives into concise, technically specific, source-grounded course profiles. It records material taught in a completed course; it does not assess personal proficiency. A profile must cover the course actually evidenced by local material and must not be expanded with plausible but unsupported subject matter.

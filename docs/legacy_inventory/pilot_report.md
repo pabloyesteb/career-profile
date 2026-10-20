@@ -1,5 +1,7 @@
 # Stage 2 course-profiling pilot report
 
+Historical reference retained during inventory simplification. Links and source locations have been updated; dated processing statuses and workflow instructions below describe the retired extraction phase. The active registry is `01_inventory/sources.yaml`; document fingerprints remain in the relevant project profiles.
+
 Pilot completed: 2026-10-13. Scope was limited to three courses; no thematic knowledge-base files were created.
 
 ## Pilot selection
@@ -23,7 +25,7 @@ The review inspected every major lecture chapter/block, every official exercise 
 ## Outputs
 
 - Reusable template: `02_profiles/courses/_template.md`
-- Extraction and validation method: `01_inventory/course_profile_methodology.md`
+- Extraction and validation method: `docs/legacy_inventory/course_profile_methodology.md`
 - Functional Analysis: `02_profiles/courses/ma3001-functional-analysis.md`
 - Combinatorial Optimization: `02_profiles/courses/ma4502-combinatorial-optimization.md`
 - Numerical Methods for Uncertainty Quantification: `02_profiles/courses/ma5348-numerical-methods-uncertainty-quantification.md`

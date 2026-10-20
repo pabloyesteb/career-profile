@@ -1,5 +1,7 @@
 # Inventory issues requiring review
 
+Historical reference retained during inventory simplification. Links and source locations have been updated; dated processing statuses and workflow instructions below describe the retired extraction phase. The active registry is `01_inventory/sources.yaml`; document fingerprints remain in the relevant project profiles.
+
 Inventory date: 2026-10-13.
 
 ## Supplementary materials resolved — 2026-10-15 (current disposition)
@@ -36,7 +38,7 @@ IN2138 remains `blocked_missing_source`; a user decision is needed to obtain mat
 
 ## pyLowOrder contribution analysis — 2026-10-14
 
-Internal analysis completed at `02_profiles/projects/_analysis/pyloworder_analysis.md`, with 242 locally reachable commits under high-confidence identity `P. Yeste <p.yesteb@upm.es>` cataloged in `pyloworder_commits.csv` (241 non-merge plus one merge). Core contributions are GNS architecture/graph/batching, Python mesh geometry, graph I/O/data adaptation, training/scalers and reproducible experiment utilities. Other developers' compiled geometry and original converter, and the library's wider numerical modules, are explicitly excluded from exclusive attribution.
+Internal analysis completed at `02_profiles/projects/_analysis/pyloworder_analysis.md`, with 242 locally reachable commits under high-confidence identity `P. Yeste <p.yesteb@upm.es>` cataloged in `02_profiles/projects/_analysis/pyloworder_commits.csv` (241 non-merge plus one merge). Core contributions are GNS architecture/graph/batching, Python mesh geometry, graph I/O/data adaptation, training/scalers and reproducible experiment utilities. Other developers' compiled geometry and original converter, and the library's wider numerical modules, are explicitly excluded from exclusive attribution.
 
 Final project profile remains unstarted. Clarify additional identities/branches; dates/components belonging to the MA8102 internship; upstream release inclusion; externally stored NLR7301 results/checkpoints/test logs; and any undocumented collaborative attribution. No GNS accuracy/speedup/test-pass outcome was verified; no project code or tests were executed. Current examples/tests have historical API mismatches, recorded only where relevant to outcome claims.
 
@@ -64,7 +66,7 @@ The earlier Cognitive Systems ambiguity is also resolved: the user confirmed tha
 
 ## Configuration and layout observations
 
-- The stale PDF paths, malformed `case_studies` indentation, and missing case-studies PDF entry in `config/sources.yaml` were corrected on 2026-10-13. Configured PDF paths now resolve to the inventoried files.
+- The stale PDF paths, malformed `case_studies` indentation, and missing case-studies PDF entry in `01_inventory/sources.yaml` were corrected on 2026-10-13. Configured PDF paths now resolve to the inventoried files.
 - Empty source directories `00_sources/pyloworder/` and `00_sources/tum/extracted/` exist. pyLowOrder is correctly available through the configured external repository; no extracted TUM files were relied upon.
 
 ## Missing or unmatched material

@@ -7,7 +7,7 @@ from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-REPO = Path('/home/pablo/pyLowOrder')
+REPO = Path('/home/pablo/UPM/pyLowOrder')
 OUT = ROOT / '.cache/pyloworder_analysis'
 
 
@@ -28,7 +28,7 @@ def main():
                     | {'changed_files': ';'.join(changed)})
         patch = git('show', '--format=fuller', '--stat', '--patch', '--no-ext-diff', commit)
         (OUT / f'{commit}.patch').write_text(patch)
-    with (ROOT / '01_inventory/pyloworder_commits.csv').open('w', newline='') as handle:
+    with (ROOT / '02_profiles/projects/_analysis/pyloworder_commits.csv').open('w', newline='') as handle:
         writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
         writer.writeheader()
         writer.writerows(rows)
