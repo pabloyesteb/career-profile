@@ -1,75 +1,52 @@
-# Source-specific knowledge tree
+# Knowledge model
 
-## Purpose
+## Responsibility
 
-The tree is a faithful, navigable decomposition of each Source into relatively atomic, technically useful knowledge Items. It preserves **where knowledge comes from and how the source presents it**. It does not group knowledge across Sources by meaning; that is the later semantic graph's responsibility.
+This document defines the agreed conceptual model. [Project overview](project_overview.md) describes purpose and stages; [working instructions](AGENTS.md) govern Codex behavior; [tree extraction](01_tree.md) specifies processing order, Item boundaries and bounded batches.
 
-## Components
+## Objects
 
-- **Source:** An existing conceptual source registered in `01_inventory/sources.yaml`. The registry identifies the source and its primary material locations; it is not a catalog of extracted concepts.
-- **TreeNode:** A structural subdivision of one Source (for example, a chapter, lecture, section, project subsystem, or experiment group). Nodes organize content; they are not Topics and do not need independent conceptual summaries.
-- **Item:** A self-contained unit of substantive knowledge or experience extracted from one Source. An Item has a stable ID, one Source, one primary TreeNode, a descriptive title, technical content, and precise source references.
+| Object | Responsibility | Persistence |
+|---|---|---|
+| **Source** | Identify one conceptual academic, scientific or professional source and its primary materials. | Existing stable mapping key and record in `00_sources/inventory/sources.yaml`. Related documents and repositories may belong to the same Source. Archive members remain in `00_sources/inventory/archive_files.csv`. |
+| **TreeNode** | Organize a structural subdivision of one Source, such as a chapter, lecture or project subsystem. It is not a semantic Topic. | Source-specific YAML under `01_tree/trees/`, recording the Source and nodes with `id`, `title`, `parent`; root nodes have `parent: null`. |
+| **Item** | Explain a coherent, relatively atomic unit of knowledge or experience from one Source. | Markdown under `01_tree/items/`, with YAML frontmatter `id`, `source`, `parent`, `title`; substantive explanation and precise references in the body. |
+| **Topic** | Synthesize technical meaning and relationships across Items, including shared principles and important distinctions. A collection or list alone is insufficient. | Human-readable graph content; exact persistence is deferred to the graph stage. |
+| **Competency** | Describe a capability reasonably supported by Items, explaining its theoretical or practical basis and scope. | Human-readable graph content; exact persistence is deferred to the graph stage. No confidence scores or proficiency ratings. |
+| **Graph** | Express cross-source semantic relationships among Topics and Competencies and their supporting Items. | Planned graph stage; no schema or implementation is introduced here. |
 
-A Source's tree consists of its TreeNodes and Items. A separate Tree object is unnecessary.
+A Source's tree consists of its TreeNodes and Items; a separate Tree object or object subclass hierarchy is unnecessary. These conceptual responsibilities do not require a Python class for every object.
 
-## Extraction procedure: follow the source
+The tree persistence paths above are intended outputs. Their directories are created only when extraction is authorized; the current `01_tree/` is empty.
 
-1. Identify the Source in `01_inventory/sources.yaml` and locate its original materials. Read relevant existing profiles only as orientation; original materials take precedence when details matter.
-2. Establish the source's **actual reading or processing order** (e.g., syllabus and lecture sequence; thesis chapters; project documentation and code structure). Use `archive_files.csv` and `archive_matches.csv` when useful. Do not treat alphabetical ZIP-member order as the intended teaching order.
-3. Unpack or inspect the next bounded portion of material into temporary working space, without changing the original archive or repository. Do not execute code found in source materials.
-4. Follow the material **linearly**, creating structural nodes as its organization becomes clear. Do not build a speculative complete tree in advance.
-5. Delimit the substantive content into Items. Decide which results deserve independent treatment and which details belong inside a larger Item. Preserve the order in which Items are encountered.
-6. Write each Item with its own coherent explanation and references, validate its placement, and stop at the requested batch limit. Record the exact point at which the next batch should resume.
+## Tree and graph
 
-Do not skip ahead to select especially impressive or varied examples. Do not silently omit substantive material merely because it seems less relevant to a career application. Headings, administrative notices, repetitions and purely transitional text need not become Items.
+The tree preserves the source's organization, order and provenance. Each Item has one Source and exactly one primary parent TreeNode within that Source. Structural parentage is acyclic. Source-specific Items remain distinct even when their content overlaps with another Source.
 
-## Deciding Item boundaries
+The graph provides revisable semantic abstraction across Sources. Topics may overlap and need not form an exclusive taxonomy. Competencies require support from Items; they are not inferred solely from Topic titles. Semantic relationships can evolve without changing source-specific factual content. Keep authoritative relationships explicit and avoid competing copies.
 
-An Item should express **one coherent, independently useful result, method, construction, argument, implementation, experiment, or tightly connected group of results**. It need not correspond to a single slide, paragraph, heading or theorem.
+The downstream master profile draws on this model. Professional emphasis remains the user's decision and does not redefine source-grounded content.
 
-Prefer **one Item** when material is best understood together, for example:
+## Identity and references
 
-- A theorem with its assumptions, proof sketch or proof, interpretation, and routine corollaries.
-- An algorithm with its mathematical formulation, steps, convergence conditions and limitations.
-- A method with the definitions and examples required to understand it.
+Keep Source, TreeNode and Item identifiers stable when titles, locations or tree order change. Resolve references by ID rather than treating display titles as identities. Preserve existing Source IDs, boundaries, academic associations and recorded ambiguities.
 
-Prefer **separate Items** when a component has substantial independent significance, for example:
+Locations in `00_sources/inventory/sources.yaml` resolve relative to that registry's directory; external absolute paths and URLs retain their own meaning. Repository-local paths quoted in instructions or source profiles are relative to the career-profile repository root unless explicitly identified as paths inside a source archive or external repository. Markdown links resolve relative to the containing Markdown file.
 
-- A corollary that is a major result in its own right, rather than a routine consequence.
-- A distinct algorithm with its own assumptions or computational behavior.
-- An implementation or experiment that makes a substantive contribution beyond illustrating a preceding concept.
+Each Item cites the supporting material with the available section, page, slide, theorem, archive-member path, code path or repository revision. A directory path alone is insufficient for a specific technical assertion. State material gaps and source limitations instead of inventing locators or details.
 
-Avoid both one-Item-per-slide fragmentation and broad Items that merely summarize an entire lecture. Definitions and supporting lemmas can remain within a larger Item unless their independent reuse justifies separation. When uncertain, favor conceptual coherence and explain the boundary decision briefly in the batch report rather than inventing metadata.
+The profiles in `00_sources/source_profiles/` are reference material. They can orient extraction but do not impose a taxonomy or replace original evidence when important details need checking. Do not present a profile-based statement as independently verified against the original source.
 
-## Content and provenance
+## Technical content and attribution
 
-Write Items in English, using Markdown with YAML frontmatter. Preserve, where supported by the source:
+Preserve supported formulations, assumptions, proofs or proof ideas, algorithms, numerical and implementation details, experimental conditions and limitations. Items should be independently useful without reproducing entire source documents.
 
-- Precise definitions, notation, equations, assumptions, statements and conclusions.
-- Proofs or essential proof ideas, algorithms and relevant computational details.
-- Important examples, edge cases, limitations and distinctions.
-- The difference between taught material, a source's claims, observed results, implemented work and personally attributable contributions.
+Distinguish theoretical knowledge, practical implementation, reported or observed results, collaborative work and personally attributable contributions. Academic exposure can support analytical capability without establishing personal software implementation. Supplementary material does not establish academic credit or completed assignments. Coauthorship does not identify every individual contribution.
 
-An Item should stand on its own without reproducing entire source documents. Cite the exact supporting material as precisely as available: archive or repository path, document filename, section, page, slide, theorem number, code path or revision. Never invent page numbers or unsupported personal contributions. If source material is incomplete or ambiguous, state the limitation.
+Quantitative results retain their units, experimental setting and material qualifications. External published findings remain distinct from results of the user's implementation. Topics and Competencies explain supported interpretations without scores or a prescribed professional taxonomy.
 
-## Minimal persistence
+## Minimal structural checks
 
-Use the conventions authorized in `docs/knowledge_model.md` and the pilot implementation. The initial intended layout is:
+Check parsing, unique IDs, resolvable Source and parent references, one primary parent per Item, same-Source placement, acyclic node ancestry and usable source locators. Human review checks technical substance, coherent Item boundaries and accurate attribution; structural validation cannot establish those qualities by itself.
 
-```text
-03_tree/
-  trees/<source-id>.yaml
-  items/<source-id>-<item-id>.md
-```
-
-A tree YAML file records its Source and structural nodes (`id`, `title`, `parent`; root nodes use `null`). An Item Markdown file uses YAML frontmatter with `id`, `source`, `parent`, `title`, followed by substantive content and source references. Each Item has exactly one primary parent node. Do not add Item types, semantic labels, confidence scores or graph links as mandatory fields.
-
-Keep IDs stable once assigned. Do not duplicate the same knowledge merely because it is referenced again later in the source; extend or cross-reference the existing Item when appropriate, while retaining its primary location. Different Sources retain their own Items even when their content overlaps.
-
-## Incremental batches and quality checks
-
-Work in small, consecutive batches. The requested number of Items is a **stop condition**, not a reason to split or merge content artificially. If the batch limit falls inside a coherent unit, finish that unit and stop; do not force an unnatural boundary. If the accessible portion contains fewer substantive units, report that instead of inventing Items.
-
-For each batch, check that IDs are unique, Source and parent references resolve, the hierarchy has no cycles, Items contain real technical content, and source references are usable. Report the Items created, material covered, decisions about boundaries, uncertainties, and a precise continuation point.
-
-Do not create Topics, Competencies, graph relations, downstream profiles, or new extraction infrastructure unless separately requested.
+Use inspectable Markdown and YAML and only the minimal Python needed for concrete loading or checking tasks. Graph persistence remains deferred. The first tree pilot can use the conventions already specified in [tree extraction](01_tree.md); it does not require graph implementation or new validation infrastructure.

@@ -12,7 +12,7 @@ import subprocess
 import tarfile
 import zipfile
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 
 
 def safe_path(name: str) -> PurePosixPath:
@@ -23,11 +23,11 @@ def safe_path(name: str) -> PurePosixPath:
 
 
 def prepare(course_id: str) -> None:
-    with (ROOT / "01_inventory/courses.csv").open() as handle:
+    with (ROOT / "00_sources/inventory/courses.csv").open() as handle:
         row = next(r for r in csv.DictReader(handle) if r["course_id"] == course_id)
     if not row["archive"]:
         raise ValueError("Course has no configured archive")
-    archive = ROOT / "00_sources/tum/archives" / row["archive"]
+    archive = ROOT / "00_sources/raw/tum/archives" / row["archive"]
     cache = ROOT / ".cache" / course_id
     records = []
 

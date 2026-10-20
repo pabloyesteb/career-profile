@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate cross-references and basic invariants in 01_inventory."""
+"""Validate cross-references and basic invariants in 00_sources/inventory."""
 
 from __future__ import annotations
 
@@ -9,8 +9,8 @@ from pathlib import Path
 import yaml
 
 
-ROOT = Path(__file__).resolve().parents[1]
-INV = ROOT / "01_inventory"
+ROOT = Path(__file__).resolve().parents[2]
+INV = ROOT / "00_sources/inventory"
 
 
 def rows(name: str) -> list[dict[str, str]]:
