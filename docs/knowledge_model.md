@@ -1,6 +1,6 @@
 # Knowledge model for Career Profile
 
-Status: **proposed architecture; approval required before implementation**. Reviewed 2026-10-15. This document designs `03_knowledge_base/`; it does not populate it.
+Status: **approved architecture; implemented knowledge base accepted as iteration zero on 2026-10-18**. The current representation is usable for downstream work; remaining optional editorial improvements are not prerequisites. The original design, examples and implementation plan below are retained as historical context, not pending approval or instructions to restart extraction. [AGENTS.md](../AGENTS.md) governs revisable interpretation, user-controlled positioning and progressive retrieval.
 
 ## 1. Goals, boundaries and inputs
 

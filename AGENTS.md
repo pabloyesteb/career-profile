@@ -55,6 +55,15 @@ Knowledge organization
 First produce source-grounded profiles of individual courses and projects. Then synthesize them into thematic knowledge-base files. Themes may include control theory, optimization, machine learning, statistics and data science, numerical mathematics, dynamical systems and robotics, aerospace engineering, and other areas justified by the material.
 Categories are not mutually exclusive: a course or project may contribute to several themes. Use consistent terminology for related categories across profiles. Avoid duplicating full course profiles inside thematic files; summarize their contributions and link back to the detailed profiles.
 Finally, build a consolidated master profile that makes the overall technical background easy to understand and retrieve. The knowledge base should remain useful independently of any particular job posting.
+
+Professional interpretation and iterative use
+
+- Distinguish source-grounded knowledge and experience from revisable technical/professional interpretations and context-dependent positioning. Preserve attribution and source limitations; theoretical familiarity does not establish personal implementation.
+- Themes, competencies and taxonomy are retrieval/synthesis structures, not definitive classifications of professional identity. The current five competencies are not a ranking of the user's most important capabilities, and the four themes are not the only valid organizational views.
+- Codex may propose narratives, capability groupings and emphasis. Target roles, professional identity and strategic emphasis are the user's decisions; when consequential or ambiguous, present alternatives with supporting evidence rather than silently choosing a position.
+- Job postings, applications, interviews, employer feedback and the user's observations may reveal capabilities needing greater visibility. Prefer adapting downstream professional representations before reorganizing the knowledge base. Change source-grounded knowledge only for new evidence, factual corrections or substantive representation gaps, not merely to match a job ad's vocabulary.
+- Retrieve progressively through the existing knowledge-base navigation and references, following relevant concepts, claims and experiences to profile passages as needed. Do not require rereading all 25 profiles or the entire knowledge base for each application.
+
 Evidence and accuracy
 Make technical claims traceable. Cite source paths and, when useful, page numbers, section names, code paths, or commit hashes. References must identify real, accessible evidence; never invent them.
 Separate directly supported information from unresolved questions. When sources conflict, prefer the most specific and relevant evidence and note material discrepancies. When material is missing, record the gap rather than silently substituting plausible content.
